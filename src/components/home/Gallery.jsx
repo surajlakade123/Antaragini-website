@@ -5,6 +5,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { LuArrowUpRight, LuSearch, LuMenu, LuX } from "react-icons/lu";
+import ghrcelogo from "../../assets/Glogo.jpg"
 
 const BentoGallery = () => {
     const [activeTab, setActiveTab] = useState("antaragni");
@@ -25,24 +26,24 @@ const BentoGallery = () => {
                 <div className={`absolute bottom-[-10%] left-[20%] w-[40%] h-[40%] rounded-full blur-[120px] transition-colors duration-700 ${activeTab === 'antaragni' ? 'bg-[#00ffff]/20' : activeTab === 'technorion' ? 'bg-purple-600/20' : 'bg-yellow-600/20'}`} />
             </div>
 
-            <div className="relative z-10">
+            <div className="relative z-10 mt-10">
                 {/* Header Section */}
-                <header className="py-12 px-6 container mx-auto flex flex-col items-center text-center">
+                <header className="py-12 px-6  container mx-auto flex flex-col items-center text-center">
                     <div className="w-24 h-24 rounded-full overflow-hidden mb-6 border-4 border-white/10 shadow-lg relative">
                         <Image
-                            src="/AT.png"
+                            src={ghrcelogo }
                             alt="Antaragni Logo"
                             width={100}
                             height={100}
                             className="object-cover w-full h-full bg-black"
                         />
                     </div>
-                    <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-2 text-white">
+                    <h1 className="text-3xl md:text-6xl font-bold tracking-tight mb-2 text-white">
                         Antaragni
                     </h1>
                     <p className="text-gray-400 max-w-md text-sm md:text-base leading-relaxed mb-8">
-                        The biggest Cultural Festival of IIT Kanpur. <br />
-                        Celebrating music, dance, drama, and art.
+                        The biggest Cultural Festival of GHRCE Nagpur <br />
+                        Celebrating music, dance, drama, and art !
                     </p>
 
                     {/* Tabs */}
@@ -51,7 +52,7 @@ const BentoGallery = () => {
                             <button
                                 key={tab.id}
                                 onClick={() => setActiveTab(tab.id)}
-                                className={`px-6 py-2 rounded-full text-sm font-bold tracking-wide transition-all duration-300 ${activeTab === tab.id
+                                className={`px-6 py-2 rounded-full text-2xl font-bold tracking-wide transition-all duration-300 ${activeTab === tab.id
                                     ? `${tab.color} text-white shadow-lg scale-105`
                                     : 'bg-white/5 text-gray-400 hover:bg-white/10'
                                     }`}
@@ -105,6 +106,13 @@ const BentoGallery = () => {
                             {/* 5. Landscape Image */}
                             <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 row-span-2 rounded-[2.5rem] overflow-hidden relative group shadow-lg">
                                 <Image src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80" alt="Landscape" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                            </motion.div>
+
+                            {/* 6. Green Logo Card */}
+                            <motion.div whileHover={{ scale: 1.02 }} className="bg-[#B5C96B] rounded-[2rem] p-6 flex flex-col justify-between shadow-lg relative overflow-hidden">
+                                <div className="transform -rotate-6 scale-110">
+                                    <h2 className="text-5xl font-black tracking-tighter text-black/90">Antaragni</h2>
+                                </div>
                             </motion.div>
 
                             {/* 6. Green Logo Card */}
@@ -178,13 +186,19 @@ const BentoGallery = () => {
                             </motion.div>
 
                             {/* 6. Tech Logo Card */}
-                            <motion.div whileHover={{ scale: 1.02 }} className="bg-slate-800 rounded-[2rem] p-6 flex flex-col justify-between shadow-lg relative overflow-hidden border border-slate-600">
+                            <motion.div whileHover={{ scale: 1.02 }} className="bg-slate-800 rounded-4xl p-6 flex flex-col justify-between shadow-lg relative overflow-hidden border border-slate-600">
                                 <div className="transform -rotate-3 scale-110">
                                     <h2 className="text-4xl font-black tracking-tighter text-cyan-400">Technorion</h2>
                                 </div>
-                                <div className="mt-auto flex justify-between items-end">
-                                    <span className="text-xs text-slate-400">Technical Fest ↗</span>
+            
+                            </motion.div>
+
+                            {/* 6. Tech Logo Card */}
+                            <motion.div whileHover={{ scale: 1.02 }} className="bg-slate-800 rounded-4xl p-6 flex flex-col justify-between shadow-lg relative overflow-hidden border border-slate-600">
+                                <div className="transform -rotate-3 scale-110">
+                                    <h2 className="text-4xl font-black tracking-tighter text-cyan-400">Technorion</h2>
                                 </div>
+            
                             </motion.div>
 
                             {/* 7. Stats Card */}
@@ -192,17 +206,17 @@ const BentoGallery = () => {
                                 <div className="flex justify-between items-start">
                                     <h3 className="text-2xl font-semibold leading-tight max-w-[80%]">Pushing the boundaries of technology.</h3>
                                     <LuArrowUpRight size={24} className="text-cyan-500" />
-                                </div>
-                                <div className="flex gap-4 mt-4">
-                                    <div className="bg-black/30 p-3 rounded-xl">
-                                        <div className="text-2xl font-bold text-cyan-400">50+</div>
-                                        <div className="text-xs text-gray-400">Events</div>
-                                    </div>
-                                    <div className="bg-black/30 p-3 rounded-xl">
-                                        <div className="text-2xl font-bold text-purple-400">10k+</div>
-                                        <div className="text-xs text-gray-400">Participants</div>
-                                    </div>
-                                </div>
+                                </div>   
+                                 
+                            </motion.div>
+
+                            {/* 7. Stats Card */}
+                            <motion.div whileHover={{ scale: 1.02 }} className="col-span-1 md:col-span-2 bg-[#1e293b] text-white rounded-[2rem] p-8 flex flex-col justify-between shadow-lg border border-slate-700">
+                                <div className="flex justify-between items-start">
+                                    <h3 className="text-2xl font-semibold leading-tight max-w-[80%]">Pushing the boundaries of technology.</h3>
+                                    <LuArrowUpRight size={24} className="text-cyan-500" />
+                                </div>   
+                                 
                             </motion.div>
                         </div>
                     )}
@@ -257,12 +271,30 @@ const BentoGallery = () => {
                                 <div className="transform -rotate-6 scale-110">
                                     <h2 className="text-4xl font-black tracking-tighter text-red-500">Parakram</h2>
                                 </div>
-                                <div className="mt-auto flex justify-between items-end">
-                                    <span className="text-xs text-stone-400">Sports Meet ↗</span>
+                            </motion.div>
+
+                            {/* 6. Parakram Logo Card */}
+                            <motion.div whileHover={{ scale: 1.02 }} className="bg-stone-900 rounded-[2rem] p-6 flex flex-col justify-between shadow-lg relative overflow-hidden border border-stone-700">
+                                <div className="transform -rotate-6 scale-110">
+                                    <h2 className="text-4xl font-black tracking-tighter text-red-500">Parakram</h2>
                                 </div>
                             </motion.div>
 
                             {/* 7. Motivation Card */}
+                            <motion.div whileHover={{ scale: 1.02 }} className="col-span-1 md:col-span-2 bg-[#451a03] text-white rounded-[2rem] p-8 flex flex-col justify-between shadow-lg border border-orange-900">
+                                <div className="flex justify-between items-start">
+                                    <h3 className="text-2xl font-semibold leading-tight max-w-[80%]">Compete with the best athletes.</h3>
+                                    <LuArrowUpRight size={24} className="text-orange-500" />
+                                </div>
+                                <div className="mt-6">
+                                    <div className="flex gap-2">
+                                        <span className="text-xs bg-orange-600/20 text-orange-400 px-2 py-1 rounded border border-orange-600/30">Cricket</span>
+                                        <span className="text-xs bg-orange-600/20 text-orange-400 px-2 py-1 rounded border border-orange-600/30">Football</span>
+                                        <span className="text-xs bg-orange-600/20 text-orange-400 px-2 py-1 rounded border border-orange-600/30">Volleyball</span>
+                                    </div>
+                                </div>
+                            </motion.div>
+                            
                             <motion.div whileHover={{ scale: 1.02 }} className="col-span-1 md:col-span-2 bg-[#451a03] text-white rounded-[2rem] p-8 flex flex-col justify-between shadow-lg border border-orange-900">
                                 <div className="flex justify-between items-start">
                                     <h3 className="text-2xl font-semibold leading-tight max-w-[80%]">Compete with the best athletes.</h3>
