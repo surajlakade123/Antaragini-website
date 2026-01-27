@@ -4,6 +4,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaHistory, FaUsers, FaLightbulb } from "react-icons/fa";
 
+
+
+
 import sunilji from "../../assets/suniljiraisoni-Bl6duqdx.png";
 import shobharaisoni from "../../assets/shobharaisoni2-CQnZ9QrQ.png";
 import director from "../../assets/director-DX4IHFhE.png";
@@ -37,11 +40,17 @@ import atiyamadam from "../../assets/atiyamadam.jpeg"
 import umakantKadu from "../../assets/decorationLead.jpeg";
 import discipline from "../../assets/disciplineLead.jpeg";
 import shreyashraisoni from "../../assets/shreyasraisoni2.png"
+import ruchamam from "../../assets/ruchamam.jpeg"
+
 import sharaddhaumate from "../../assets/sharaddhaumate.jpeg"
+
+
+
+
 
 const teamSections = [
   {
-    title: "Patrons",
+    title:  "PATRONS" ,
     members: [
       {
         name: "Dr. Sunilji Raisoni",
@@ -61,7 +70,7 @@ const teamSections = [
     ],
   },
   {
-    title: "Director",
+    title: " DIRECTOR",
     members: [
       {
         name: "Dr. Sachin Untawale",
@@ -71,7 +80,7 @@ const teamSections = [
     ],
   },
   {
-    title: "Steering Committee",
+    title:  " STEERING COMMITTEE" ,
     members: [
       {
         name: "Dr. Pramod Walke",
@@ -91,7 +100,7 @@ const teamSections = [
     ],
   },
   {
-    title: "Gathering Incharge",
+    title: " GATHERING INCHARGE" ,
     members: [
       {
         name: "Dr. Kapil Jajulwar",
@@ -101,7 +110,7 @@ const teamSections = [
     ],
   },
   {
-    title: "Gathering Co-Incharge",
+    title: "GATHERING CO-INCHARGE" ,
     members: [
       {
         name: "Dr. Sujesh Ghodmare",
@@ -119,24 +128,24 @@ const teamSections = [
         image: abhijeetTitarmare,
       },
       {
-        name: "Prof. Shraddha Umate",
+        name: "Dr. Shradha Umate",
         role: "Asst. Prof, EE Dept.",
-        image: sharaddhaumate,
+        image:sharaddhaumate,
       },
     ],
   },
   {
-    title: "Treasurer",
+    title: " TREASURER"  ,
     members: [
       {
         name: "Prof. Rucha Jichkar",
         role: "Treasurer, GHRCE",
-        image: treasurer,
+        image: ruchamam,
       },
     ],
   },
   {
-    title: "SRC Student Body",
+    title:  " OFFICE BEARERS" ,
     members: [
       {
         name: "Devanshi Baraskar",
@@ -201,7 +210,7 @@ const teamSections = [
     ],
   },
   {
-    title: "Web Development Incharge",
+    title: "WEB DEVELOPMENT INCHARGE" ,
     members: [
       {
         name: "Prof. Atiya Khan",
@@ -215,7 +224,7 @@ const teamSections = [
     members: [
       {
         name: "Shubham Verma",
-        role: "Web Developer",
+        role: "Web Developer Lead",
         image: shubhamVerma,
       },
       {
@@ -225,22 +234,22 @@ const teamSections = [
       },
       {
         name: "Suraj Lakade",
-        role: "Web Developer",
+        role: "Web Developer & Designer",
         image: surajLakade,
       },
       {
         name: "Jitendra Yadav",
-        role: "Web Developer",
+        role: "Web Designer",
         image: jitendraYadav,
       },
       {
         name: "Soujanya Poshattiwar",
-        role: "Web Developer",
+        role: "Web Developer & Version Control",
         image: soujanyaPoshattiwar,
       },
       {
         name: "Neha Kathole",
-        role: "Web Developer",
+        role: "Web Designer",
         image: nehaKathole,
       },
       {
@@ -275,6 +284,8 @@ export default function AboutPage() {
       transition: { staggerChildren: 0.2 },
     },
   };
+
+
 
   return (
     <div className="min-h-screen w-full pt-20 pb-20 px-4 md:px-8 max-w-7xl mx-auto text-white">
@@ -349,19 +360,41 @@ export default function AboutPage() {
         transition={{ duration: 0.8 }}
         className="mb-32"
       >
+         {/* ghrce Section */}
         <div className="backdrop-blur-md rounded-3xl p-12 border border-purple-700/100 hover:shadow-[0_0_25px_4px_rgba(168,85,247,0.35)]
 ">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
 
-              <h2 className="text-4xl font-bold mb-6">About Antaragni</h2>
+              <h2 className="text-4xl font-bold mb-6">About GHRCE</h2>
               <p className="text-gray-300 text-lg leading-relaxed align-justify">
                 G.H. Raisoni College of Engineering (GHRCE) Nagpur, established in 1996, is an Empowered autonomous institution affiliated to Rashtrasant Tukadoji Maharaj Nagpur University. The institute became Autonomous in 2010 and UGC has renewed autonomous status till 2032. It has been awarded A++ (3.55/4) grade by NAAC during 3 rd cycle in 2023. It is ranked in the band of 201-300 in year 2025 PAN India in Engineering Discipline, as declared by National Institutional Ranking Framework (NIRF) 2025, MoE, Government of India.
               </p>
             </div>
             <div className="md:w-1/2 w-full h-72 rounded-xl overflow-hidden">
               <video width="640" height="360" autoPlay loop muted>
-                <source src="/videos/TeaserChangesdone.mp4" type="video/mp4" muted={true} />
+                <source src="/videos/ghrcevedio.mp4" type="video/mp4" muted={true} />
+              </video>
+            </div>
+          </div>
+        </div>
+
+      {/* Antaragni  Section */}
+          <div className="backdrop-blur-md mt-10 rounded-3xl p-12 border border-purple-700/100 hover:shadow-[0_0_25px_4px_rgba(168,85,247,0.35)]
+">
+          <div className="flex flex-col md:flex-row items-center gap-12">
+            <div className="md:w-1/2">
+
+              <h2 className="text-4xl font-bold mb-6">About Antaragni</h2>
+              <p className="text-gray-300 text-lg leading-relaxed align-justify">
+               ANTARAGNI-2025 is the Annual Fest of G. H. Raisoni College of Engineering, taking things to a greater level this year. With competitions in dance, film and photography, music, dramatics, and various technical events with a unique twist, it promises to be an unforgettable event.
+
+The festival includes events like dancing, singing, and fashion shows. Antaragni, being the cultural part of the gathering, observes the maximum audience participation, starting from day one and concluding with a grand finale featuring a renowned celebrity.
+              </p>
+            </div>
+            <div className="md:w-1/2 w-full h-72 rounded-xl overflow-hidden">
+              <video width="640" height="360"   autoPlay   loop    playinline  >
+                <source src="videos/TeaserChangesdone.mp4" type="video/mp4" muted={true} />
               </video>
             </div>
           </div>
