@@ -37,7 +37,7 @@ export default function Navbar() {
                 <div className="flex items-center justify-between h-20 w-full">
 
 
-                    <Link href="/" className="relative h-16 w-32 sm:w-40 md:w-60 shrink-0">
+                    <Link href="/" className="relative h-20 w-40 sm:w-40 md:w-60 shrink-0">
                         <Image
                             src="/AT.png"
                             alt="Technorion Antaragni Parakram 2026"
@@ -60,14 +60,14 @@ export default function Navbar() {
                                 {link.name}
                                 {pathname === link.path && (
                                     <motion.span
-                                        layoutId="underline"
+                                        layoutId=""
                                         className="absolute left-0 bottom-1 block h-0.5 w-full bg-white"
                                     />
                                 )}
                             </Link>
                         ))}
 
-                        <img className="h-10 w-auto ml-4" src="https://antaragni.co.in/assets/newlogo-CaJDsZv3.png" alt="College Logo" />
+                        <img className="h-10 w-auto ml-4 lg:h-13 lg:w-27" src="https://antaragni.co.in/assets/newlogo-CaJDsZv3.png" alt="College Logo" />
                     </nav>
 
                     {/* Mobile Menu Button */}
@@ -109,7 +109,7 @@ export default function Navbar() {
                             <img
                                 src="https://antaragni.co.in/assets/newlogo-CaJDsZv3.png"
                                 alt="College Logo"
-                                className="h-20 w-40 lg-h-40 lg-w-60"
+                                className="h-15 w-30 "
                             />
                         </div>
                     </motion.div>

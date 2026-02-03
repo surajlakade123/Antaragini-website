@@ -5,15 +5,14 @@ import { motion } from "framer-motion";
 
 const categories = [
     {
-        id: "antaragni",
-        name: "ANTARAGNI",
-        subtitle: "Cultural Events",
-        count: "14 Events",
-        description: "Dance, Music, Drama & Art",
-        color: "var(--antaragni-primary)",
-        gradient: "from-[var(--antaragni-primary)] to-[var(--antaragni-secondary)]",
-        // Using placeholder images from Unsplash
-        image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2070&auto=format&fit=crop"
+        id: "parakram",
+        name: "PARAKRAM",
+        subtitle: "Sports Events",
+        count: "16 Events",
+        description: "Athletics, Team Sports & E-Sports",
+        color: "var(--parakram-tertiary)",
+        gradient: "from-[var(--parakram-primary)] to-[var(--parakram-tertiary)]",
+        image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=2070&auto=format&fit=crop"
     },
     {
         id: "technorion",
@@ -25,15 +24,17 @@ const categories = [
         gradient: "from-[var(--technorion-primary)] to-[var(--technorion-tertiary)]",
         image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop"
     },
+
     {
-        id: "parakram",
-        name: "PARAKRAM",
-        subtitle: "Sports Events",
-        count: "16 Events",
-        description: "Athletics, Team Sports & E-Sports",
-        color: "var(--parakram-tertiary)",
-        gradient: "from-[var(--parakram-primary)] to-[var(--parakram-tertiary)]",
-        image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=2070&auto=format&fit=crop"
+        id: "antaragni",
+        name: "ANTARAGNI",
+        subtitle: "Cultural Events",
+        count: "14 Events",
+        description: "Dance, Music, Drama & Art",
+        color: "var(--antaragni-primary)",
+        gradient: "from-[var(--antaragni-primary)] to-[var(--antaragni-secondary)]",
+        // Using placeholder images from Unsplash
+        image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2070&auto=format&fit=crop"
     }
 ];
 
