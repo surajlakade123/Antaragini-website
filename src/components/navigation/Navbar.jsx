@@ -32,11 +32,11 @@ export default function Navbar() {
 
     return (
         <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-black">
-      
+
             <div className="w-full container mx-auto px-4 md:px-15">
                 <div className="flex items-center justify-between h-20 w-full">
-                    
-   
+
+
                     <Link href="/" className="relative h-16 w-32 sm:w-40 md:w-60 shrink-0">
                         <Image
                             src="/AT.png"
@@ -54,9 +54,8 @@ export default function Navbar() {
                             <Link
                                 key={link.name}
                                 href={link.path}
-                                className={`relative text-sm font-bold uppercase tracking-widest transition-colors duration-300 ${
-                                    pathname === link.path ? "text-white" : "text-gray-400 hover:text-white"
-                                }`}
+                                className={`relative text-sm font-bold uppercase tracking-widest transition-colors duration-300 ${pathname === link.path ? "text-white" : "text-gray-400 hover:text-white"
+                                    }`}
                             >
                                 {link.name}
                                 {pathname === link.path && (
@@ -67,7 +66,7 @@ export default function Navbar() {
                                 )}
                             </Link>
                         ))}
-                
+
                         <img className="h-10 w-auto ml-4" src="https://antaragni.co.in/assets/newlogo-CaJDsZv3.png" alt="College Logo" />
                     </nav>
 
@@ -97,9 +96,8 @@ export default function Navbar() {
                                     key={link.name}
                                     href={link.path}
                                     onClick={() => setIsMobileMenuOpen(false)}
-                                    className={`text-2xl font-bold uppercase tracking-tighter ${
-                                        pathname === link.path ? "text-white" : "text-gray-500"
-                                    }`}
+                                    className={`text-2xl font-bold uppercase tracking-tighter ${pathname === link.path ? "text-white" : "text-gray-500"
+                                        }`}
                                 >
                                     {link.name}
                                 </Link>
@@ -108,10 +106,10 @@ export default function Navbar() {
 
                         {/* FIX 4: Added the College Logo at the bottom of the mobile menu to match your image */}
                         <div className="p-10 flex justify-center border-t border-white/10">
-                            <img 
-                                src="https://antaragni.co.in/assets/newlogo-CaJDsZv3.png" 
-                                alt="College Logo" 
-                                className="h-12 w-auto"
+                            <img
+                                src="https://antaragni.co.in/assets/newlogo-CaJDsZv3.png"
+                                alt="College Logo"
+                                className="h-20 w-40 lg-h-40 lg-w-60"
                             />
                         </div>
                     </motion.div>

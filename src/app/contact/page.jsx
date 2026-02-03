@@ -10,6 +10,13 @@ export default function ContactPage() {
     };
 
     return (
+        <div
+        className="min-h-screen w-full bg-black text-white
+        bg-[linear-gradient(rgba(255,255,255,0.16)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.16)_1px,transparent_1px)]
+        bg-[size:40px_40px]"
+        >
+
+
         <div className="min-h-screen w-full pt-20 pb-10 px-4 md:px-8 max-w-7xl mx-auto text-white">
             {/* Header */}
             <motion.div
@@ -95,9 +102,9 @@ export default function ContactPage() {
                             </div>
                             <h3 className="text-xl font-bold mb-2">Address</h3>
                             <p className="text-gray-400 text-sm">
-                                Indian Institute of Technology Kanpur (IITK)<br />
-                                Kalyanpur, Kanpur<br />
-                                Uttar Pradesh - 208016
+                                GH Raisoni College of Engineering<br />
+                                CRPF Gate No. 3, Hingna Road, Digdoh Hills<br />
+                                Nagpur - 440016<br />
                             </p>
                         </div>
                         <div className="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-2xl hover:border-blue-400/30 transition-colors">
@@ -128,10 +135,16 @@ export default function ContactPage() {
                         </div>
                     </div>
 
-                    {/* Stylized Map Placeholder */}
+                    {/* Map Placeholder */}
+                    <a
+                    href="https://maps.app.goo.gl/GvYbQanyvzTaSQx76"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                    >
                     <div className="w-full h-64 rounded-2xl overflow-hidden relative group">
                         <img
-                            src="https://picsum.photos/seed/map/800/400"
+                            src="src\assets\"
                             alt="Location Map"
                             className="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
                         />
@@ -144,8 +157,10 @@ export default function ContactPage() {
                             </div>
                         </div>
                     </div>
+                    </a>
                 </motion.div>
             </div>
+        </div>
         </div>
     );
 }
