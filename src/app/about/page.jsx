@@ -9,6 +9,17 @@ import shobharaisoni from "../../assets/shobharaisoni2-CQnZ9QrQ.png";
 import director from "../../assets/director-DX4IHFhE.png";
 import jajulwar from "../../assets/jajulwar3-IL2zNYI5.png";
 import atiyamadam from "../../assets/atiyamadam-DHN3Ahu0.jpg";
+import sonaliJoshi from "../../assets/sonaliJoshi.png";
+import sujeshGhodmare from "../../assets/sujeshGhodmare.jpg";
+import abhijeetTitarmare from "../../assets/abhijeetTitarmare.avif";
+import gatheringSecratery from "../../assets/gatheringSecratery.jpeg";
+import jointGathering from "../../assets/jointGathering.jpeg";
+import jointGathering1 from "../../assets/jointGathering1.jpeg";
+import jointTechnorion from "../../assets/jointTechnorion.jpeg";
+import jointTechnorion1 from "../../assets/jointTechnorion1.jpeg";
+import technorionPresident from "../../assets/technorionPresident.jpeg";
+import treasurer from "../../assets/treasurer.jpeg";
+
 
 
 const teamSections = [
@@ -53,17 +64,17 @@ const teamSections = [
       {
         name: "Dr. Sujesh Ghodmare",
         role: "Asst. Registrar",
-        image: "",
+        image: sujeshGhodmare,
       },
       {
         name: "Dr. Sonali Joshi",
         role: "Dean IQAC",
-        image: "",
+        image: sonaliJoshi,
       },
       {
         name: "Dr. Abhijeet Titarmare",
         role: "Asscoiate CoE",
-        image: "",
+        image: abhijeetTitarmare,
       },
       {
         name: "Prof. Shraddha Umate",
@@ -78,17 +89,17 @@ const teamSections = [
       {
         name: "Devanshi Baraskar",
         role: "Gathering Secretary",
-        image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=300&q=80",
+        image: gatheringSecratery,
       },
       {
         name: "Nandini Kakde",
         role: "Joint Gathering Secretary",
-        image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&q=80",
+        image: jointGathering,
       },
       {
         name: "Tanish Tawri",
         role: "Joint Gathering Secretary",
-        image: "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=300&q=80",
+        image: jointGathering1,
       },
       {
         name: "Sanika Guru",
@@ -108,22 +119,22 @@ const teamSections = [
       {
         name: "Soham Kale",
         role: "Technorion President",
-        image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=300&q=80",
+        image: technorionPresident,
       },
       {
         name: "Abhijeet Gour",
         role: "Joint Technorion President",
-        image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=300&q=80",
+        image: jointTechnorion1,
       },
       {
         name: "Suyog Aware",
         role: "Joint Technorion President",
-        image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=300&q=80",
+        image: jointTechnorion,
       },
       {
         name: "Himanshi Joshi",
         role: "Treasurer",
-        image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=300&q=80",
+        image: treasurer,
       },
     ],
   },
@@ -146,6 +157,16 @@ const teamSections = [
         image: "",
       },
       {
+        name: "Suraj Lakade",
+        role: "Web Developer",
+        image: "",
+      },
+      {
+        name: "Jitendra Yadav",
+        role: "Web Developer",
+        image: "",
+      },
+      {
         name: "Soujanya Poshattiwar",
         role: "Web Developer",
         image: "",
@@ -155,21 +176,18 @@ const teamSections = [
         role: "Web Developer",
         image: "",
       },
-      {
-        name: "Suraj Lakade",
-        role: "Web Developer",
-        image: "",
-      },
+
       {
         name: "Parth Yerawar",
         role: "Web Developer",
         image: "",
       },
       {
-        name: "Jitendra Yadav",
-        role: "Web Developer",
+        name: "Manthan Bhandari",
+        role: "Web Designer",
         image: "",
       },
+
     ],
   },
 ];
@@ -285,25 +303,30 @@ export default function AboutPage() {
       </motion.section>
 
       {/* Team Section */}
-      <section align="center">
+      <section className="text-center px-4">
         {teamSections.map((section) => (
           <div key={section.title} className="mb-20">
-            <h3 className="  text-3xl font-bold text-center mb-10">
+            <h3 className="text-3xl font-bold text-center mb-10">
               {section.title}
             </h3>
-            <div className=" lg:flex lg:justify-center lg:items-center  lg:flex-wrap lg:flex-row grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="flex flex-wrap justify-center gap-8">
               {section.members.map((member) => (
                 <div
                   key={member.name}
-                  className="   rounded-2xl overflow-hidden text-center hover:scale-105 transition-transform"
+                  className="flex flex-col items-center rounded-2xl overflow-hidden text-center hover:scale-105 transition-transform max-w-xs w-full relative group"
                 >
-                  <img
-                    src={member.image?.src || member.image}
-                    alt={member.name}
-                    className=" ml-30 h-40 w-40 sm:ml-10 md:h-70 md:w-70 rounded-full "
-                  />
-                  <div className="p-4">
-                    <h4 className="font-semibold">{member.name}</h4>
+                  {section.title === "SRC Student Body" && (
+                    <div className="absolute top-10 w-40 h-40 md:w-48 md:h-48 rounded-full bg-gradient-to-br from-purple-600 via-purple-500 to-orange-400 blur-2xl opacity-60 scale-125 -z-10 group-hover:opacity-80 transition-opacity"></div>
+                  )}
+                  <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white/10 shadow-lg bg-black/20 z-10">
+                    <img
+                      src={member.image?.src || member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover object-center"
+                    />
+                  </div>
+                  <div className="p-4 z-10">
+                    <h4 className="font-semibold text-lg">{member.name}</h4>
                     <p className="text-sm text-gray-400">{member.role}</p>
                   </div>
                 </div>
