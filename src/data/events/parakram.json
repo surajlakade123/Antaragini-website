@@ -1,0 +1,366 @@
+[
+    {
+        "id": "futsal-women",
+        "name": "Futsal (Women Only)",
+        "slug": "futsal-women",
+        "category": "parakram",
+        "shortDescription": "Indoor football tournament exclusively for women",
+        "description": "Fast-paced indoor football action. Skill, speed, and teamwork on display.",
+        "bannerImage": "/events/sports.png",
+        "details": {
+            "date": "2026-03-15",
+            "time": "9:00 AM",
+            "venue": "Indoor Sports Complex",
+            "teamSize": "5 + 3 subs",
+            "registrationFee": "₹300",
+            "prizePool": "₹8,000"
+        },
+        "rules": [
+            "20 min halves",
+            "Women only"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "basketball",
+        "name": "Basketball",
+        "slug": "basketball",
+        "category": "parakram",
+        "shortDescription": "5v5 basketball championship",
+        "description": "Dribble, shoot, score. Intense basketball action on the court.",
+        "bannerImage": "/events/sports.png",
+        "details": {
+            "date": "2026-03-16",
+            "time": "8:00 AM",
+            "venue": "Basketball Court",
+            "teamSize": "Team of 5-8",
+            "registrationFee": "₹400",
+            "prizePool": "₹10,000"
+        },
+        "rules": [
+            "FIBA rules",
+            "10 min quarters"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "football",
+        "name": "Football",
+        "slug": "football",
+        "category": "parakram",
+        "shortDescription": "11-a-side football tournament",
+        "description": "The beautiful game. Full field football tournament for the ultimate glory.",
+        "bannerImage": "/events/sports.png",
+        "details": {
+            "date": "2026-03-15 - 17",
+            "time": "7:00 AM",
+            "venue": "Main Football Ground",
+            "teamSize": "11 + Subs",
+            "registrationFee": "₹500",
+            "prizePool": "₹15,000"
+        },
+        "rules": [
+            "FIFA rules",
+            "30 min halves"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "volleyball",
+        "name": "Volleyball",
+        "slug": "volleyball",
+        "category": "parakram",
+        "shortDescription": "6v6 volleyball championship",
+        "description": "Spike, block, and dig. High-flying volleyball action.",
+        "bannerImage": "/events/sports.png",
+        "details": {
+            "date": "2026-03-16",
+            "time": "9:00 AM",
+            "venue": "Volleyball Court",
+            "teamSize": "Team of 6",
+            "registrationFee": "₹300",
+            "prizePool": "₹8,000"
+        },
+        "rules": [
+            "Best of 3 sets",
+            "Rally scoring"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "cricket",
+        "name": "Cricket",
+        "slug": "cricket",
+        "category": "parakram",
+        "shortDescription": "16-over cricket tournament",
+        "description": "Gentleman's game in a limited overs format. Bat, bowl, and field your way to victory.",
+        "bannerImage": "/events/sports.png",
+        "details": {
+            "date": "2026-03-15 - 17",
+            "time": "7:00 AM",
+            "venue": "Cricket Ground",
+            "teamSize": "11 players",
+            "registrationFee": "₹600",
+            "prizePool": "₹20,000"
+        },
+        "rules": [
+            "16 overs",
+            "Leather ball"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "handball",
+        "name": "Handball",
+        "slug": "handball",
+        "category": "parakram",
+        "shortDescription": "Fast-paced handball matches",
+        "description": "Speed, strength, and strategy. Handball is an intense team sport.",
+        "bannerImage": "/events/sports.png",
+        "details": {
+            "date": "2026-03-17",
+            "time": "10:00 AM",
+            "venue": "Handball Court",
+            "teamSize": "Team of 7",
+            "registrationFee": "₹300",
+            "prizePool": "₹7,000"
+        },
+        "rules": [
+            "20 min halves"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "badminton",
+        "name": "Badminton",
+        "slug": "badminton",
+        "category": "parakram",
+        "shortDescription": "Singles and doubles badminton tournament",
+        "description": "Smash and drop. Shuttlecock action for singles and doubles.",
+        "bannerImage": "/events/sports.png",
+        "details": {
+            "date": "2026-03-16",
+            "time": "9:00 AM",
+            "venue": "Indoor Court",
+            "teamSize": "Individual/Doubles",
+            "registrationFee": "₹150",
+            "prizePool": "₹6,000"
+        },
+        "rules": [
+            "Best of 3 games",
+            "21 points"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "kabaddi",
+        "name": "Kabaddi",
+        "slug": "kabaddi",
+        "category": "parakram",
+        "shortDescription": "Traditional contact sport competition",
+        "description": "The sport of the soil. Strength, breath, and raid skills required.",
+        "bannerImage": "/events/sports.png",
+        "details": {
+            "date": "2026-03-17",
+            "time": "8:00 AM",
+            "venue": "Kabaddi Ground",
+            "teamSize": "Team of 7",
+            "registrationFee": "Free",
+            "prizePool": "₹10,000"
+        },
+        "rules": [
+            "20 min halves",
+            "Standard rules"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "table-tennis",
+        "name": "Table Tennis",
+        "slug": "table-tennis",
+        "category": "parakram",
+        "shortDescription": "TT singles and doubles championship",
+        "description": "Reflexes and spin. The fastest racket sport in the world.",
+        "bannerImage": "/events/sports.png",
+        "details": {
+            "date": "2026-03-15",
+            "time": "10:00 AM",
+            "venue": "TT Hall",
+            "teamSize": "Individual/Doubles",
+            "registrationFee": "₹100",
+            "prizePool": "₹4,000"
+        },
+        "rules": [
+            "Best of 5 games",
+            "11 points"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "pool-8-ball",
+        "name": "Pool (8-Ball)",
+        "slug": "pool-8-ball",
+        "category": "parakram",
+        "shortDescription": "Billiards tournament",
+        "description": "Cue sports action. Sink the 8-ball to win.",
+        "bannerImage": "/events/sports.png",
+        "details": {
+            "date": "2026-03-16",
+            "time": "11:00 AM",
+            "venue": "Recreation Room",
+            "teamSize": "Individual",
+            "registrationFee": "₹100",
+            "prizePool": "₹3,000"
+        },
+        "rules": [
+            "Knockout format",
+            "Standard 8-ball rules"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "carrom",
+        "name": "Carrom",
+        "slug": "carrom",
+        "category": "parakram",
+        "shortDescription": "Board game singles and doubles",
+        "description": "Strike and pocket. Precision carrom board tournament.",
+        "bannerImage": "/events/sports.png",
+        "details": {
+            "date": "2026-03-17",
+            "time": "10:00 AM",
+            "venue": "Recreation Room",
+            "teamSize": "Individual/Doubles",
+            "registrationFee": "₹50",
+            "prizePool": "₹2,000"
+        },
+        "rules": [
+            "Best of 3 boards"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "chess",
+        "name": "Chess",
+        "slug": "chess",
+        "category": "parakram",
+        "shortDescription": "Strategic board game tournament",
+        "description": "Battle of wits. Checkmate your opponent in this mind sport.",
+        "bannerImage": "/events/sports.png",
+        "details": {
+            "date": "2026-03-16",
+            "time": "2:00 PM",
+            "venue": "Library Hall",
+            "teamSize": "Individual",
+            "registrationFee": "Free",
+            "prizePool": "₹3,000"
+        },
+        "rules": [
+            "15 min rapid format",
+            "Knockout"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "tug-of-war",
+        "name": "Tug of War",
+        "slug": "tug-of-war",
+        "category": "parakram",
+        "shortDescription": "Team strength competition",
+        "description": "Pull with all your might. A test of raw strength and teamwork.",
+        "bannerImage": "/events/sports.png",
+        "details": {
+            "date": "2026-03-17",
+            "time": "4:00 PM",
+            "venue": "Main Ground",
+            "teamSize": "Team of 8",
+            "registrationFee": "Free",
+            "prizePool": "₹5,000"
+        },
+        "rules": [
+            "Best of 3 pulls"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "power-lifting",
+        "name": "Power Lifting",
+        "slug": "power-lifting",
+        "category": "parakram",
+        "shortDescription": "Weight lifting competition",
+        "description": "Bench, deadlift, and squat. Show off your power.",
+        "bannerImage": "/events/sports.png",
+        "details": {
+            "date": "2026-03-16",
+            "time": "10:00 AM",
+            "venue": "Gym",
+            "teamSize": "Individual",
+            "registrationFee": "₹100",
+            "prizePool": "₹4,000"
+        },
+        "rules": [
+            "3 attempts each lift",
+            "Weight categories"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "athletics",
+        "name": "Athletics",
+        "slug": "athletics",
+        "category": "parakram",
+        "shortDescription": "Track and field events",
+        "description": "Run, jump, and sprint. Track and field events including 100m, 200m, 400m, Relay.",
+        "bannerImage": "/events/sports.png",
+        "details": {
+            "date": "2026-03-15",
+            "time": "7:00 AM",
+            "venue": "Running Track",
+            "teamSize": "Individual/Relay",
+            "registrationFee": "Free",
+            "prizePool": "Medals + Certificates"
+        },
+        "rules": [
+            "Standard athletics rules"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "dodge-ball",
+        "name": "Dodge Ball",
+        "slug": "dodge-ball",
+        "category": "parakram",
+        "shortDescription": "Fast-paced elimination ball game",
+        "description": "Dodge, duck, dip, dive, and dodge. Eliminate the opposing team to win.",
+        "bannerImage": "/events/sports.png",
+        "details": {
+            "date": "2026-03-17",
+            "time": "1:00 PM",
+            "venue": "Indoor Court",
+            "teamSize": "Team of 6",
+            "registrationFee": "Free",
+            "prizePool": "₹3,000"
+        },
+        "rules": [
+            "Best of 3 games",
+            "Last standing team wins"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    }
+]

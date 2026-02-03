@@ -1,0 +1,50 @@
+{
+    "festivalName": "Antaragni 2026",
+    "tagline": "Saga Spectrum - Every Color Has a Story",
+    "collegeName": "GHRCEN",
+    "collegeFullName": "G H Raisoni College of Engineering, Nagpur",
+    "address": {
+        "line1": "CRPF Gate No. 3, Hingna Road",
+        "line2": "Digdoh Hills",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "pin": "440016"
+    },
+    "festivalDates": {
+        "start": "2026-02-19T00:00:00",
+        "end": "2026-02-21T23:59:59"
+    },
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.4084620577963!2d79.006263375048!3d21.135213680540454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0604d509817%3A0xe53d0af60510526e!2sG.%20H.%20Raisoni%20College%20of%20Engineering%2C%20Nagpur!5e0!3m2!1sen!2sin!4v1714838002000!5m2!1sen!2sin",
+    "socialMedia": {
+        "instagram": "https://instagram.com/antaragni_ghrcen",
+        "facebook": "https://facebook.com/antaragni",
+        "twitter": "https://twitter.com/antaragni",
+        "youtube": "https://youtube.com/antaragni"
+    },
+    "contact": [
+        {
+            "type": "Event Queries",
+            "name": "Student Coordinator",
+            "role": "Event Coordinator",
+            "phone": "+91-9876543210",
+            "email": "events@antaragni.com"
+        }
+    ],
+    "theme": {
+        "antaragni": {
+            "primary": "#ff6b6b",
+            "secondary": "#ff8c42",
+            "tertiary": "#ffd93d"
+        },
+        "technorion": {
+            "primary": "#4facfe",
+            "secondary": "#00f2fe",
+            "tertiary": "#a855f7"
+        },
+        "parakram": {
+            "primary": "#ff6b6b",
+            "secondary": "#ff8c42",
+            "tertiary": "#6bcf7f"
+        }
+    }
+}

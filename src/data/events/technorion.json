@@ -1,0 +1,433 @@
+[
+    {
+        "id": "prompt-master",
+        "name": "Prompt Master",
+        "slug": "prompt-master",
+        "category": "technorion",
+        "shortDescription": "AI prompt engineering competition",
+        "description": "Master the art of AI communication. Craft the perfect prompts to generate stunning images or precise text outputs using ChatGPT/Midjourney.",
+        "bannerImage": "/events/tech.png",
+        "details": {
+            "date": "2026-03-15",
+            "time": "11:00 AM",
+            "venue": "Computer Lab 1",
+            "teamSize": "Individual",
+            "registrationFee": "Free",
+            "prizePool": "₹3,000"
+        },
+        "rules": [
+            "3 rounds",
+            "Best output wins"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "tech-quiz",
+        "name": "Tech Quiz",
+        "slug": "tech-quiz",
+        "category": "technorion",
+        "shortDescription": "Technology and innovation trivia championship",
+        "description": "Test your geek quotient. A quiz covering everything from latest gadgets to coding history.",
+        "bannerImage": "/events/tech.png",
+        "details": {
+            "date": "2026-03-16",
+            "time": "12:00 PM",
+            "venue": "Seminar Hall",
+            "teamSize": "Team of 3",
+            "registrationFee": "Free",
+            "prizePool": "₹4,000"
+        },
+        "rules": [
+            "Written + buzzer rounds"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "microcode",
+        "name": "MicroCode",
+        "slug": "microcode",
+        "category": "technorion",
+        "shortDescription": "Speed coding challenge with micro-problems",
+        "description": "Fast fingers, faster logic. Solve small coding problems against the clock.",
+        "bannerImage": "/events/tech.png",
+        "details": {
+            "date": "2026-03-15",
+            "time": "2:00 PM",
+            "venue": "Computer Lab 2",
+            "teamSize": "Individual",
+            "registrationFee": "Free",
+            "prizePool": "₹5,000"
+        },
+        "rules": [
+            "10 problems in 60 minutes"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "mobile-pool",
+        "name": "Mobile Pool",
+        "slug": "mobile-pool",
+        "category": "technorion",
+        "shortDescription": "Mobile gaming tournament",
+        "description": "8-ball pool on mobile. Precision and strategy on the small screen.",
+        "bannerImage": "/events/tech.png",
+        "details": {
+            "date": "2026-03-17",
+            "time": "10:00 AM",
+            "venue": "Gaming Zone",
+            "teamSize": "Individual",
+            "registrationFee": "₹50",
+            "prizePool": "₹2,000"
+        },
+        "rules": [
+            "Knockout format"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "logo-design",
+        "name": "Logo Design",
+        "slug": "logo-design",
+        "category": "technorion",
+        "shortDescription": "Brand identity design competition",
+        "description": "Create visual identities that speak. Design a logo based on the provided brief.",
+        "bannerImage": "/events/tech.png",
+        "details": {
+            "date": "2026-03-15",
+            "time": "Online Submission",
+            "venue": "Online",
+            "teamSize": "Individual",
+            "registrationFee": "Free",
+            "prizePool": "₹3,000"
+        },
+        "rules": [
+            "Digital submission",
+            "Brief provided"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "ludo-king",
+        "name": "Ludo King",
+        "slug": "ludo-king",
+        "category": "technorion",
+        "shortDescription": "Digital Ludo tournament",
+        "description": "The classic board game goes digital. Luck meets strategy.",
+        "bannerImage": "/events/tech.png",
+        "details": {
+            "date": "2026-03-16",
+            "time": "11:00 AM",
+            "venue": "Gaming Zone",
+            "teamSize": "Individual",
+            "registrationFee": "₹50",
+            "prizePool": "₹2,000"
+        },
+        "rules": [
+            "Best of 3 format"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "tower-making",
+        "name": "Tower Making",
+        "slug": "tower-making",
+        "category": "technorion",
+        "shortDescription": "Engineering challenge to build tallest/strongest structure",
+        "description": "Reach for the skies. Build the tallest or strongest tower using limited materials.",
+        "bannerImage": "/events/tech.png",
+        "details": {
+            "date": "2026-03-15",
+            "time": "12:00 PM",
+            "venue": "Civil Workshop",
+            "teamSize": "Team of 3",
+            "registrationFee": "Free",
+            "prizePool": "₹4,000"
+        },
+        "rules": [
+            "Limited materials provided",
+            "1 hour time limit"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "uno",
+        "name": "UNO",
+        "slug": "uno",
+        "category": "technorion",
+        "shortDescription": "Card game tournament",
+        "description": "Wild cards, draw fours, and reverses. The ultimate UNO championship.",
+        "bannerImage": "/events/tech.png",
+        "details": {
+            "date": "2026-03-17",
+            "time": "2:00 PM",
+            "venue": "Casual Zone",
+            "teamSize": "Individual",
+            "registrationFee": "₹50",
+            "prizePool": "₹1,500"
+        },
+        "rules": [
+            "Knockout rounds"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "bgmi",
+        "name": "BGMI",
+        "slug": "bgmi",
+        "category": "technorion",
+        "shortDescription": "Battle royale gaming championship",
+        "description": "Survival of the fittest. Squad up and dominate the battlegrounds.",
+        "bannerImage": "/events/tech.png",
+        "details": {
+            "date": "2026-03-16",
+            "time": "10:00 AM",
+            "venue": "E-Sports Arena",
+            "teamSize": "Squad of 4",
+            "registrationFee": "₹200",
+            "prizePool": "₹10,000"
+        },
+        "rules": [
+            "Multiple rounds",
+            "Points-based system"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "codeoquick",
+        "name": "CodeOQuick",
+        "slug": "codeoquick",
+        "category": "technorion",
+        "shortDescription": "Rapid-fire coding competition",
+        "description": "Think fast, code faster. Algorithmic challenges solved at lightning speed.",
+        "bannerImage": "/events/tech.png",
+        "details": {
+            "date": "2026-03-15",
+            "time": "4:00 PM",
+            "venue": "Computer Lab 3",
+            "teamSize": "Individual",
+            "registrationFee": "Free",
+            "prizePool": "₹5,000"
+        },
+        "rules": [
+            "Algorithmic problems",
+            "Time-based scoring"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "strategic-trade",
+        "name": "Strategic Trade",
+        "slug": "strategic-trade",
+        "category": "technorion",
+        "shortDescription": "Stock market simulation and trading game",
+        "description": "Wall Street comes to campus. Buy low, sell high, and build the biggest portfolio.",
+        "bannerImage": "/events/tech.png",
+        "details": {
+            "date": "2026-03-16",
+            "time": "10:00 AM",
+            "venue": "MBA Hall",
+            "teamSize": "Individual",
+            "registrationFee": "Free",
+            "prizePool": "₹6,000"
+        },
+        "rules": [
+            "Virtual money provided",
+            "Best portfolio wins"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "hackathon",
+        "name": "Hackathon",
+        "slug": "hackathon",
+        "category": "technorion",
+        "shortDescription": "24-hour coding marathon",
+        "description": "Sleep is optional, coding is mandatory. Build a working prototype in 24 hours.",
+        "bannerImage": "/events/tech.png",
+        "details": {
+            "date": "2026-03-15 - 16",
+            "time": "Starts 10:00 AM",
+            "venue": "Innovation Center",
+            "teamSize": "Team of 2-4",
+            "registrationFee": "Free",
+            "prizePool": "₹25,000"
+        },
+        "rules": [
+            "Theme revealed on spot",
+            "Working prototype required"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "valorant",
+        "name": "Valorant",
+        "slug": "valorant",
+        "category": "technorion",
+        "shortDescription": "Tactical FPS gaming tournament",
+        "description": "5v5 character-based tactical shooter. Plant the spike or defuse it.",
+        "bannerImage": "/events/tech.png",
+        "details": {
+            "date": "2026-03-17",
+            "time": "10:00 AM",
+            "venue": "E-Sports Arena",
+            "teamSize": "Team of 5",
+            "registrationFee": "₹250",
+            "prizePool": "₹12,000"
+        },
+        "rules": [
+            "Best of 3 matches"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "tech-showcase",
+        "name": "Tech Showcase",
+        "slug": "tech-showcase",
+        "category": "technorion",
+        "shortDescription": "Project exhibition",
+        "description": "Showcase your innovative projects and prototypes to industry experts and peers.",
+        "bannerImage": "/events/tech.png",
+        "details": {
+            "date": "2026-03-16",
+            "time": "All Day",
+            "venue": "Exhibition Hall",
+            "teamSize": "Team of 2-4",
+            "registrationFee": "Free",
+            "prizePool": "₹8,000"
+        },
+        "rules": [
+            "Working demo required",
+            "Poster presentation"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "line-follower",
+        "name": "Line Follower",
+        "slug": "line-follower",
+        "category": "technorion",
+        "shortDescription": "Autonomous robot race",
+        "description": "Robotics in motion. Build a bot that follows the black line in the fastest time.",
+        "bannerImage": "/events/tech.png",
+        "details": {
+            "date": "2026-03-17",
+            "time": "11:00 AM",
+            "venue": "Robotics Lab",
+            "teamSize": "Team of 3",
+            "registrationFee": "FREE",
+            "prizePool": "₹6,000"
+        },
+        "rules": [
+            "Bot dimensions restricted",
+            "Fastest time wins"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "clash-royale",
+        "name": "Clash Royale",
+        "slug": "clash-royale",
+        "category": "technorion",
+        "shortDescription": "Mobile strategy game tournament",
+        "description": "Duel in the arena. Destroy enemy towers in this real-time strategy game.",
+        "bannerImage": "/events/tech.png",
+        "details": {
+            "date": "2026-03-16",
+            "time": "2:00 PM",
+            "venue": "Gaming Zone",
+            "teamSize": "Individual",
+            "registrationFee": "₹50",
+            "prizePool": "₹2,500"
+        },
+        "rules": [
+            "Knockout format",
+            "Best of 3"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "reeling-se-feeling",
+        "name": "Reeling se Feeling",
+        "slug": "reeling-se-feeling",
+        "category": "technorion",
+        "shortDescription": "Video editing and short film making",
+        "description": "Tell a story through your lens. Create compelling reels or short films.",
+        "bannerImage": "/events/tech.png",
+        "details": {
+            "date": "2026-03-15",
+            "time": "Submission by 5 PM",
+            "venue": "Online",
+            "teamSize": "Team of 2-5",
+            "registrationFee": "Free",
+            "prizePool": "₹4,000"
+        },
+        "rules": [
+            "3-5 min video",
+            "Theme-based"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "garena-free-fire",
+        "name": "Garena Free Fire",
+        "slug": "garena-free-fire",
+        "category": "technorion",
+        "shortDescription": "Battle royale mobile gaming championship",
+        "description": "Drop in, gear up, and survive. The ultimate mobile survival shooter.",
+        "bannerImage": "/events/tech.png",
+        "details": {
+            "date": "2026-03-17",
+            "time": "11:00 AM",
+            "venue": "E-Sports Arena",
+            "teamSize": "Squad of 4",
+            "registrationFee": "₹200",
+            "prizePool": "₹8,000"
+        },
+        "rules": [
+            "Squad format",
+            "Elimination rounds"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    },
+    {
+        "id": "robo-soccer",
+        "name": "Robo Soccer",
+        "slug": "robo-soccer",
+        "category": "technorion",
+        "shortDescription": "Robot football match",
+        "description": "Tech meets sports. Control your bots to score goals in this mechanical match.",
+        "bannerImage": "/events/tech.png",
+        "details": {
+            "date": "2026-03-17",
+            "time": "3:00 PM",
+            "venue": "Robotics Arena",
+            "teamSize": "Team of 3-4",
+            "registrationFee": "Free",
+            "prizePool": "₹7,000"
+        },
+        "rules": [
+            "Wireless bots",
+            "10 min match"
+        ],
+        "contacts": [],
+        "registrationUrl": "#"
+    }
+]
