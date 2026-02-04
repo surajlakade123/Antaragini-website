@@ -18,9 +18,10 @@ import jointGathering1 from "../../assets/jointGathering1.jpeg";
 import jointTechnorion from "../../assets/jointTechnorion.jpeg";
 import jointTechnorion1 from "../../assets/jointTechnorion1.jpeg";
 import technorionPresident from "../../assets/technorionPresident.jpeg";
+import gymkhanaPresident from "../../assets/gymkhanaPresident.jpeg";
+import gymkhanaJointPresident from "../../assets/jointGymkhana.jpeg";
+import gymkhanaJointPresident1 from "../../assets/jointGymkhana1.jpeg";
 import treasurer from "../../assets/treasurer.jpeg";
-
-
 
 const teamSections = [
   {
@@ -79,7 +80,17 @@ const teamSections = [
       {
         name: "Prof. Shraddha Umate",
         role: "Asst. Prof, EE Dept.",
-        image: "",
+        image: sonaliJoshi,
+      },
+    ],
+  },
+  {
+    title: "Treasurer",
+    members: [
+      {
+        name: "Prof. Rucha Jichkar",
+        role: "Treasurer, GHRCE",
+        image: treasurer,
       },
     ],
   },
@@ -103,18 +114,18 @@ const teamSections = [
       },
       {
         name: "Sanika Guru",
-        role: "Parakram President",
-        image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=300&q=80",
+        role: "Gymkhana President",
+        image: gymkhanaPresident,
       },
       {
         name: "Shreyash Shriwas",
-        role: "Joint Parakram President",
-        image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=300&q=80",
+        role: "Joint Gymkhana President",
+        image: gymkhanaJointPresident,
       },
       {
         name: "Tanmay Khode",
-        role: "Joint Parakram President",
-        image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=300&q=80",
+        role: "Joint Gymkhana President",
+        image: gymkhanaJointPresident1,
       },
       {
         name: "Soham Kale",
@@ -149,43 +160,43 @@ const teamSections = [
       {
         name: "Shubham Verma",
         role: "Web Developer",
-        image: "",
+        image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=300&q=80",
       },
       {
         name: "Harsh Koku",
         role: "Web Developer",
-        image: "",
+        image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=300&q=80",
       },
       {
         name: "Suraj Lakade",
         role: "Web Developer",
-        image: "",
+        image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=300&q=80",
       },
       {
         name: "Jitendra Yadav",
         role: "Web Developer",
-        image: "",
+        image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=300&q=80",
       },
       {
         name: "Soujanya Poshattiwar",
         role: "Web Developer",
-        image: "",
+        image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=300&q=80",
       },
       {
         name: "Neha Kathole",
         role: "Web Developer",
-        image: "",
+        image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=300&q=80",
       },
 
       {
         name: "Parth Yerawar",
         role: "Web Developer",
-        image: "",
+        image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=300&q=80",
       },
       {
         name: "Manthan Bhandari",
         role: "Web Designer",
-        image: "",
+        image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=300&q=80",
       },
 
     ],
@@ -225,14 +236,14 @@ export default function AboutPage() {
         </p>
       </motion.section>
 
-      {/* About + Theme */}
+      {/* About + Theme
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
         className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-32"
       >
-        {/* About Antaragni */}
+        About Antaragni
         <motion.div
           variants={fadeInUp}
           className="bg-white/5 backdrop-blur-lg border border-white/10 p-8 rounded-2xl"
@@ -251,7 +262,7 @@ export default function AboutPage() {
           </p>
         </motion.div>
 
-        {/* Theme */}
+        Theme
         <motion.div
           variants={fadeInUp}
           className="bg-white/5 backdrop-blur-lg border border-white/10 p-8 rounded-2xl"
@@ -268,9 +279,10 @@ export default function AboutPage() {
             brilliance within every participant.
           </p>
         </motion.div>
-      </motion.div>
+      </motion.div> 
+      */}
 
-      {/* Spirit Section */}
+      {/* Antaragni Section */}
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -278,25 +290,22 @@ export default function AboutPage() {
         transition={{ duration: 0.8 }}
         className="mb-32"
       >
-        <div className="bg-gradient-to-br from-purple-900/40 to-blue-900/40 backdrop-blur-md rounded-3xl p-12 border border-white/10">
+        <div className="backdrop-blur-md rounded-3xl p-12 border border-purple-700/100 hover:shadow-[0_0_25px_4px_rgba(168,85,247,0.35)]
+">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
               <div className="inline-block p-3 bg-blue-500/20 rounded-lg text-blue-400 mb-6">
-                <FaUsers size={24} />
+                <FaUsers size={20} />
               </div>
-              <h2 className="text-4xl font-bold mb-6">The Spirit Behind</h2>
-              <p className="text-gray-300 text-lg leading-relaxed">
-                Antaragni is entirely student-driven. From sleepless nights to
-                roaring crowds, it is passion, teamwork, and shared dreams that
-                bring this spectacle to life.
+              <h2 className="text-4xl font-bold mb-6">About Antaragni</h2>
+              <p className="text-gray-300 text-lg leading-relaxed align-justify">
+                Antaragni is entirely student-driven. From sleepless nights to roaring crowds, it is passion, teamwork, and shared dreams that bring this spectacle to life. Antaragni is the flagship annual cultural and technical festival of G.H. Raisoni College of Engineering, Nagpur. Recognized nationally, the institution has consistently ranked among top engineering colleges by NIRF, ARIIA, and India Today.
               </p>
             </div>
             <div className="md:w-1/2 w-full h-72 rounded-xl overflow-hidden">
-              <img
-                src="https://picsum.photos/seed/team/800/600"
-                alt="Team Antaragni"
-                className="w-full h-full object-cover"
-              />
+             <video  width="640" height="360" controls autoplay>
+    <source src="https://antaragni.co.in/assets/newantvideo-Bbjj1ztI.mp4" type="video/mp4" />
+</video> 
             </div>
           </div>
         </div>

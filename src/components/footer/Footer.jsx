@@ -16,9 +16,12 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
                     {/* Column 1: Branding */}
                     <div className="space-y-4">
-                        <h2 className="text-3xl font-bold text-white tracking-widest uppercase">
-                            {config.festivalName.split(" ")[0]}
-                        </h2>
+                        <div className="flex items-center">
+                            <img src="https://antaragni.co.in/assets/newsrclogo-CcpIVukO.png" alt="SRC Logo" className="w-50 h-50 mr-4" />
+                        </div>
+                        <div className="text-white text-2xl font-bold">
+                            {config.festivalName}
+                        </div>
                         <p className="text-gray-400 text-sm max-w-xs">
                             {config.tagline}
                         </p>
@@ -69,7 +72,7 @@ export default function Footer() {
                             <li className="flex items-start">
                                 <FaMapMarkerAlt className="mt-1 mr-3 text-[var(--antaragni-primary)] shrink-0" />
                                 <span>
-                                    {config.collegeName}<br />
+                                    {config.collegeFullName}<br />
                                     {config.address.line1}, {config.address.line2}<br />
                                     {config.address.city} - {config.address.pin}
                                 </span>
