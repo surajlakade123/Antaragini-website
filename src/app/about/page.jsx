@@ -22,6 +22,14 @@ import gymkhanaPresident from "../../assets/gymkhanaPresident.jpeg";
 import gymkhanaJointPresident from "../../assets/jointGymkhana.jpeg";
 import gymkhanaJointPresident1 from "../../assets/jointGymkhana1.jpeg";
 import treasurer from "../../assets/treasurer.jpeg";
+import shubhamVerma from "../../assets/shubhamVerma.jpeg";
+import harshKoku from "../../assets/harshKoku.jpeg";
+import surajLakade from "../../assets/surajLakade.png";
+import jitendraYadav from "../../assets/jitendraYadav.jpeg";
+import soujanyaPoshattiwar from "../../assets/soujanyaPoshattiwar.jpeg";
+import nehaKathole from "../../assets/nehaKathole.jpeg";
+import manthanBhandari from "../../assets/manthanBhandari.jpeg";
+import vaishnaviKharche from "../../assets/vaishnaviKharche.jpg";
 
 const teamSections = [
   {
@@ -160,34 +168,38 @@ const teamSections = [
       {
         name: "Shubham Verma",
         role: "Web Developer",
-        image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=300&q=80",
+        image: shubhamVerma,
       },
       {
         name: "Harsh Koku",
         role: "Web Developer",
-        image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=300&q=80",
+        image: harshKoku,
       },
       {
         name: "Suraj Lakade",
         role: "Web Developer",
-        image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=300&q=80",
+        image: surajLakade,
       },
       {
         name: "Jitendra Yadav",
         role: "Web Developer",
-        image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=300&q=80",
+        image: jitendraYadav,
       },
       {
         name: "Soujanya Poshattiwar",
         role: "Web Developer",
-        image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=300&q=80",
+        image: soujanyaPoshattiwar,
       },
       {
         name: "Neha Kathole",
         role: "Web Developer",
-        image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=300&q=80",
+        image: nehaKathole,
       },
-
+      {
+        name: "Vaishnavi Kharche",
+        role: "Web Designer",
+        image: vaishnaviKharche,
+      },
       {
         name: "Parth Yerawar",
         role: "Web Developer",
@@ -196,9 +208,8 @@ const teamSections = [
       {
         name: "Manthan Bhandari",
         role: "Web Designer",
-        image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=300&q=80",
-      },
-
+        image: manthanBhandari,
+      },  
     ],
   },
 ];

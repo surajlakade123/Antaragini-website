@@ -60,7 +60,7 @@ export default function CircularGallery() {
 
             <div className="relative z-10 text-center w-full">
                 <h2 className="text-5xl md:text-7xl font-bold mb-20 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 tracking-tighter">
-                    Spectrum in Motion
+                    Event Highlights
                 </h2>
 
                 <div className="relative w-[350px] h-[350px] md:w-[900px] md:h-[500px] mx-auto perspective-1000">
