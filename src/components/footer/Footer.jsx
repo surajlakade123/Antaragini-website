@@ -3,9 +3,19 @@
 import Link from "next/link";
 import config from "@/data/config.json";
 import { FaInstagram, FaFacebook, FaTwitter, FaYoutube, FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
+import { useEffect, useState } from "react";
+
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
+    const [visits, setVisits] = useState(0);
+
+    useEffect(() => {
+        fetch("/api/visits")
+            .then(res => res.json())
+            .then(data => setVisits(data.count))
+            .catch(() => {});
+    }, []);
 
     return (
         <footer className="relative bg-[#050505] pt-16 pb-8 overflow-hidden">
@@ -92,6 +102,7 @@ export default function Footer() {
                 {/* Bottom Bar */}
                 <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
                     <p>© {currentYear} {config.collegeName} {config.festivalName.split(" ")[0]}. All rights reserved.</p>
+                    <p className="text-gray-400">Visitors: {visits}</p>
                     <div className="mt-4 md:mt-0">
                         Designed & Developed by <span className="text-white">Web Team</span>
                     </div>
