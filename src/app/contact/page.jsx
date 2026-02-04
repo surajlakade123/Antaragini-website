@@ -29,63 +29,52 @@ export default function ContactPage() {
                     Get in Touch
                 </h1>
                 <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                    Have questions? Want to collaborate? Reach out to us.
+                    Have questions? Reach out to us.
                 </p>
             </motion.div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                {/* Contact Form */}
-                <motion.div
-                    initial={{ opacity: 0, x: -50 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.6 }}
-                    className="bg-white/5 backdrop-blur-lg border border-white/10 p-8 rounded-3xl"
+                
+               <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6 }}
+                className="
+                bg-black/40 backdrop-blur-lg
+                border border-white/10
+                p-8 rounded-3xl
+                relative
+                hover:border-teal-400
+                hover:shadow-[0_0_10px_rgba(45,212,191,0.12)]
+                transition-all duration-300"
                 >
-                    <h2 className="text-3xl font-bold mb-8">Send us a Message</h2>
-                    <form className="space-y-6">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div className="space-y-2">
-                                <label className="text-sm text-gray-400 uppercase tracking-wider">Name</label>
-                                <input
-                                    type="text"
-                                    placeholder="John Doe"
-                                    className="w-full bg-black/20 border border-white/10 rounded-lg p-3 text-white focus:border-teal-400 focus:outline-none focus:bg-black/40 transition-colors"
-                                />
-                            </div>
-                            <div className="space-y-2">
-                                <label className="text-sm text-gray-400 uppercase tracking-wider">Email</label>
-                                <input
-                                    type="email"
-                                    placeholder="john@example.com"
-                                    className="w-full bg-black/20 border border-white/10 rounded-lg p-3 text-white focus:border-teal-400 focus:outline-none focus:bg-black/40 transition-colors"
-                                />
-                            </div>
-                        </div>
-                        <div className="space-y-2">
-                            <label className="text-sm text-gray-400 uppercase tracking-wider">Subject</label>
-                            <input
-                                type="text"
-                                placeholder="Regarding Registration..."
-                                className="w-full bg-black/20 border border-white/10 rounded-lg p-3 text-white focus:border-teal-400 focus:outline-none focus:bg-black/40 transition-colors"
-                            />
-                        </div>
-                        <div className="space-y-2">
-                            <label className="text-sm text-gray-400 uppercase tracking-wider">Message</label>
-                            <textarea
-                                rows="5"
-                                placeholder="Your message here..."
-                                className="w-full bg-black/20 border border-white/10 rounded-lg p-3 text-white focus:border-teal-400 focus:outline-none focus:bg-black/40 transition-colors resize-none"
-                            ></textarea>
-                        </div>
-                        <button
-                            type="submit"
-                            className="w-full bg-gradient-to-r from-teal-500 to-blue-600 text-white font-bold py-4 rounded-lg hover:shadow-[0_0_20px_rgba(45,212,191,0.4)] transition-all duration-300 flex items-center justify-center gap-2 group"
-                        >
-                            Send Message
-                            <FaPaperPlane className="group-hover:translate-x-1 transition-transform" />
-                        </button>
-                    </form>
-                </motion.div>
+  <h2 className="text-3xl font-bold mb-6">College Location</h2>
+
+  <p className="text-teal-400 font-semibold mb-4">
+    G. H. Raisoni College of Engineering
+  </p>
+
+  {/* Map Container */}
+  <div
+    className="
+      w-full h-[350px]
+      rounded-xl overflow-hidden
+      border border-white/10
+      hover:border-teal-400
+      hover:shadow-[0_0_10px_rgba(45,212,191,0.12)]
+      transition-all duration-300
+    "
+  >
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.1835199044062!2d79.0034903!3d21.105248399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4954f412ca411%3A0x4fd4cb2d05b49c7d!2sG.%20H.%20Raisoni%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1770207426052!5m2!1sen!2sin"
+      className="w-full h-full"
+      style={{ border: 0 }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    />
+  </div>
+</motion.div>
 
                 {/* Contact Info & Map */}
                 <motion.div
@@ -135,29 +124,6 @@ export default function ContactPage() {
                         </div>
                     </div>
 
-                    {/* Map Placeholder */}
-                    <a
-                    href="https://maps.app.goo.gl/GvYbQanyvzTaSQx76"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block"
-                    >
-                    <div className="w-full h-64 rounded-2xl overflow-hidden relative group">
-                        <img
-                            src="src\assets\"
-                            alt="Location Map"
-                            className="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
-                        />
-                        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                            <div className="bg-black/50 backdrop-blur-md p-4 rounded-xl border border-white/20">
-                                <span className="text-white font-bold flex items-center gap-2">
-                                    <FaMapMarkerAlt className="text-red-500 animate-bounce" />
-                                    Locate Us on Campus
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
                 </motion.div>
             </div>
         </div>

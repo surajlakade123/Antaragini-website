@@ -60,8 +60,7 @@ export default function Navbar() {
                                 {link.name}
                                 {pathname === link.path && (
                                     <motion.span
-                                        layoutId=""
-                                        className="absolute left-0 bottom-1 block h-0.5 w-full bg-white"
+                                        className="absolute left-0 bottom-1 block w-full"
                                     />
                                 )}
                             </Link>
