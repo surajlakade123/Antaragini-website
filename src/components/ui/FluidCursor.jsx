@@ -1,26 +1,31 @@
-"use client";
-
 import { useEffect } from 'react';
 import useFluidCursor from '@/hooks/use-FluidCursor';
 
-export default function FluidCursor({ isActive = true, onTriggerReady }) {
-    const { canvasRef, triggerSplat } = useFluidCursor(isActive);
-
+export default function FluidCursor() {
     useEffect(() => {
-        if (onTriggerReady && triggerSplat) {
-            onTriggerReady(triggerSplat);
-        }
-    }, [triggerSplat, onTriggerReady]);
+        // Create canvas element
+        const canvas = document.createElement('canvas');
+        canvas.id = 'fluid';
+        canvas.style.position = 'fixed';
+        canvas.style.top = '0';
+        canvas.style.left = '0';
+        canvas.style.width = '100%';
+        canvas.style.height = '100%';
+        canvas.style.pointerEvents = 'none';
+        canvas.style.zIndex = '9999';
+        document.body.appendChild(canvas);
 
-    if (!isActive) return null;
+        // Initialize fluid cursor
+        useFluidCursor();
 
-    return (
-        <div className="fixed top-0 left-0 z-20 pointer-events-none w-full h-full">
-            <canvas
-                ref={canvasRef}
-                className="w-full h-full"
-                style={{ width: '100%', height: '100%' }}
-            />
-        </div>
-    );
+        // Cleanup
+        return () => {
+            const existingCanvas = document.getElementById('fluid');
+            if (existingCanvas) {
+                document.body.removeChild(existingCanvas);
+            }
+        };
+    }, []);
+
+    return null;
 }

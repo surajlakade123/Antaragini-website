@@ -164,13 +164,8 @@ function Scene({ onPrismClick }) {
     );
 }
 
-// --- Main Export with Break Feature ---
+// --- Main Export ---
 export default function PrismHero() {
-    const [isBroken, setIsBroken] = useState(false);
-
-    const handleBreakPrism = () => {
-        setIsBroken(true);
-    };
 
     return (
         <section className="h-screen w-full relative overflow-hidden bg-black">
@@ -185,160 +180,124 @@ export default function PrismHero() {
 
 
 
-            {/* Overlay Content with Split Animation */}
-            <AnimatePresence>
-                {!isBroken && (
-                    <>
-                        {/* Left Half */}
+            {/* Overlay Content */}
+            <>
+                {/* Left Half */}
+                <div className="absolute inset-0 z-30 flex items-center justify-end overflow-hidden"
+                    style={{ clipPath: 'polygon(0 0, 50% 0, 50% 100%, 0 100%)' }}
+                >
+                    <div className="relative h-auto mt-25 flex flex-col items-center justify-center text-center px-4 pointer-events-none opacity-95 w-full">
                         <motion.div
-                            initial={{ opacity: 1, x: 0 }}
-                            exit={{
-                                x: '-100%',
-                                opacity: 0,
-                                transition: { duration: 1.2, ease: [0.76, 0, 0.24, 1] }
-                            }}
-                            className="absolute inset-0 z-30 flex items-center justify-end overflow-hidden"
-                            style={{ clipPath: 'polygon(0 0, 50% 0, 50% 100%, 0 100%)' }}
+                            initial={{ opacity: 0, scale: 0 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 1.2, ease: "easeOut" }}
+                            className="glass-panel p-8 md:p-16 rounded-[3rem] border border-white/10 bg-black/30 backdrop-blur-md pointer-events-auto max-w-5xl w-full mx-auto shadow-[0_0_50px_rgba(100,0,100,0.3)]"
                         >
-                            <div className="relative h-auto mt-25 flex flex-col items-center justify-center text-center px-4 pointer-events-none opacity-95 w-full">
-                                <motion.div
-                                    initial={{ opacity: 0, scale: 0 }}
-                                    animate={{ opacity: 1, scale: 1 }}
-                                    transition={{ duration: 1.2, ease: "easeOut" }}
-                                    className="glass-panel p-8 md:p-16 rounded-[3rem] border border-white/10 bg-black/30 backdrop-blur-md pointer-events-auto max-w-5xl w-full mx-auto shadow-[0_0_50px_rgba(100,0,100,0.3)]"
-                                >
-                                    <motion.h1
-                                        initial={{ y: 20, opacity: 0 }}
-                                        animate={{ y: 0, opacity: 1 }}
-                                        transition={{ delay: 0.2, duration: 0.8 }}
-                                        className="text-6xl md:text-9xl font-black mb-4 tracking-tighter"
-                                    >
-                                        <span className="bg-clip-text text-transparent bg-linear-to-r from-[#ff0080] via-[#7928ca] to-[#ff0080] animate-gradient-x">
-                                            ANTARAGNI
-                                        </span>
-                                    </motion.h1>
+                            <motion.h1
+                                initial={{ y: 20, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ delay: 0.2, duration: 0.8 }}
+                                className="text-6xl md:text-9xl font-black mb-4 tracking-tighter"
+                            >
+                                <span className="bg-clip-text text-transparent bg-linear-to-r from-[#ff0080] via-[#7928ca] to-[#ff0080] animate-gradient-x">
+                                    ANTARAGNI
+                                </span>
+                            </motion.h1>
 
-                                    <motion.h2
-                                        initial={{ y: 20, opacity: 0 }}
-                                        animate={{ y: 0, opacity: 1 }}
-                                        transition={{ delay: 0.4, duration: 0.8 }}
-                                        className="text-2xl md:text-4xl font-light text-white tracking-[0.3em] uppercase mb-8"
-                                    >
-                                        <span className="text-cyan-400">Spectrum</span> Saga
-                                    </motion.h2>
+                            <motion.h2
+                                initial={{ y: 20, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ delay: 0.4, duration: 0.8 }}
+                                className="text-2xl md:text-4xl font-light text-white tracking-[0.3em] uppercase mb-8"
+                            >
+                                <span className="text-cyan-400">Spectrum</span> Saga
+                            </motion.h2>
 
-                                    <motion.p
-                                        initial={{ y: 20, opacity: 0 }}
-                                        animate={{ y: 0, opacity: 1 }}
-                                        transition={{ delay: 0.6, duration: 0.8 }}
-                                        className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light leading-relaxed"
-                                    >
-                                        Immerse yourself in the prism of possibilities. <br />
-                                        Where every color tells a story of courage and creativity.
-                                    </motion.p>
+                            <motion.p
+                                initial={{ y: 20, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ delay: 0.6, duration: 0.8 }}
+                                className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light leading-relaxed"
+                            >
+                                Immerse yourself in the prism of possibilities. <br />
+                                Where every color tells a story of courage and creativity.
+                            </motion.p>
 
-                                    <motion.h1 className="text-2xl text-gray-400">
-                                        The <span className="text-cyan-400 font-bold">SAGA</span> BEGINS IN
-                                    </motion.h1>
+                            <motion.h1 className="text-2xl text-gray-400">
+                                The <span className="text-cyan-400 font-bold">SAGA</span> BEGINS IN
+                            </motion.h1>
 
-                                    <motion.div
-                                        initial={{ y: 20, opacity: 0 }}
-                                        animate={{ y: 0, opacity: 1 }}
-                                        transition={{ delay: 0.8, duration: 0.8 }}
-                                    >
-                                        <CountdownTimer targetDate="2026-02-19T00:00:00" />
-                                    </motion.div>
+                            <motion.div
+                                initial={{ y: 20, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ delay: 0.8, duration: 0.8 }}
+                            >
+                                <CountdownTimer targetDate="2026-02-19T00:00:00" />
+                            </motion.div>
 
-                                    {/* Break the Prism Button */}
-                                    <motion.button
-                                        initial={{ y: 20, opacity: 0 }}
-                                        animate={{ y: 0, opacity: 1 }}
-                                        transition={{ delay: 1.0, duration: 0.8 }}
-                                        onClick={handleBreakPrism}
-                                        className="mt-12 px-12 py-4 bg-gradient-to-r from-[#ff0080] via-[#7928ca] to-[#00ffff] rounded-full text-white font-bold text-lg tracking-wider uppercase shadow-[0_0_30px_rgba(255,0,128,0.5)] hover:shadow-[0_0_50px_rgba(255,0,128,0.8)] transition-all duration-300 hover:scale-105 active:scale-95"
-                                    >
-                                        Break the Prism
-                                    </motion.button>
-                                </motion.div>
-                            </div>
+
                         </motion.div>
+                    </div>
+                </div>
 
-                        {/* Right Half */}
+                {/* Right Half */}
+                <div className="absolute inset-0 z-30 flex items-center justify-start overflow-hidden"
+                    style={{ clipPath: 'polygon(50% 0, 100% 0, 100% 100%, 50% 100%)' }}
+                >
+                    <div className="relative h-auto mt-25 flex flex-col items-center justify-center text-center px-4 pointer-events-none opacity-95 w-full">
                         <motion.div
-                            initial={{ opacity: 1, x: 0 }}
-                            exit={{
-                                x: '100%',
-                                opacity: 0,
-                                transition: { duration: 1.2, ease: [0.76, 0, 0.24, 1] }
-                            }}
-                            className="absolute inset-0 z-30 flex items-center justify-start overflow-hidden"
-                            style={{ clipPath: 'polygon(50% 0, 100% 0, 100% 100%, 50% 100%)' }}
+                            initial={{ opacity: 0, scale: 0 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 1.2, ease: "easeOut" }}
+                            className="glass-panel p-8 md:p-16 rounded-[3rem] border border-white/10 bg-black/30 backdrop-blur-md pointer-events-auto max-w-5xl w-full mx-auto shadow-[0_0_50px_rgba(100,0,100,0.3)]"
                         >
-                            <div className="relative h-auto mt-25 flex flex-col items-center justify-center text-center px-4 pointer-events-none opacity-95 w-full">
-                                <motion.div
-                                    initial={{ opacity: 0, scale: 0 }}
-                                    animate={{ opacity: 1, scale: 1 }}
-                                    transition={{ duration: 1.2, ease: "easeOut" }}
-                                    className="glass-panel p-8 md:p-16 rounded-[3rem] border border-white/10 bg-black/30 backdrop-blur-md pointer-events-auto max-w-5xl w-full mx-auto shadow-[0_0_50px_rgba(100,0,100,0.3)]"
-                                >
-                                    <motion.h1
-                                        initial={{ y: 20, opacity: 0 }}
-                                        animate={{ y: 0, opacity: 1 }}
-                                        transition={{ delay: 0.2, duration: 0.8 }}
-                                        className="text-6xl md:text-9xl font-black mb-4 tracking-tighter"
-                                    >
-                                        <span className="bg-clip-text text-transparent bg-linear-to-r from-[#ff0080] via-[#7928ca] to-[#ff0080] animate-gradient-x">
-                                            ANTARAGNI
-                                        </span>
-                                    </motion.h1>
+                            <motion.h1
+                                initial={{ y: 20, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ delay: 0.2, duration: 0.8 }}
+                                className="text-6xl md:text-9xl font-black mb-4 tracking-tighter"
+                            >
+                                <span className="bg-clip-text text-transparent bg-linear-to-r from-[#ff0080] via-[#7928ca] to-[#ff0080] animate-gradient-x">
+                                    ANTARAGNI
+                                </span>
+                            </motion.h1>
 
-                                    <motion.h2
-                                        initial={{ y: 20, opacity: 0 }}
-                                        animate={{ y: 0, opacity: 1 }}
-                                        transition={{ delay: 0.4, duration: 0.8 }}
-                                        className="text-2xl md:text-4xl font-light text-white tracking-[0.3em] uppercase mb-8"
-                                    >
-                                        <span className="text-cyan-400">Spectrum</span> Saga
-                                    </motion.h2>
+                            <motion.h2
+                                initial={{ y: 20, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ delay: 0.4, duration: 0.8 }}
+                                className="text-2xl md:text-4xl font-light text-white tracking-[0.3em] uppercase mb-8"
+                            >
+                                <span className="text-cyan-400">Spectrum</span> Saga
+                            </motion.h2>
 
-                                    <motion.p
-                                        initial={{ y: 20, opacity: 0 }}
-                                        animate={{ y: 0, opacity: 1 }}
-                                        transition={{ delay: 0.6, duration: 0.8 }}
-                                        className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light leading-relaxed"
-                                    >
-                                        Immerse yourself in the prism of possibilities. <br />
-                                        Where every color tells a story of courage and creativity.
-                                    </motion.p>
+                            <motion.p
+                                initial={{ y: 20, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ delay: 0.6, duration: 0.8 }}
+                                className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light leading-relaxed"
+                            >
+                                Immerse yourself in the prism of possibilities. <br />
+                                Where every color tells a story of courage and creativity.
+                            </motion.p>
 
-                                    <motion.h1 className="text-2xl text-gray-400">
-                                        The <span className="text-cyan-400 font-bold">SAGA</span> BEGINS IN
-                                    </motion.h1>
+                            <motion.h1 className="text-2xl text-gray-400">
+                                The <span className="text-cyan-400 font-bold">SAGA</span> BEGINS IN
+                            </motion.h1>
 
-                                    <motion.div
-                                        initial={{ y: 20, opacity: 0 }}
-                                        animate={{ y: 0, opacity: 1 }}
-                                        transition={{ delay: 0.8, duration: 0.8 }}
-                                    >
-                                        <CountdownTimer targetDate="2026-02-19T00:00:00" />
-                                    </motion.div>
+                            <motion.div
+                                initial={{ y: 20, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ delay: 0.8, duration: 0.8 }}
+                            >
+                                <CountdownTimer targetDate="2026-02-19T00:00:00" />
+                            </motion.div>
 
-                                    {/* Break the Prism Button */}
-                                    <motion.button
-                                        initial={{ y: 20, opacity: 0 }}
-                                        animate={{ y: 0, opacity: 1 }}
-                                        transition={{ delay: 1.0, duration: 0.8 }}
-                                        onClick={handleBreakPrism}
-                                        className="mt-12 px-12 py-4 bg-gradient-to-r from-[#ff0080] via-[#7928ca] to-[#00ffff] rounded-full text-white font-bold text-lg tracking-wider uppercase shadow-[0_0_30px_rgba(255,0,128,0.5)] hover:shadow-[0_0_50px_rgba(255,0,128,0.8)] transition-all duration-300 hover:scale-105 active:scale-95"
-                                    >
-                                        Break the Prism
-                                    </motion.button>
-                                </motion.div>
-                            </div>
+
                         </motion.div>
-                    </>
-                )}
-            </AnimatePresence>
+                    </div>
+                </div>
+            </>
 
 
 
@@ -352,6 +311,6 @@ export default function PrismHero() {
             >
                 <div className="w-px h-16 bg-linear-to-b from-cyan-400 to-transparent mx-auto" />
             </motion.div>
-        </section>
+        </section >
     );
 }
