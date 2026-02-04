@@ -38,18 +38,19 @@ const categories = [
         gradient: "from-[var(--antaragni-primary)] to-[var(--antaragni-secondary)]",
         // Using placeholder images from Unsplash
         image: antaragni,
+        video: "/videos/collegebackground video.mp4"
     }
 ];
 
 export default function EventCategories() {
     return (
-        <section className="py-32 bg-black relative">
+        <section className="py-32 bg-[var(--color-cream)] relative">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-6xl font-bold mb-4 text-white">
-                        Event <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Categories</span>
+                    <h2 className="text-4xl md:text-6xl font-bold mb-4 text-black">
+                        Event <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-800">Categories</span>
                     </h2>
-                    <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+                    <p className="text-gray-600 max-w-2xl mx-auto text-lg">
                         Dive into the world of culture, technology, and sports.
                     </p>
                 </div>
@@ -61,13 +62,25 @@ export default function EventCategories() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.2, duration: 0.6 }}
-                                className="relative h-[300px] md:h-full w-full rounded-2xl overflow-hidden glass-panel border-0"
+                                className="relative h-[300px] md:h-full w-full rounded-2xl overflow-hidden glass-panel border-0 shadow-2xl shadow-black/20"
                             >
-                                {/* Background Image */}
-                                <div
-                                    className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                                    style={{ backgroundImage: `url(${cat.image.src || cat.image})` }}
-                                />
+                                {/* Background Image or Video */}
+                                {cat.video ? (
+                                    <video
+                                        autoPlay
+                                        loop
+                                        muted
+                                        playsInline
+                                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                    >
+                                        <source src={cat.video} type="video/mp4" />
+                                    </video>
+                                ) : (
+                                    <div
+                                        className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                                        style={{ backgroundImage: `url(${cat.image.src || cat.image})` }}
+                                    />
+                                )}
 
                                 {/* Gradient Overlay */}
                                 <div className={`absolute inset-0 bg-gradient-to-t ${cat.gradient} opacity-40 mix-blend-multiply transition-opacity duration-300 group-hover:opacity-80`} />

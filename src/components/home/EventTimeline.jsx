@@ -88,15 +88,15 @@ const antaragniDays = [
 
 export default function EventTimeline() {
     return (
-        <section className="py-20 bg-black relative">
+        <section className="py-20 bg-[var(--color-cream)] relative">
             <div className="container mx-auto px-4">
 
                 {/* Main Title */}
                 <div className="text-center mb-16">
-                    <h2 className="text-5xl md:text-7xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-red-500">
+                    <h2 className="text-5xl md:text-7xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-700 to-red-600">
                         Event Schedule
                     </h2>
-                    <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+                    <p className="text-gray-600 max-w-2xl mx-auto text-lg">
                         Mark your calendars for the most awaited festival of the year.
                     </p>
                 </div>
@@ -104,15 +104,15 @@ export default function EventTimeline() {
                 {/* ANTARAGNI SECTION (Now On Top) */}
                 <div className="mb-24">
                     <div className="mb-12 border-l-4 border-purple-500 pl-6">
-                        <h3 className="text-4xl font-bold mb-2 text-white">
-                            Antaragni & <span className="text-blue-400">Technorion</span>
+                        <h3 className="text-4xl font-bold mb-2 text-black">
+                            Antaragni & <span className="text-blue-600">Technorion</span>
                         </h3>
-                        <p className="text-gray-400 text-lg">
-                            Feb 19th - 21st • <span className="text-yellow-500 font-semibold">Hackathon starts Feb 18th</span> at Library.
+                        <p className="text-gray-700 text-lg">
+                            Feb 19th - 21st • <span className="text-yellow-600 font-semibold">Hackathon starts Feb 18th</span> at Library.
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="text-3xl grid grid-cols-1 md:grid-cols-3 gap-8">
                         {antaragniDays.map((item, index) => (
                             <TimelineCard key={`antaragni-${index}`} item={item} index={index} />
                         ))}
@@ -122,10 +122,10 @@ export default function EventTimeline() {
                 {/* PARAKRAM SECTION (Now Below) */}
                 <div>
                     <div className="mb-12 border-l-4 border-red-500 pl-6">
-                        <h3 className="text-4xl font-bold mb-2 text-white">
-                            Parakram <span className="text-red-500">2026</span>
+                        <h3 className="text-4xl font-bold mb-2 text-black">
+                            Parakram <span className="text-red-600">2026</span>
                         </h3>
-                        <p className="text-gray-400 text-lg">
+                        <p className="text-gray-700 text-lg">
                             Feb 14th - 18th • Witness the clash of titans.
                         </p>
                     </div>
@@ -171,15 +171,15 @@ function TimelineCard({ item, index }) {
                         </div>
                     </div>
 
-                    <h3 className="text-xl font-semibold text-white mb-1">{item.subtitle}</h3>
+                    <h3 className="text-2xl lg:text-4xl font-semibold text-white mb-1">{item.subtitle}</h3>
                     {item.venue && <p className="text-xs text-gray-500 mb-4 flex items-center gap-1">📍 {item.venue}</p>}
 
                     <div className="w-full h-[1px] bg-white/10 my-4" />
 
                     <ul className="space-y-3">
                         {item.events.map((event, i) => (
-                            <li key={i} className="flex items-start gap-2 text-gray-300 text-sm">
-                                <span className={`mt-1.5 min-w-[6px] h-1.5 rounded-full bg-gradient-to-r ${item.color}`}></span>
+                            <li key={i} className="flex items-start gap-2 text-gray-300 text-sm lg:text-2xl ">
+                                <span className={` l mt-1.5 min-w-[6px] h-1.5 rounded-full bg-gradient-to-r ${item.color}`}></span>
                                 <span>{event}</span>
                             </li>
                         ))}

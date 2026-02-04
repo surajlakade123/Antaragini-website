@@ -56,7 +56,7 @@ export default function Footer() {
                             {config.tagline}
                         </p>
                         <div className="flex space-x-4 pt-4">
-                            <a href= "https://www.instagram.com/src.ghrce/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[var(--antaragni-primary)] transition-colors">
+                            <a href="https://www.instagram.com/src.ghrce/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[var(--antaragni-primary)] transition-colors">
                                 <FaInstagram size={24} />
                             </a>
                             <a href="https://www.facebook.com/GHRCE.Official/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#1877F2] transition-colors">
@@ -71,26 +71,26 @@ export default function Footer() {
                         </div>
                     </div>
 
-                  {/* Column 2: Quick Links */}
+                    {/* Column 2: Quick Links */}
                     <div className="my-auto">
-                    <h3 className="text-white font-semibold mb-6 flex items-center">
-                        <span className="w-8 h-[2px] bg-[var(--technorion-secondary)] mr-3"></span>
-                        Quick Links
-                    </h3>
+                        <h3 className="text-white font-semibold mb-6 flex items-center">
+                            <span className="w-8 h-[2px] bg-[var(--technorion-secondary)] mr-3"></span>
+                            Quick Links
+                        </h3>
 
-                    <ul className="grid grid-cols-2 gap-3">
-                        {['Home', 'About', 'Events', 'Gallery', 'Sponsors', 'UDAN', 'Contact'].map((item) => (
-                        <li key={item}>
-                            <Link
-                            href={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
-                            className="text-gray-400 hover:text-white transition-colors text-sm flex items-center group"
-                            >
-                            <span className="w-1 h-1 bg-gray-600 rounded-full mr-2 group-hover:bg-[var(--antaragni-secondary)] transition-colors"></span>
-                            {item}
-                            </Link>
-                        </li>
-                        ))}
-                    </ul>
+                        <ul className="grid grid-cols-2 gap-3">
+                            {['Home', 'About', 'Events', 'Gallery', 'Sponsors', 'UDAN', 'Contact'].map((item) => (
+                                <li key={item}>
+                                    <Link
+                                        href={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
+                                        className="text-gray-400 hover:text-white transition-colors text-sm flex items-center group"
+                                    >
+                                        <span className="w-1 h-1 bg-gray-600 rounded-full mr-2 group-hover:bg-[var(--antaragni-secondary)] transition-colors"></span>
+                                        {item}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
 
                     {/* Column 3: Contact */}

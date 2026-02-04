@@ -288,7 +288,7 @@ export default function AboutPage() {
 
 
   return (
-    <div className="min-h-screen w-full pt-20 pb-20 px-4 md:px-8 max-w-7xl mx-auto text-white">
+    <div className="min-h-screen w-full pt-20 pb-20 px-4 md:px-8 max-w-7xl mx-auto text-black bg-white">
       {/* Hero Section */}
       <motion.section
         initial="hidden"
@@ -300,7 +300,7 @@ export default function AboutPage() {
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
           Antaragni 2026
         </h1>
-        <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
           Antaragni is not just a festival, it's a legacy a spectrum of emotions,
           talent, and culture colliding to create magic.
         </p>
@@ -367,7 +367,7 @@ export default function AboutPage() {
             <div className="md:w-1/2">
 
               <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6">About GHRCE</h2>
-              <p className="text-gray-300 text-lg leading-relaxed align-justify">
+              <p className="text-gray-700 text-lg leading-relaxed align-justify">
                 G.H. Raisoni College of Engineering (GHRCE) Nagpur, established in 1996, is an Empowered autonomous institution affiliated to Rashtrasant Tukadoji Maharaj Nagpur University. The institute became Autonomous in 2010 and UGC has renewed autonomous status till 2032. It has been awarded A++ (3.55/4) grade by NAAC during 3 rd cycle in 2023. It is ranked in the band of 201-300 in year 2025 PAN India in Engineering Discipline, as declared by National Institutional Ranking Framework (NIRF) 2025, MoE, Government of India.
               </p>
             </div>
@@ -386,7 +386,7 @@ export default function AboutPage() {
             <div className="md:w-1/2">
 
               <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6">About Antaragni</h2>
-              <p className="text-gray-300 text-lg leading-relaxed align-justify">
+              <p className="text-gray-700 text-lg leading-relaxed align-justify">
                 ANTARAGNI-2025 is the Annual Fest of G. H. Raisoni College of Engineering, taking things to a greater level this year. With competitions in dance, film and photography, music, dramatics, and various technical events with a unique twist, it promises to be an unforgettable event.
 
                 The festival includes events like dancing, singing, and fashion shows. Antaragni, being the cultural part of the gathering, observes the maximum audience participation, starting from day one and concluding with a grand finale featuring a renowned celebrity.
@@ -431,7 +431,7 @@ export default function AboutPage() {
                     </div>
 
                     <div className="z-10 w-full">
-                      <h4 className="font-bold text-xl mb-1 text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 transition-all duration-300">
+                      <h4 className="font-bold text-xl mb-1 text-black group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 transition-all duration-300">
                         {member.name}
                       </h4>
                       <p className="text-sm font-medium text-gray-400 group-hover:text-gray-200 tracking-wide uppercase transition-colors">

@@ -5,7 +5,7 @@ import { FaDownload, FaBookOpen } from "react-icons/fa";
 
 export default function UdanPage() {
     return (
-        <div className="min-h-screen w-full pt-20 pb-10 px-4 md:px-8 max-w-7xl mx-auto text-white">
+        <div className="min-h-screen w-full pt-20 pb-10 px-4 md:px-8 max-w-7xl mx-auto text-black bg-white">
             <div className="flex flex-col md:flex-row items-center gap-12 mt-10">
 
                 {/* Magazine Cover */}
@@ -49,27 +49,27 @@ export default function UdanPage() {
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Creativity & Innovation</span>
                     </h2>
 
-                    <p className="text-gray-300 text-lg leading-relaxed">
+                    <p className="text-gray-700 text-lg leading-relaxed">
                         **UDAN** is the literary heartbeat of Antaragni. It captures the essence of the festival, featuring student artwork, poetry, technical articles, and behind-the-scenes stories of the Saga Spectrum.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                        <button className="flex items-center justify-center gap-3 bg-white text-black px-8 py-4 rounded-full font-bold hover:bg-gray-200 transition-colors">
+                        <button className="flex items-center justify-center gap-3 bg-gray-400 text-white px-8 py-4 rounded-full font-bold hover:bg-gray-500 transition-colors shadow-lg">
                             <FaBookOpen />
                             Read Online
                         </button>
-                        <button className="flex items-center justify-center gap-3 bg-transparent border border-white/30 text-white px-8 py-4 rounded-full font-bold hover:bg-white/10 transition-colors">
+                        <button className="flex items-center justify-center gap-3 bg-gray-800 text-white px-8 py-4 rounded-full font-bold hover:bg-black transition-colors shadow-lg">
                             <FaDownload />
                             Download PDF
                         </button>
                     </div>
 
                     {/* Previous Editions */}
-                    <div className="pt-8 border-t border-white/10">
-                        <h3 className="text-lg font-semibold text-gray-400 mb-4">Previous Editions</h3>
+                    <div className="pt-8 border-t border-gray-200">
+                        <h3 className="text-lg font-semibold text-gray-500 mb-4">Previous Editions</h3>
                         <div className="flex gap-4">
                             {['2025', '2024', '2023'].map(year => (
-                                <span key={year} className="px-4 py-2 bg-white/5 rounded-lg border border-white/10 text-sm hover:border-blue-500/50 cursor-pointer transition-colors">
+                                <span key={year} className="px-4 py-2 bg-gray-100 rounded-lg border border-gray-300 text-sm hover:border-blue-500/50 cursor-pointer transition-colors text-gray-700">
                                     Edition {year}
                                 </span>
                             ))}

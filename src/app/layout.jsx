@@ -1,18 +1,19 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Orbitron, Rajdhani } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navigation/Navbar";
 import Footer from "@/components/footer/Footer";
 
 import StarBackground from "@/components/ui/StarBackground";
 
-const geistSans = Geist({
-    variable: "--font-geist-sans",
+const orbitron = Orbitron({
+    variable: "--font-orbitron",
     subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
+const rajdhani = Rajdhani({
+    variable: "--font-rajdhani",
     subsets: ["latin"],
+    weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata = {
@@ -24,7 +25,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white min-h-screen flex flex-col`}
+                className={`${rajdhani.variable} ${orbitron.variable} antialiased bg-black text-white min-h-screen flex flex-col font-sans`}
             >
                 <StarBackground />
                 <Navbar />

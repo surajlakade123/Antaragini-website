@@ -157,12 +157,8 @@ function Scene({ onPrismClick }) {
             <pointLight position={[0, -10, 0]} intensity={2} color="#ffffff" />
             <spotLight position={[0, 15, 0]} intensity={10} angle={0.6} penumbra={1} castShadow />
             <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={1} />
-            <Center>
-                <CompositePrism
-                    onPrismClick={onPrismClick}
-                />
-            </Center>
-            <FloatingShards />
+            <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={1} />
+            {/* Prism and Shards removed as per request */}
             <Sparkles count={100} scale={10} size={4} speed={0.4} opacity={0.5} color="#ffffff" />
         </>
     );
@@ -172,7 +168,14 @@ function Scene({ onPrismClick }) {
 export default function PrismHero() {
 
     return (
-        <section className="h-screen w-full relative overflow-hidden bg-black">
+        <section className="h-screen w-full relative overflow-hidden bg-gray-900">
+            {/* Background Image with Opacity */}
+            <div
+                className="absolute inset-0 bg-cover bg-center opacity-40 z-0"
+                style={{
+                    backgroundImage: "url('/events/backgroundimge .jpeg')",
+                }}
+            />
             {/* 3D Scene Background */}
             <div className="absolute inset-0 z-0">
                 <Canvas gl={{ antialias: true, toneMapping: THREE.ACESFilmicToneMapping }}>
@@ -190,12 +193,12 @@ export default function PrismHero() {
                 <div className="absolute inset-0 z-30 flex items-center justify-end overflow-hidden"
                     style={{ clipPath: 'polygon(0 0, 50% 0, 50% 100%, 0 100%)' }}
                 >
-                    <div className="relative h-auto mt-25 flex flex-col items-center justify-center text-center px-4 pointer-events-none opacity-95 w-full">
+                    <div className="relative h-auto mt-25 flex flex-col items-center justify-center text-center px-4 pointer-events-none opacity-100 w-full">
                         <motion.div
                             initial={{ opacity: 0, scale: 0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 1.2, ease: "easeOut" }}
-                            className="glass-panel p-8 md:p-16 rounded-[3rem] border border-white/10 bg-black/30 backdrop-blur-md pointer-events-auto max-w-5xl w-full mx-auto shadow-[0_0_50px_rgba(100,0,100,0.3)]"
+                            className="glass-panel p-8 md:p-16 rounded-[3rem] border border-black/5 bg-white/40 backdrop-blur-md pointer-events-auto max-w-5xl w-full mx-auto shadow-[0_0_50px_rgba(0,0,0,0.1)]"
                         >
                             <motion.h1
                                 initial={{ y: 20, opacity: 0 }}
@@ -212,23 +215,24 @@ export default function PrismHero() {
                                 initial={{ y: 20, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ delay: 0.4, duration: 0.8 }}
-                                className="text-2xl md:text-4xl font-light text-white tracking-[0.3em] uppercase mb-8"
+                                className="text-2xl md:text-4xl font-light text-white tracking-[0.3em] uppercase mb-8 drop-shadow-md"
                             >
-                                <span className="text-cyan-400">Spectrum</span> Saga
+                                <span className="text-cyan-400 font-medium">Spectrum</span>Saga
                             </motion.h2>
-
                             <motion.p
                                 initial={{ y: 20, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ delay: 0.6, duration: 0.8 }}
-                                className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light leading-relaxed"
+
+                                className="text-white text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light leading-relaxed drop-shadow-sm"
                             >
                                 Immerse yourself in the prism of possibilities. <br />
                                 Where every color tells a story of courage and creativity.
                             </motion.p>
 
-                            <motion.h1 className="text-2xl text-gray-400">
-                                The <span className="text-cyan-400 font-bold">SAGA</span> BEGINS IN
+                            <motion.h1
+                                className="text-2xl text-white drop-shadow-sm"
+                            >The <span className="text-cyan-400 font-bold">SAGA</span> BEGINS IN
                             </motion.h1>
 
                             <motion.div
@@ -253,7 +257,7 @@ export default function PrismHero() {
                             initial={{ opacity: 0, scale: 0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 1.2, ease: "easeOut" }}
-                            className="glass-panel p-8 md:p-16 rounded-[3rem] border border-white/10 bg-black/30 backdrop-blur-md pointer-events-auto max-w-5xl w-full mx-auto shadow-[0_0_50px_rgba(100,0,100,0.3)]"
+                            className="glass-panel p-8 md:p-16 rounded-[3rem] border border-black/5 bg-white/40 backdrop-blur-md pointer-events-auto max-w-5xl w-full mx-auto shadow-[0_0_50px_rgba(0,0,0,0.1)]"
                         >
                             <motion.h1
                                 initial={{ y: 20, opacity: 0 }}
@@ -270,7 +274,7 @@ export default function PrismHero() {
                                 initial={{ y: 20, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ delay: 0.4, duration: 0.8 }}
-                                className="text-2xl md:text-4xl font-light text-white tracking-[0.3em] uppercase mb-8"
+                                className="text-2xl md:text-4xl font-light text-black tracking-[0.3em] uppercase mb-8"
                             >
                                 <span className="text-cyan-400">Spectrum</span> Saga
                             </motion.h2>
@@ -279,13 +283,13 @@ export default function PrismHero() {
                                 initial={{ y: 20, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ delay: 0.6, duration: 0.8 }}
-                                className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light leading-relaxed"
+                                className="relative z-10 text-white text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light leading-relaxed"
                             >
                                 Immerse yourself in the prism of possibilities. <br />
                                 Where every color tells a story of courage and creativity.
                             </motion.p>
 
-                            <motion.h1 className="text-2xl text-gray-400">
+                            <motion.h1 className="text-2xl text-white">
                                 The <span className="text-cyan-400 font-bold">SAGA</span> BEGINS IN
                             </motion.h1>
 
@@ -312,7 +316,7 @@ export default function PrismHero() {
             <motion.div
                 animate={{ y: [0, 10, 0], opacity: [0.5, 1, 0.5] }}
                 transition={{ duration: 2, repeat: Infinity }}
-                className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white/50 z-20"
+                className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-black/50 z-20"
             >
                 <div className="w-px h-16 bg-linear-to-b from-cyan-400 to-transparent mx-auto" />
             </motion.div>

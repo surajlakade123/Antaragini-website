@@ -212,7 +212,7 @@ const BentoGallery = () => {
 
 
     return (
-        <div className="min-h-screen bg-black text-white font-sans selection:bg-pink-500 selection:text-white relative overflow-hidden">
+        <div className="min-h-screen bg-[#D3D3D3] text-black font-sans selection:bg-pink-500 selection:text-white relative overflow-hidden">
             {/* Background Gradient Mesh */}
             <div className="fixed inset-0 z-0 pointer-events-none">
                 <div className={`absolute top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full blur-[120px] transition-colors duration-700 ${activeTab === 'antaragni' ? 'bg-[#0000ff]/20' : activeTab === 'technorion' ? 'bg-cyan-600/20' : 'bg-red-600/20'}`} />
@@ -232,10 +232,10 @@ const BentoGallery = () => {
                             className="object-cover w-full h-full bg-black"
                         />
                     </div>
-                    <h1 className="text-3xl md:text-6xl font-bold tracking-tight mb-2 text-white">
+                    <h1 className="text-3xl md:text-6xl font-bold tracking-tight mb-2 text-black">
                         Antaragni
                     </h1>
-                    <p className="text-gray-400 max-w-md text-sm md:text-base leading-relaxed mb-8">
+                    <p className="text-gray-700 max-w-md text-sm md:text-base leading-relaxed mb-8">
                         The biggest Cultural Festival of GHRCE Nagpur <br />
                         Celebrating music, dance, drama, and art !
                     </p>
@@ -248,7 +248,7 @@ const BentoGallery = () => {
                                 onClick={() => setActiveTab(tab.id)}
                                 className={`px-6 py-2 rounded-full text-2xl font-bold tracking-wide transition-all duration-300 ${activeTab === tab.id
                                     ? `${tab.color} text-white shadow-lg scale-105`
-                                    : 'bg-white/5 text-gray-400 hover:bg-white/10'
+                                    : 'bg-black/5 text-gray-600 hover:bg-black/10'
                                     }`}
                             >
                                 {tab.name}

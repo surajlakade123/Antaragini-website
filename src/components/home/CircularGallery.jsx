@@ -23,7 +23,7 @@ const VideoCard = ({ vid }) => {
     }, []);
 
     return (
-        <div className={`p-1 rounded-2xl bg-gradient-to-br ${vid.color} shadow-[0_0_40px_rgba(255,255,255,0.3)]`}>
+        <div className={`p-1 rounded-2xl bg-gradient-to-br ${vid.color} shadow-2xl shadow-black/80`}>
             <div className="w-64 h-36 md:w-[600px] md:h-[400px] bg-black rounded-xl overflow-hidden relative">
                 <video
                     ref={videoRef}
@@ -54,12 +54,12 @@ export default function CircularGallery() {
     }, []);
 
     return (
-        <section className="py-20 bg-black overflow-hidden relative min-h-[500px] flex items-center justify-center">
+        <section className="py-20 bg-[var(--color-cream)] overflow-hidden relative min-h-[500px] flex items-center justify-center">
             {/* Background Glow */}
-            <div className="absolute inset-0 bg-gradient-radial from-purple-900/20 via-black to-black pointer-events-none"></div>
+            <div className="absolute inset-0 bg-gradient-radial from-purple-900/5 via-[var(--color-cream)] to-[var(--color-cream)] pointer-events-none"></div>
 
             <div className="relative z-10 text-center w-full">
-                <h2 className="text-5xl md:text-7xl font-bold mb-20 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 tracking-tighter">
+                <h2 className="text-5xl md:text-7xl font-bold mb-20 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 tracking-tighter">
                     Event Highlights
                 </h2>
 

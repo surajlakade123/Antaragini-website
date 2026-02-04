@@ -33,12 +33,12 @@ export default function EventsPage() {
     ];
 
     return (
-        <div className="min-h-screen bg-black pt-24 pb-20">
+        <div className="min-h-screen bg-[#D3D3D3] pt-24 pb-20">
             <div className="container mx-auto px-4 mb-12 text-center">
                 <motion.h1
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tighter"
+                    className="text-5xl md:text-7xl font-bold text-black mb-6 tracking-tighter"
                 >
                     Event Spectrum
                 </motion.h1>
@@ -46,7 +46,7 @@ export default function EventsPage() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.2 }}
-                    className="text-gray-400 max-w-2xl mx-auto mb-10"
+                    className="text-gray-700 max-w-2xl mx-auto mb-10"
                 >
                     Discover over 40 events across culture, technology, and sports.
                 </motion.p>
@@ -58,8 +58,8 @@ export default function EventsPage() {
                             key={tab.id}
                             onClick={() => setActiveTab(tab.id)}
                             className={`px-6 py-2 rounded-full text-sm font-bold uppercase tracking-widest transition-all ${activeTab === tab.id
-                                    ? "bg-white text-black scale-105 shadow-lg shadow-white/20"
-                                    : "bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white"
+                                ? "bg-black text-white scale-105 shadow-lg shadow-black/20"
+                                : "bg-black/5 text-gray-700 hover:bg-black/10 hover:text-black"
                                 }`}
                         >
                             {tab.label}
