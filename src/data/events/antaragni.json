@@ -1,337 +1,363 @@
 [
     {
-        "id": "street-dance",
-        "name": "Street Dance",
-        "slug": "street-dance",
-        "category": "antaragni",
-        "shortDescription": "Showcase your urban dance moves",
-        "description": "Unleash your rhythm and style in the ultimate street dance battle. From hip-hop to heavy hitting beats, show us your best moves and claim the streets.",
-        "bannerImage": "/events/cultural.png",
-        "details": {
-            "date": "2026-03-15",
-            "time": "10:00 AM",
-            "venue": "Main Ground",
-            "teamSize": "5-8 members",
-            "registrationFee": "Free",
-            "prizePool": "₹10,000"
-        },
-        "rules": [
-            "Performance duration should be 4-6 minutes",
-            "Teams must register 2 days prior",
-            "Props are allowed but must be cleared after performance",
-            "Vulgarity in movements or attire will lead to disqualification"
-        ],
-        "contacts": [
-            {
-                "name": "Cultural Coordinator",
-                "phone": "+91-9876543210"
-            }
-        ],
-        "registrationUrl": "https://forms.google.com/sample"
+        "id":  "street-dance",
+        "name":  "Street Dance",
+        "slug":  "street-dance",
+        "category":  "antaragni",
+        "shortDescription":  "Showcase your urban dance moves",
+        "description":  "Unleash your rhythm and style in the ultimate street dance battle. From hip-hop to heavy hitting beats, show us your best moves and claim the streets.",
+        "bannerImage":  "/events/cultural.png",
+        "details":  {
+                        "date":  "Feb 19-21, 2026",
+                        "time":  "9:30 AM",
+                        "venue":  "Main Ground",
+                        "teamSize":  "5-8 members",
+                        "registrationFee":  "Free",
+                        "prizePool":  "₹10,000"
+                    },
+        "rules":  [
+                      "Performance duration should be 4-6 minutes",
+                      "Teams must register 2 days prior",
+                      "Props are allowed but must be cleared after performance",
+                      "Vulgarity in movements or attire will lead to disqualification"
+                  ],
+        "contacts":  [
+                         {
+                             "name":  "Cultural Coordinator",
+                             "phone":  "+91-9876543210"
+                         }
+                     ],
+        "registrationUrl":  "https://forms.google.com/sample"
     },
     {
-        "id": "theme-dance",
-        "name": "Theme Dance / Folk Dance",
-        "slug": "theme-dance",
-        "category": "antaragni",
-        "shortDescription": "Traditional and themed dance performances celebrating diversity",
-        "description": "A celebration of culture and storytelling through dance. Bring your traditions or creative themes to life on the big stage.",
-        "bannerImage": "/events/cultural.png",
-        "details": {
-            "date": "2026-03-15",
-            "time": "2:00 PM",
-            "venue": "Auditorium",
-            "teamSize": "6-10 members",
-            "registrationFee": "Free",
-            "prizePool": "₹12,000"
-        },
-        "rules": [
-            "Theme-based performance is mandatory",
-            "Authentic costumes encouraged",
-            "Time limit: 8-10 minutes"
-        ],
-        "contacts": [],
-        "registrationUrl": "#"
+        "id":  "theme-dance",
+        "name":  "Theme Dance / Folk Dance",
+        "slug":  "theme-dance",
+        "category":  "antaragni",
+        "shortDescription":  "Traditional and themed dance performances celebrating diversity",
+        "description":  "A celebration of culture and storytelling through dance. Bring your traditions or creative themes to life on the big stage.",
+        "bannerImage":  "/events/cultural.png",
+        "details":  {
+                        "date":  "Feb 19-21, 2026",
+                        "time":  "9:30 AM",
+                        "venue":  "Auditorium",
+                        "teamSize":  "6-10 members",
+                        "registrationFee":  "Free",
+                        "prizePool":  "₹12,000"
+                    },
+        "rules":  [
+                      "Theme-based performance is mandatory",
+                      "Authentic costumes encouraged",
+                      "Time limit: 8-10 minutes"
+                  ],
+        "contacts":  [
+
+                     ],
+        "registrationUrl":  "#"
     },
     {
-        "id": "fashion-show",
-        "name": "Fashion Show",
-        "slug": "fashion-show",
-        "category": "antaragni",
-        "shortDescription": "Ramp walk showcase with creative themes and styling",
-        "description": "Strut your stuff and showcase the latest trends or avant-garde designs. The ramp is yours to command.",
-        "bannerImage": "/events/cultural.png",
-        "details": {
-            "date": "2026-03-16",
-            "time": "7:00 PM",
-            "venue": "Main Stage",
-            "teamSize": "8-12 models",
-            "registrationFee": "₹500",
-            "prizePool": "₹20,000"
-        },
-        "rules": [
-            "3 rounds minimum",
-            "Theme must be innovative",
-            "15-20 min show duration"
-        ],
-        "contacts": [],
-        "registrationUrl": "#"
+        "id":  "fashion-show",
+        "name":  "Fashion Show",
+        "slug":  "fashion-show",
+        "category":  "antaragni",
+        "shortDescription":  "Ramp walk showcase with creative themes and styling",
+        "description":  "Strut your stuff and showcase the latest trends or avant-garde designs. The ramp is yours to command.",
+        "bannerImage":  "/events/cultural.png",
+        "details":  {
+                        "date":  "Feb 19-21, 2026",
+                        "time":  "9:30 AM",
+                        "venue":  "Main Stage",
+                        "teamSize":  "8-12 models",
+                        "registrationFee":  "₹500",
+                        "prizePool":  "₹20,000"
+                    },
+        "rules":  [
+                      "3 rounds minimum",
+                      "Theme must be innovative",
+                      "15-20 min show duration"
+                  ],
+        "contacts":  [
+
+                     ],
+        "registrationUrl":  "#"
     },
     {
-        "id": "battle-of-tradition",
-        "name": "Battle of Tradition",
-        "slug": "battle-of-tradition",
-        "category": "antaragni",
-        "shortDescription": "Cultural quiz and performance competition",
-        "description": "Test your knowledge of Indian traditions and showcase your cultural roots in this unique hybrid competition.",
-        "bannerImage": "/events/cultural.png",
-        "details": {
-            "date": "2026-03-16",
-            "time": "11:00 AM",
-            "venue": "Seminar Hall",
-            "teamSize": "Team of 3",
-            "registrationFee": "Free",
-            "prizePool": "₹5,000"
-        },
-        "rules": [
-            "Knowledge of Indian traditions required"
-        ],
-        "contacts": [],
-        "registrationUrl": "#"
+        "id":  "battle-of-tradition",
+        "name":  "Battle of Tradition",
+        "slug":  "battle-of-tradition",
+        "category":  "antaragni",
+        "shortDescription":  "Cultural quiz and performance competition",
+        "description":  "Test your knowledge of Indian traditions and showcase your cultural roots in this unique hybrid competition.",
+        "bannerImage":  "/events/cultural.png",
+        "details":  {
+                        "date":  "Feb 19-21, 2026",
+                        "time":  "9:30 AM",
+                        "venue":  "Seminar Hall",
+                        "teamSize":  "Team of 3",
+                        "registrationFee":  "Free",
+                        "prizePool":  "₹5,000"
+                    },
+        "rules":  [
+                      "Knowledge of Indian traditions required"
+                  ],
+        "contacts":  [
+
+                     ],
+        "registrationUrl":  "#"
     },
     {
-        "id": "singing-solo-duet",
-        "name": "Singing (Solo/Duet)",
-        "slug": "singing-solo-duet",
-        "category": "antaragni",
-        "shortDescription": "Vocal talent showcase across genres",
-        "description": "Let your voice be heard. From classical to pop, solo or duet, the microphone awaits your melody.",
-        "bannerImage": "/events/cultural.png",
-        "details": {
-            "date": "2026-03-16",
-            "time": "2:00 PM",
-            "venue": "Amphitheater",
-            "teamSize": "1-2 members",
-            "registrationFee": "Free",
-            "prizePool": "₹7,000"
-        },
-        "rules": [
-            "3-5 min performance",
-            "Backing track allowed",
-            "Live instruments bonus"
-        ],
-        "contacts": [],
-        "registrationUrl": "#"
+        "id":  "singing-solo-duet",
+        "name":  "Singing (Solo/Duet)",
+        "slug":  "singing-solo-duet",
+        "category":  "antaragni",
+        "shortDescription":  "Vocal talent showcase across genres",
+        "description":  "Let your voice be heard. From classical to pop, solo or duet, the microphone awaits your melody.",
+        "bannerImage":  "/events/cultural.png",
+        "details":  {
+                        "date":  "Feb 19-21, 2026",
+                        "time":  "9:30 AM",
+                        "venue":  "Amphitheater",
+                        "teamSize":  "1-2 members",
+                        "registrationFee":  "Free",
+                        "prizePool":  "₹7,000"
+                    },
+        "rules":  [
+                      "3-5 min performance",
+                      "Backing track allowed",
+                      "Live instruments bonus"
+                  ],
+        "contacts":  [
+
+                     ],
+        "registrationUrl":  "#"
     },
     {
-        "id": "wall-painting",
-        "name": "Wall Painting",
-        "slug": "wall-painting",
-        "category": "antaragni",
-        "shortDescription": "Large-scale artistic expression on designated walls",
-        "description": "Transform a blank wall into a masterpiece. Express your creativity on a grand scale.",
-        "bannerImage": "/events/cultural.png",
-        "details": {
-            "date": "2026-03-15",
-            "time": "9:00 AM",
-            "venue": "College Walls",
-            "teamSize": "Team of 2-4",
-            "registrationFee": "Free",
-            "prizePool": "₹8,000"
-        },
-        "rules": [
-            "3 hours duration",
-            "Eco-friendly colors only"
-        ],
-        "contacts": [],
-        "registrationUrl": "#"
+        "id":  "wall-painting",
+        "name":  "Wall Painting",
+        "slug":  "wall-painting",
+        "category":  "antaragni",
+        "shortDescription":  "Large-scale artistic expression on designated walls",
+        "description":  "Transform a blank wall into a masterpiece. Express your creativity on a grand scale.",
+        "bannerImage":  "/events/cultural.png",
+        "details":  {
+                        "date":  "Feb 19-21, 2026",
+                        "time":  "9:30 AM",
+                        "venue":  "College Walls",
+                        "teamSize":  "Team of 2-4",
+                        "registrationFee":  "Free",
+                        "prizePool":  "₹8,000"
+                    },
+        "rules":  [
+                      "3 hours duration",
+                      "Eco-friendly colors only"
+                  ],
+        "contacts":  [
+
+                     ],
+        "registrationUrl":  "#"
     },
     {
-        "id": "box-cricket",
-        "name": "Box Cricket",
-        "slug": "box-cricket",
-        "category": "antaragni",
-        "shortDescription": "Indoor cricket tournament with compact format",
-        "description": "Short boundaries, fast pace, and intense action. Box cricket is cricket reimagined for thrill.",
-        "bannerImage": "/events/cultural.png",
-        "details": {
-            "date": "2026-03-17",
-            "time": "All Day",
-            "venue": "Sports Complex",
-            "teamSize": "6 players",
-            "registrationFee": "₹300",
-            "prizePool": "₹15,000"
-        },
-        "rules": [
-            "6 overs per innings",
-            "Soft ball utilized"
-        ],
-        "contacts": [],
-        "registrationUrl": "#"
+        "id":  "box-cricket",
+        "name":  "Box Cricket",
+        "slug":  "box-cricket",
+        "category":  "antaragni",
+        "shortDescription":  "Indoor cricket tournament with compact format",
+        "description":  "Short boundaries, fast pace, and intense action. Box cricket is cricket reimagined for thrill.",
+        "bannerImage":  "/events/cultural.png",
+        "details":  {
+                        "date":  "Feb 19-21, 2026",
+                        "time":  "9:30 AM",
+                        "venue":  "Sports Complex",
+                        "teamSize":  "6 players",
+                        "registrationFee":  "₹300",
+                        "prizePool":  "₹15,000"
+                    },
+        "rules":  [
+                      "6 overs per innings",
+                      "Soft ball utilized"
+                  ],
+        "contacts":  [
+
+                     ],
+        "registrationUrl":  "#"
     },
     {
-        "id": "global-street-master-chef",
-        "name": "Global Street Master Chef",
-        "slug": "global-street-master-chef",
-        "category": "antaragni",
-        "shortDescription": "Outdoor cooking competition with international cuisines",
-        "description": "Cook up a storm! Create delicious global street food dishes under time pressure.",
-        "bannerImage": "/events/cultural.png",
-        "details": {
-            "date": "2026-03-17",
-            "time": "12:00 PM",
-            "venue": "Food Court",
-            "teamSize": "Team of 2",
-            "registrationFee": "Free",
-            "prizePool": "₹6,000"
-        },
-        "rules": [
-            "90 min prep time",
-            "Mystery box challenge"
-        ],
-        "contacts": [],
-        "registrationUrl": "#"
+        "id":  "global-street-master-chef",
+        "name":  "Global Street Master Chef",
+        "slug":  "global-street-master-chef",
+        "category":  "antaragni",
+        "shortDescription":  "Outdoor cooking competition with international cuisines",
+        "description":  "Cook up a storm! Create delicious global street food dishes under time pressure.",
+        "bannerImage":  "/events/cultural.png",
+        "details":  {
+                        "date":  "Feb 19-21, 2026",
+                        "time":  "9:30 AM",
+                        "venue":  "Food Court",
+                        "teamSize":  "Team of 2",
+                        "registrationFee":  "Free",
+                        "prizePool":  "₹6,000"
+                    },
+        "rules":  [
+                      "90 min prep time",
+                      "Mystery box challenge"
+                  ],
+        "contacts":  [
+
+                     ],
+        "registrationUrl":  "#"
     },
     {
-        "id": "art-exhibition",
-        "name": "Art Exhibition",
-        "slug": "art-exhibition",
-        "category": "antaragni",
-        "shortDescription": "Display of paintings, sculptures, and mixed media art",
-        "description": "A gallery of creativity. Display your best works for the college to admire.",
-        "bannerImage": "/events/cultural.png",
-        "details": {
-            "date": "2026-03-15 - 17",
-            "time": "All Day",
-            "venue": "Art Gallery Hall",
-            "teamSize": "Individual",
-            "registrationFee": "Free",
-            "prizePool": "Certificates"
-        },
-        "rules": [
-            "Submit 2-5 artworks",
-            "Original work only",
-            "Artist statement required"
-        ],
-        "contacts": [],
-        "registrationUrl": "#"
+        "id":  "art-exhibition",
+        "name":  "Art Exhibition",
+        "slug":  "art-exhibition",
+        "category":  "antaragni",
+        "shortDescription":  "Display of paintings, sculptures, and mixed media art",
+        "description":  "A gallery of creativity. Display your best works for the college to admire.",
+        "bannerImage":  "/events/cultural.png",
+        "details":  {
+                        "date":  "Feb 19-21, 2026",
+                        "time":  "9:30 AM",
+                        "venue":  "Art Gallery Hall",
+                        "teamSize":  "Individual",
+                        "registrationFee":  "Free",
+                        "prizePool":  "Certificates"
+                    },
+        "rules":  [
+                      "Submit 2-5 artworks",
+                      "Original work only",
+                      "Artist statement required"
+                  ],
+        "contacts":  [
+
+                     ],
+        "registrationUrl":  "#"
     },
     {
-        "id": "face-painting",
-        "name": "Face Painting",
-        "slug": "face-painting",
-        "category": "antaragni",
-        "shortDescription": "Live face art demonstration and competition",
-        "description": "Turn faces into living canvases. Show off your painting skills on a unique medium.",
-        "bannerImage": "/events/cultural.png",
-        "details": {
-            "date": "2026-03-16",
-            "time": "3:00 PM",
-            "venue": "College Lawn",
-            "teamSize": "Individual",
-            "registrationFee": "Free",
-            "prizePool": "₹3,000"
-        },
-        "rules": [
-            "30 min per design",
-            "Theme-based designs"
-        ],
-        "contacts": [],
-        "registrationUrl": "#"
+        "id":  "face-painting",
+        "name":  "Face Painting",
+        "slug":  "face-painting",
+        "category":  "antaragni",
+        "shortDescription":  "Live face art demonstration and competition",
+        "description":  "Turn faces into living canvases. Show off your painting skills on a unique medium.",
+        "bannerImage":  "/events/cultural.png",
+        "details":  {
+                        "date":  "Feb 19-21, 2026",
+                        "time":  "9:30 AM",
+                        "venue":  "College Lawn",
+                        "teamSize":  "Individual",
+                        "registrationFee":  "Free",
+                        "prizePool":  "₹3,000"
+                    },
+        "rules":  [
+                      "30 min per design",
+                      "Theme-based designs"
+                  ],
+        "contacts":  [
+
+                     ],
+        "registrationUrl":  "#"
     },
     {
-        "id": "poster-making",
-        "name": "Poster Making",
-        "slug": "poster-making",
-        "category": "antaragni",
-        "shortDescription": "Social awareness poster design competition",
-        "description": "Design with a purpose. Create impactful posters to spread awareness on social issues.",
-        "bannerImage": "/events/cultural.png",
-        "details": {
-            "date": "2026-03-15",
-            "time": "11:00 AM",
-            "venue": "Drawing Hall",
-            "teamSize": "Individual",
-            "registrationFee": "Free",
-            "prizePool": "₹3,000"
-        },
-        "rules": [
-            "A2 size",
-            "2 hours duration",
-            "Theme provided on spot"
-        ],
-        "contacts": [],
-        "registrationUrl": "#"
+        "id":  "poster-making",
+        "name":  "Poster Making",
+        "slug":  "poster-making",
+        "category":  "antaragni",
+        "shortDescription":  "Social awareness poster design competition",
+        "description":  "Design with a purpose. Create impactful posters to spread awareness on social issues.",
+        "bannerImage":  "/events/cultural.png",
+        "details":  {
+                        "date":  "Feb 19-21, 2026",
+                        "time":  "9:30 AM",
+                        "venue":  "Drawing Hall",
+                        "teamSize":  "Individual",
+                        "registrationFee":  "Free",
+                        "prizePool":  "₹3,000"
+                    },
+        "rules":  [
+                      "A2 size",
+                      "2 hours duration",
+                      "Theme provided on spot"
+                  ],
+        "contacts":  [
+
+                     ],
+        "registrationUrl":  "#"
     },
     {
-        "id": "treasure-hunt",
-        "name": "Treasure Hunt",
-        "slug": "treasure-hunt",
-        "category": "antaragni",
-        "shortDescription": "Campus-wide puzzle-solving adventure",
-        "description": "Follow the clues, solve the riddles, and race against time to find the hidden treasure.",
-        "bannerImage": "/events/cultural.png",
-        "details": {
-            "date": "2026-03-17",
-            "time": "10:00 AM",
-            "venue": "Campus Wide",
-            "teamSize": "Team of 4",
-            "registrationFee": "₹200",
-            "prizePool": "₹8,000"
-        },
-        "rules": [
-            "Solve clues in order",
-            "First to finish wins"
-        ],
-        "contacts": [],
-        "registrationUrl": "#"
+        "id":  "treasure-hunt",
+        "name":  "Treasure Hunt",
+        "slug":  "treasure-hunt",
+        "category":  "antaragni",
+        "shortDescription":  "Campus-wide puzzle-solving adventure",
+        "description":  "Follow the clues, solve the riddles, and race against time to find the hidden treasure.",
+        "bannerImage":  "/events/cultural.png",
+        "details":  {
+                        "date":  "Feb 19-21, 2026",
+                        "time":  "9:30 AM",
+                        "venue":  "Campus Wide",
+                        "teamSize":  "Team of 4",
+                        "registrationFee":  "₹200",
+                        "prizePool":  "₹8,000"
+                    },
+        "rules":  [
+                      "Solve clues in order",
+                      "First to finish wins"
+                  ],
+        "contacts":  [
+
+                     ],
+        "registrationUrl":  "#"
     },
     {
-        "id": "talent-hunt",
-        "name": "Talent Hunt",
-        "slug": "talent-hunt",
-        "category": "antaragni",
-        "shortDescription": "Open platform for unique talents and skills",
-        "description": "Got a hidden talent? Magic, juggling, mimicry? This is your stage to shine.",
-        "bannerImage": "/events/cultural.png",
-        "details": {
-            "date": "2026-03-16",
-            "time": "4:00 PM",
-            "venue": "Open Air Theater",
-            "teamSize": "Individual/Group",
-            "registrationFee": "Free",
-            "prizePool": "₹5,000"
-        },
-        "rules": [
-            "3-5 min performance",
-            "Any talent allowed",
-            "Judged on originality"
-        ],
-        "contacts": [],
-        "registrationUrl": "#"
+        "id":  "talent-hunt",
+        "name":  "Talent Hunt",
+        "slug":  "talent-hunt",
+        "category":  "antaragni",
+        "shortDescription":  "Open platform for unique talents and skills",
+        "description":  "Got a hidden talent? Magic, juggling, mimicry? This is your stage to shine.",
+        "bannerImage":  "/events/cultural.png",
+        "details":  {
+                        "date":  "Feb 19-21, 2026",
+                        "time":  "9:30 AM",
+                        "venue":  "Open Air Theater",
+                        "teamSize":  "Individual/Group",
+                        "registrationFee":  "Free",
+                        "prizePool":  "₹5,000"
+                    },
+        "rules":  [
+                      "3-5 min performance",
+                      "Any talent allowed",
+                      "Judged on originality"
+                  ],
+        "contacts":  [
+
+                     ],
+        "registrationUrl":  "#"
     },
     {
-        "id": "open-mic",
-        "name": "Open Mic",
-        "slug": "open-mic",
-        "category": "antaragni",
-        "shortDescription": "Stand-up comedy, poetry, storytelling platform",
-        "description": "Speak your heart out. Poetry, comedy, or storytelling - the mic is open.",
-        "bannerImage": "/events/cultural.png",
-        "details": {
-            "date": "2026-03-17",
-            "time": "5:00 PM",
-            "venue": "Cafeteria Stage",
-            "teamSize": "Individual",
-            "registrationFee": "Free",
-            "prizePool": "Goodies"
-        },
-        "rules": [
-            "5-7 min slot",
-            "Original content",
-            "PG-13 rating"
-        ],
-        "contacts": [],
-        "registrationUrl": "#"
+        "id":  "open-mic",
+        "name":  "Open Mic",
+        "slug":  "open-mic",
+        "category":  "antaragni",
+        "shortDescription":  "Stand-up comedy, poetry, storytelling platform",
+        "description":  "Speak your heart out. Poetry, comedy, or storytelling - the mic is open.",
+        "bannerImage":  "/events/cultural.png",
+        "details":  {
+                        "date":  "Feb 19-21, 2026",
+                        "time":  "9:30 AM",
+                        "venue":  "Cafeteria Stage",
+                        "teamSize":  "Individual",
+                        "registrationFee":  "Free",
+                        "prizePool":  "Goodies"
+                    },
+        "rules":  [
+                      "5-7 min slot",
+                      "Original content",
+                      "PG-13 rating"
+                  ],
+        "contacts":  [
+
+                     ],
+        "registrationUrl":  "#"
     }
 ]
