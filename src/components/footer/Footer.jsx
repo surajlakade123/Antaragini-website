@@ -38,7 +38,7 @@ export default function Footer() {
     }, []);
 
     return (
-        <footer className="relative bg-[#050505] pt-16 pb-8 overflow-hidden">
+        <footer className="relative bg-[#050505] pt-5 pb-8 overflow-hidden">
             {/* Top Gradient Border */}
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[var(--antaragni-primary)] via-[var(--technorion-primary)] to-[var(--parakram-tertiary)] opacity-60" />
 
@@ -47,7 +47,7 @@ export default function Footer() {
                     {/* Column 1: Branding */}
                     <div className="space-y-4">
                         <div className="flex items-center">
-                            <img src="https://antaragni.co.in/assets/newsrclogo-CcpIVukO.png" alt="SRC Logo" className="w-50 h-50 mr-4" />
+                            <img src="https://antaragni.co.in/assets/newsrclogo-CcpIVukO.png" alt="SRC Logo" className="w-35 h-35 mr-4" />
                         </div>
                         <div className="text-white text-2xl font-bold">
                             {config.festivalName}
@@ -71,29 +71,30 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* Column 2: Quick Links */}
-                    <div>
-                        <h3 className="text-white font-semibold mb-6 flex items-center">
-                            <span className="w-8 h-[2px] bg-[var(--technorion-secondary)] mr-3"></span>
-                            Quick Links
-                        </h3>
-                        <ul className="grid grid-cols-2 gap-3">
-                            {['Home', 'About', 'Events', 'Gallery', 'Sponsors', 'UDAN', 'Contact'].map((item) => (
-                                <li key={item}>
-                                    <Link
-                                        href={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
-                                        className="text-gray-400 hover:text-white transition-colors text-sm flex items-center group"
-                                    >
-                                        <span className="w-1 h-1 bg-gray-600 rounded-full mr-2 group-hover:bg-[var(--antaragni-secondary)] transition-colors"></span>
-                                        {item}
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
+                  {/* Column 2: Quick Links */}
+                    <div className="my-auto">
+                    <h3 className="text-white font-semibold mb-6 flex items-center">
+                        <span className="w-8 h-[2px] bg-[var(--technorion-secondary)] mr-3"></span>
+                        Quick Links
+                    </h3>
+
+                    <ul className="grid grid-cols-2 gap-3">
+                        {['Home', 'About', 'Events', 'Gallery', 'Sponsors', 'UDAN', 'Contact'].map((item) => (
+                        <li key={item}>
+                            <Link
+                            href={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
+                            className="text-gray-400 hover:text-white transition-colors text-sm flex items-center group"
+                            >
+                            <span className="w-1 h-1 bg-gray-600 rounded-full mr-2 group-hover:bg-[var(--antaragni-secondary)] transition-colors"></span>
+                            {item}
+                            </Link>
+                        </li>
+                        ))}
+                    </ul>
                     </div>
 
                     {/* Column 3: Contact */}
-                    <div>
+                    <div className="my-auto">
                         <h3 className="text-white font-semibold mb-6 flex items-center">
                             <span className="w-8 h-[2px] bg-[var(--parakram-tertiary)] mr-3"></span>
                             Contact Us
