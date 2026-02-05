@@ -3,6 +3,8 @@ import "./globals.css";
 import Navbar from "@/components/navigation/Navbar";
 import Footer from "@/components/footer/Footer";
 
+import StarBackground from "@/components/ui/StarBackground";
+
 const geistSans = Geist({
     variable: "--font-geist-sans",
     subsets: ["latin"],
@@ -24,6 +26,7 @@ export default function RootLayout({ children }) {
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white min-h-screen flex flex-col`}
             >
+                <StarBackground />
                 <Navbar />
                 <main className="flex-grow">
                     {children}

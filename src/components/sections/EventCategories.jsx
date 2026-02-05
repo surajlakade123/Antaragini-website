@@ -2,6 +2,9 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import parakram from "../../assets/parakram.jpeg";
+
+import antaragni from "../../assets/ant1.jpeg";
 
 const categories = [
     {
@@ -12,7 +15,7 @@ const categories = [
         description: "Athletics, Team Sports & E-Sports",
         color: "var(--parakram-tertiary)",
         gradient: "from-[var(--parakram-primary)] to-[var(--parakram-tertiary)]",
-        image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=2070&auto=format&fit=crop"
+        image: parakram,
     },
     {
         id: "technorion",
@@ -22,7 +25,7 @@ const categories = [
         description: "Coding, Robotics, Gaming & Innovation",
         color: "var(--technorion-primary)",
         gradient: "from-[var(--technorion-primary)] to-[var(--technorion-tertiary)]",
-        image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop"
+        image: " ",
     },
 
     {
@@ -34,7 +37,7 @@ const categories = [
         color: "var(--antaragni-primary)",
         gradient: "from-[var(--antaragni-primary)] to-[var(--antaragni-secondary)]",
         // Using placeholder images from Unsplash
-        image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2070&auto=format&fit=crop"
+        image: antaragni,
     }
 ];
 
@@ -55,7 +58,7 @@ export default function EventCategories() {
                                 {/* Background Image */}
                                 <div
                                     className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                                    style={{ backgroundImage: `url(${cat.image})` }}
+                                    style={{ backgroundImage: `url(${cat.image.src || cat.image})` }}
                                 />
 
                                 {/* Gradient Overlay */}

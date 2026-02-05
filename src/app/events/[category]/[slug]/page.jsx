@@ -4,7 +4,7 @@ import { use, useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { FaCalendarAlt, FaClock, FaMapMarkerAlt, FaUsers, FaTrophy, FaPhone, FaArrowLeft } from "react-icons/fa";
 
 import antaragniEvents from "@/data/events/antaragni.json";
@@ -29,6 +29,7 @@ export default function EventDetailPage({ params }) {
     // Wait, if this is Next.js 15 (as per summary "Next.js 16.0.1"), params is a Promise.
 
     const { category, slug } = use(params);
+    const [showParakramPopup, setShowParakramPopup] = useState(false);
 
     const event = getEventData(category, slug);
 
@@ -43,6 +44,13 @@ export default function EventDetailPage({ params }) {
         parakram: "var(--parakram-primary)"
     };
     const accentColor = themeColors[category] || "#ffffff";
+
+    const handleRegisterClick = (e) => {
+        if (category === "parakram") {
+            e.preventDefault();
+            setShowParakramPopup(true);
+        }
+    };
 
     return (
         <article className="min-h-screen bg-[#050505] pb-20">
@@ -172,6 +180,7 @@ export default function EventDetailPage({ params }) {
                                     href={event.registrationUrl}
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    onClick={handleRegisterClick}
                                     className="block w-full py-4 rounded-xl font-bold text-center text-black hover:scale-105 transition-transform shadow-lg shadow-white/10"
                                     style={{ backgroundColor: accentColor }}
                                 >
@@ -198,6 +207,40 @@ export default function EventDetailPage({ params }) {
                     </div>
                 </div>
             </div>
+            {/* Parakram Popup */}
+            <AnimatePresence>
+                {showParakramPopup && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+                        onClick={() => setShowParakramPopup(false)}
+                    >
+                        <motion.div
+                            initial={{ scale: 0.9, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            exit={{ scale: 0.9, opacity: 0 }}
+                            className="bg-[#1a1a1a] border border-white/10 rounded-2xl p-8 max-w-md w-full text-center relative overflow-hidden"
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500" />
+
+                            <h3 className="text-2xl font-bold text-white mb-4">Trials Completed</h3>
+                            <p className="text-gray-300 mb-8">
+                                The trials for this event have finished. Please check with the coordinators for further information.
+                            </p>
+
+                            <button
+                                onClick={() => setShowParakramPopup(false)}
+                                className="bg-white text-black font-bold py-3 px-8 rounded-full hover:scale-105 transition-transform"
+                            >
+                                Close
+                            </button>
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </article>
     );
 }

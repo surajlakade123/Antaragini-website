@@ -167,12 +167,12 @@ const teamSections = [
       {
         name: "Abhijeet Gour",
         role: "Joint Technorion President",
-        image: jointTechnorion1,
+        image: jointTechnorion,
       },
       {
         name: "Suyog Aware",
         role: "Joint Technorion President",
-        image: jointTechnorion,
+        image: jointTechnorion1,
       },
       {
         name: "Himanshi Joshi",
@@ -238,7 +238,7 @@ const teamSections = [
         name: "Manthan Bhandari",
         role: "Web Designer",
         image: manthanBhandari,
-      },  
+      },
     ],
   },
 ];
@@ -268,10 +268,10 @@ export default function AboutPage() {
         className="text-center mb-24"
       >
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
-          About Antaragni
+          Antaragni 2026
         </h1>
         <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-          Antaragni is not just a festival; it's a legacy — a spectrum of emotions,
+          Antaragni is not just a festival, it's a legacy a spectrum of emotions,
           talent, and culture colliding to create magic.
         </p>
       </motion.section>
@@ -343,9 +343,9 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="md:w-1/2 w-full h-72 rounded-xl overflow-hidden">
-             <video  width="640" height="360" controls autoPlay>
-    <source src="https://antaragni.co.in/assets/newantvideo-Bbjj1ztI.mp4" type="video/mp4" />
-</video> 
+              <video width="640" height="360" controls autoPlay>
+                <source src="https://antaragni.co.in/assets/newantvideo-Bbjj1ztI.mp4" type="video/mp4" muted={true} />
+              </video>
             </div>
           </div>
         </div>
@@ -364,9 +364,7 @@ export default function AboutPage() {
                   key={member.name}
                   className="flex flex-col items-center rounded-2xl overflow-hidden text-center hover:scale-105 transition-transform max-w-xs w-full relative group"
                 >
-                  {section.title === "SRC Student Body" && (
-                    <div className="absolute top-10 w-40 h-40 md:w-48 md:h-48 rounded-full bg-gradient-to-br from-purple-600 via-purple-500 to-orange-400 blur-2xl opacity-60 scale-125 -z-10 group-hover:opacity-80 transition-opacity"></div>
-                  )}
+                  <div className="absolute top-10 w-40 h-40 md:w-48 md:h-48 rounded-full bg-gradient-to-br from-purple-600 via-purple-500 to-orange-400 blur-2xl opacity-60 scale-125 -z-10 group-hover:opacity-80 transition-opacity"></div>
                   <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white/10 shadow-lg bg-black/20 z-10">
                     <img
                       src={member.image?.src || member.image}

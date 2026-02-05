@@ -1,228 +1,288 @@
 "use client";
 
-import { useState } from 'react';
-import Image from 'next/image';
-import { motion, AnimatePresence } from 'framer-motion';
-import { BlurFade } from '@/components/ui/blur-fade';
-import { LuX, LuChevronLeft, LuChevronRight } from 'react-icons/lu';
+import Link from "next/link";
+import { useState } from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { LuArrowUpRight, LuSearch, LuMenu, LuX } from "react-icons/lu";
 
-const galleryImages = {
-    antaragni: [
-        { src: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80', alt: 'Dance Performance' },
-        { src: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80', alt: 'Music Night' },
-        { src: 'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80', alt: 'Fashion Show' },
-        { src: 'https://images.unsplash.com/photo-1506157786151-b8491531f063?w=800&q=80', alt: 'Stage Performance' },
-        { src: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&q=80', alt: 'DJ Night' },
-        { src: 'https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=800&q=80', alt: 'Cultural Dance' },
-    ],
-    technorion: [
-        { src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80', alt: 'Hackathon' },
-        { src: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80', alt: 'Robotics' },
-        { src: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80', alt: 'Tech Workshop' },
-        { src: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80', alt: 'Coding Session' },
-        { src: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&q=80', alt: 'Gaming Tournament' },
-        { src: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&q=80', alt: 'Programming' },
-    ],
-    parakram: [
-        { src: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800&q=80', alt: 'Basketball' },
-        { src: 'https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=800&q=80', alt: 'Football' },
-        { src: 'https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&q=80', alt: 'Athletics' },
-        { src: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&q=80', alt: 'Indoor Sports' },
-        { src: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80', alt: 'Fitness' },
-        { src: 'https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=800&q=80', alt: 'Chess' },
-    ],
-};
+const BentoGallery = () => {
+    const [activeTab, setActiveTab] = useState("antaragni");
 
-const tabs = [
-    { id: 'antaragni', name: 'Antaragni', gradient: 'bg-gradient-to-r from-red-500 to-orange-500', shadow: 'shadow-red-500/50' },
-    { id: 'technorion', name: 'Technorion', gradient: 'bg-gradient-to-r from-blue-500 to-cyan-500', shadow: 'shadow-blue-500/50' },
-    { id: 'parakram', name: 'Parakram', gradient: 'bg-gradient-to-r from-emerald-500 to-green-500', shadow: 'shadow-emerald-500/50' },
-];
-
-const Gallery = () => {
-    const [activeTab, setActiveTab] = useState('antaragni');
-    const [lightboxOpen, setLightboxOpen] = useState(false);
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-    const currentImages = galleryImages[activeTab];
-
-    const openLightbox = (index) => {
-        setCurrentImageIndex(index);
-        setLightboxOpen(true);
-    };
-
-    const nextImage = () => {
-        setCurrentImageIndex((prev) => (prev + 1) % currentImages.length);
-    };
-
-    const prevImage = () => {
-        setCurrentImageIndex((prev) => (prev - 1 + currentImages.length) % currentImages.length);
-    };
+    const tabs = [
+        { id: 'antaragni', name: 'Antaragni', color: 'bg-gradient-to-r from-purple-500 to-pink-500' },
+        { id: 'technorion', name: 'Technorion', color: 'bg-gradient-to-r from-cyan-500 to-blue-500' },
+        { id: 'parakram', name: 'Parakram', color: 'bg-gradient-to-r from-orange-500 to-red-500' },
+    ];
 
     return (
-        <div className="bg-background text-foreground min-h-screen">
-            {/* Hero Section */}
-            <section className="pt-32 pb-16 relative overflow-hidden">
-                <div className="absolute inset-0">
-                    <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-purple-500/15 blur-[150px]" />
-                    <div className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-orange-500/10 blur-[150px]" />
-                </div>
+        <div className="min-h-screen bg-black text-white font-sans selection:bg-pink-500 selection:text-white relative overflow-hidden">
 
-                <div className="container mx-auto px-6 relative z-10">
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                        className="text-center max-w-3xl mx-auto"
-                    >
-                        <p className="text-sm text-[--antaragni-primary] uppercase tracking-[0.3em] mb-4">
-                            Memories
-                        </p>
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-                            Glimpses of
-                            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">The Spectrum</span>
-                        </h1>
-                        <p className="text-lg text-gray-400">
-                            Relive the moments that made Antaragni unforgettable
-                        </p>
-                    </motion.div>
-                </div>
-            </section>
+            {/* Background Gradient Mesh */}
+            <div className="fixed inset-0 z-0 pointer-events-none">
+                <div className={`absolute top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full blur-[120px] transition-colors duration-700 ${activeTab === 'antaragni' ? 'bg-[#0000ff]/20' : activeTab === 'technorion' ? 'bg-cyan-600/20' : 'bg-red-600/20'}`} />
+                <div className={`absolute top-[10%] right-[-10%] w-[40%] h-[50%] rounded-full blur-[120px] transition-colors duration-700 ${activeTab === 'antaragni' ? 'bg-[#ff0080]/20' : activeTab === 'technorion' ? 'bg-blue-600/20' : 'bg-orange-600/20'}`} />
+                <div className={`absolute bottom-[-10%] left-[20%] w-[40%] h-[40%] rounded-full blur-[120px] transition-colors duration-700 ${activeTab === 'antaragni' ? 'bg-[#00ffff]/20' : activeTab === 'technorion' ? 'bg-purple-600/20' : 'bg-yellow-600/20'}`} />
+            </div>
 
-            {/* Tabs */}
-            <section className="py-8">
-                <div className="container mx-auto px-6">
-                    <div className="flex justify-center gap-4 flex-wrap">
+            <div className="relative z-10">
+                {/* Header Section */}
+                <header className="py-12 px-6 container mx-auto flex flex-col items-center text-center">
+                    <div className="w-24 h-24 rounded-full overflow-hidden mb-6 border-4 border-white/10 shadow-lg relative">
+                        <Image
+                            src="/AT.png"
+                            alt="Antaragni Logo"
+                            width={100}
+                            height={100}
+                            className="object-cover w-full h-full bg-black"
+                        />
+                    </div>
+                    <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-2 text-white">
+                        Antaragni
+                    </h1>
+                    <p className="text-gray-400 max-w-md text-sm md:text-base leading-relaxed mb-8">
+                        The biggest Cultural Festival of IIT Kanpur. <br />
+                        Celebrating music, dance, drama, and art.
+                    </p>
+
+                    {/* Tabs */}
+                    <div className="flex flex-wrap justify-center gap-4 mb-4">
                         {tabs.map((tab) => (
                             <button
                                 key={tab.id}
                                 onClick={() => setActiveTab(tab.id)}
-                                className={`px-8 py-3 rounded-full font-bold tracking-wide transition-all duration-300 transform hover:scale-105 ${activeTab === tab.id
-                                    ? `${tab.gradient} text-white shadow-lg ${tab.shadow} ring-2 ring-white/20`
-                                    : 'glass-panel text-gray-300 hover:text-white hover:bg-white/10 border border-white/5'
+                                className={`px-6 py-2 rounded-full text-sm font-bold tracking-wide transition-all duration-300 ${activeTab === tab.id
+                                    ? `${tab.color} text-white shadow-lg scale-105`
+                                    : 'bg-white/5 text-gray-400 hover:bg-white/10'
                                     }`}
                             >
                                 {tab.name}
                             </button>
                         ))}
                     </div>
-                </div>
-            </section>
+                </header>
 
-            {/* Gallery Grid */}
-            <section className="py-16">
-                <div className="container mx-auto px-6">
-                    <div
-                        key={activeTab}
-                        className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6"
-                    >
-                        {currentImages.map((image, index) => (
-                            <BlurFade
-                                key={image.src}
-                                delay={0.25 + index * 0.05}
-                                inView
-                                className="break-inside-avoid"
-                            >
-                                <button
-                                    onClick={() => openLightbox(index)}
-                                    className="group block w-full rounded-xl overflow-hidden glass-panel hover:shadow-[0_0_30px_rgba(168,85,247,0.3)] transition-all duration-500"
-                                >
-                                    <Image
-                                        src={image.src}
-                                        alt={image.alt}
-                                        width={800}
-                                        height={600}
-                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                        className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
-                                    />
-                                </button>
-                            </BlurFade>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                {/* Bento Grid */}
+                <main className="container mx-auto px-4 md:px-8 pb-20">
 
-            {/* Lightbox */}
-            <AnimatePresence>
-                {lightboxOpen && (
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 backdrop-blur-xl p-4"
-                        onClick={() => setLightboxOpen(false)}
-                    >
-                        <button
-                            onClick={() => setLightboxOpen(false)}
-                            className="absolute top-6 right-6 p-3 rounded-full glass-panel hover:bg-white/10 transition-colors text-foreground"
-                        >
-                            <LuX size={24} />
-                        </button>
+                    {/* ANTARAGNI GRID */}
+                    {activeTab === 'antaragni' && (
+                        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[200px] md:auto-rows-[250px] animate-in fade-in zoom-in duration-500">
+                            {/* 1. Blue Folder Card (Large) */}
+                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 md:col-span-2 row-span-2 relative bg-[#9FB6E0] rounded-[2.5rem] p-8 overflow-hidden group shadow-lg">
+                                <div className="absolute top-0 left-0 w-1/3 h-12 bg-[#9FB6E0] rounded-br-[2rem] z-10" />
+                                <div className="absolute top-8 left-0 w-16 h-8 bg-[#8FA6D0] rounded-br-2xl -z-0" />
+                                <div className="h-full flex flex-col justify-end items-end">
+                                    <span className="bg-[#E8C547] text-black text-xs font-bold px-4 py-2 rounded-full shadow-sm">About us</span>
+                                </div>
+                            </motion.div>
 
-                        <button
-                            onClick={(e) => {
-                                e.stopPropagation();
-                                prevImage();
-                            }}
-                            className="absolute left-6 p-3 rounded-full glass-panel hover:bg-white/10 transition-colors text-foreground hidden md:block"
-                        >
-                            <LuChevronLeft size={24} />
-                        </button>
+                            {/* 2. White Card */}
+                            <motion.div whileHover={{ scale: 1.02 }} className="bg-[#F8F8F7] text-black rounded-[2rem] p-6 flex flex-col justify-between shadow-lg">
+                                <div>
+                                    <h3 className="text-xl font-semibold leading-tight mb-2">Antaragni '24</h3>
+                                    <p className="text-sm text-gray-500">The Fire Within</p>
+                                </div>
+                                <div className="self-end">
+                                    <div className="w-10 h-10 rounded-full bg-[#D4F238] flex items-center justify-center text-xl font-bold text-black">P</div>
+                                </div>
+                            </motion.div>
 
-                        <motion.img
-                            key={currentImageIndex}
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            exit={{ opacity: 0, scale: 0.9 }}
-                            src={currentImages[currentImageIndex].src}
-                            alt={currentImages[currentImageIndex].alt}
-                            className="max-w-full max-h-[85vh] rounded-xl object-contain select-none"
-                            onClick={(e) => e.stopPropagation()}
-                        />
+                            {/* 3. Orange Card */}
+                            <motion.div whileHover={{ scale: 1.02 }} className="bg-[#EF6924] rounded-[2rem] p-6 text-black flex flex-col justify-center shadow-lg">
+                                <p className="font-serif text-lg leading-snug">"Ignite the passion. Unleash the creativity."</p>
+                                <p className="mt-4 text-xs underline opacity-70 cursor-pointer">Explore history ↗</p>
+                            </motion.div>
 
-                        <button
-                            onClick={(e) => {
-                                e.stopPropagation();
-                                nextImage();
-                            }}
-                            className="absolute right-6 p-3 rounded-full glass-panel hover:bg-white/10 transition-colors text-foreground hidden md:block"
-                        >
-                            <LuChevronRight size={24} />
-                        </button>
+                            {/* 4. Tall Image Card */}
+                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 md:col-span-1 row-span-2 rounded-[2.5rem] overflow-hidden relative group shadow-lg">
+                                <Image src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80" alt="Dancer" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent text-white">
+                                    <p className="text-xs font-light opacity-90">Cultural Extravaganza</p>
+                                </div>
+                            </motion.div>
 
-                        {/* Mobile Navigation */}
-                        <div className="absolute bottom-6 flex gap-4 md:hidden">
-                            <button
-                                onClick={(e) => {
-                                    e.stopPropagation();
-                                    prevImage();
-                                }}
-                                className="p-3 rounded-full glass-panel hover:bg-white/10 transition-colors text-foreground"
-                            >
-                                <LuChevronLeft size={24} />
-                            </button>
-                            <button
-                                onClick={(e) => {
-                                    e.stopPropagation();
-                                    nextImage();
-                                }}
-                                className="p-3 rounded-full glass-panel hover:bg-white/10 transition-colors text-foreground"
-                            >
-                                <LuChevronRight size={24} />
-                            </button>
+                            {/* 5. Landscape Image */}
+                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 row-span-2 rounded-[2.5rem] overflow-hidden relative group shadow-lg">
+                                <Image src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80" alt="Landscape" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                            </motion.div>
+
+                            {/* 6. Green Logo Card */}
+                            <motion.div whileHover={{ scale: 1.02 }} className="bg-[#B5C96B] rounded-[2rem] p-6 flex flex-col justify-between shadow-lg relative overflow-hidden">
+                                <div className="transform -rotate-6 scale-110">
+                                    <h2 className="text-5xl font-black tracking-tighter text-black/90">Antaragni</h2>
+                                </div>
+                            </motion.div>
+
+                            {/* 7. Yellow Card */}
+                            <motion.div whileHover={{ scale: 1.02 }} className="col-span-1 md:col-span-2 bg-[#FBDC78] text-black rounded-[2rem] p-8 flex flex-col justify-between shadow-lg">
+                                <div className="flex justify-between items-start">
+                                    <h3 className="text-2xl font-semibold leading-tight max-w-[80%]">Providing a platform for talent.</h3>
+                                    <LuArrowUpRight size={24} className="opacity-60" />
+                                </div>
+                            </motion.div>
+
+                            {/* 8. Dark Green Card */}
+                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 md:col-span-2 bg-[#2D4539] text-white rounded-[2rem] p-8 flex flex-col justify-between shadow-lg">
+                                <div>
+                                    <h3 className="text-2xl font-medium mb-4">"Diversity makes us unique."</h3>
+                                </div>
+                            </motion.div>
                         </div>
+                    )}
 
 
-                        <div className="absolute top-6 left-6 md:bottom-6 md:top-auto md:left-1/2 md:-translate-x-1/2 text-center">
-                            <p className="text-gray-400">
-                                {currentImageIndex + 1} / {currentImages.length}
-                            </p>
+                    {/* TECHNORION GRID */}
+                    {activeTab === 'technorion' && (
+                        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[200px] md:auto-rows-[250px] animate-in fade-in zoom-in duration-500">
+                            {/* 1. Cyan Tech Card (Large) */}
+                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 md:col-span-2 row-span-2 relative bg-cyan-900 rounded-[2.5rem] p-8 overflow-hidden group shadow-lg border border-cyan-500/30">
+                                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80')] bg-cover bg-center opacity-40 mix-blend-overlay" />
+                                <div className="relative z-10 h-full flex flex-col justify-between">
+                                    <span className="bg-cyan-500 text-black text-xs font-bold px-4 py-2 rounded-full w-fit">Tech & Innovation</span>
+                                    <h2 className="text-4xl font-bold text-white">Future is Now</h2>
+                                </div>
+                            </motion.div>
+
+                            {/* 2. Dark Blue Code Card */}
+                            <motion.div whileHover={{ scale: 1.02 }} className="bg-blue-950 text-white rounded-[2rem] p-6 flex flex-col justify-between shadow-lg border border-blue-500/30">
+                                <div>
+                                    <h3 className="text-xl font-semibold leading-tight mb-2">Technorion '24</h3>
+                                    <p className="text-sm text-cyan-400">Code. Build. Innovate.</p>
+                                </div>
+                                <div className="self-end">
+                                    <div className="w-10 h-10 rounded-full bg-cyan-500 flex items-center justify-center text-xl font-bold text-black">T</div>
+                                </div>
+                            </motion.div>
+
+                            {/* 3. Purple Gaming Card */}
+                            <motion.div whileHover={{ scale: 1.02 }} className="bg-purple-900 rounded-[2rem] p-6 text-white flex flex-col justify-center shadow-lg border border-purple-500/30">
+                                <p className="font-mono text-lg leading-snug">"Level up your skills. Conquer the arena."</p>
+                                <p className="mt-4 text-xs text-purple-300 underline cursor-pointer">View Esport rules ↗</p>
+                            </motion.div>
+
+                            {/* 4. Robot Image Card */}
+                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 md:col-span-1 row-span-2 rounded-[2.5rem] overflow-hidden relative group shadow-lg">
+                                <Image src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80" alt="Robotics" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent text-white">
+                                    <p className="text-xs font-bold text-cyan-400">RoboWars</p>
+                                </div>
+                            </motion.div>
+
+                            {/* 5. Hackathon Image */}
+                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 row-span-2 rounded-[2.5rem] overflow-hidden relative group shadow-lg">
+                                <Image src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80" alt="Hackathon" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                                <div className="absolute bottom-6 left-6">
+                                    <p className="text-white text-xs bg-black/50 px-2 py-1 rounded">24h Hackathon</p>
+                                </div>
+                            </motion.div>
+
+                            {/* 6. Tech Logo Card */}
+                            <motion.div whileHover={{ scale: 1.02 }} className="bg-slate-800 rounded-[2rem] p-6 flex flex-col justify-between shadow-lg relative overflow-hidden border border-slate-600">
+                                <div className="transform -rotate-3 scale-110">
+                                    <h2 className="text-4xl font-black tracking-tighter text-cyan-400">Technorion</h2>
+                                </div>
+                                <div className="mt-auto flex justify-between items-end">
+                                    <span className="text-xs text-slate-400">Technical Fest ↗</span>
+                                </div>
+                            </motion.div>
+
+                            {/* 7. Stats Card */}
+                            <motion.div whileHover={{ scale: 1.02 }} className="col-span-1 md:col-span-2 bg-[#1e293b] text-white rounded-[2rem] p-8 flex flex-col justify-between shadow-lg border border-slate-700">
+                                <div className="flex justify-between items-start">
+                                    <h3 className="text-2xl font-semibold leading-tight max-w-[80%]">Pushing the boundaries of technology.</h3>
+                                    <LuArrowUpRight size={24} className="text-cyan-500" />
+                                </div>
+                                <div className="flex gap-4 mt-4">
+                                    <div className="bg-black/30 p-3 rounded-xl">
+                                        <div className="text-2xl font-bold text-cyan-400">50+</div>
+                                        <div className="text-xs text-gray-400">Events</div>
+                                    </div>
+                                    <div className="bg-black/30 p-3 rounded-xl">
+                                        <div className="text-2xl font-bold text-purple-400">10k+</div>
+                                        <div className="text-xs text-gray-400">Participants</div>
+                                    </div>
+                                </div>
+                            </motion.div>
                         </div>
-                    </motion.div>
-                )}
-            </AnimatePresence>
+                    )}
+
+                    {/* PARAKRAM GRID */}
+                    {activeTab === 'parakram' && (
+                        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[200px] md:auto-rows-[250px] animate-in fade-in zoom-in duration-500">
+                            {/* 1. Red Sports Card (Large) */}
+                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 md:col-span-2 row-span-2 relative bg-red-900 rounded-[2.5rem] p-8 overflow-hidden group shadow-lg border border-red-500/30">
+                                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800&q=80')] bg-cover bg-center opacity-40 mix-blend-multiply" />
+                                <div className="relative z-10 h-full flex flex-col justify-between">
+                                    <span className="bg-red-500 text-white text-xs font-bold px-4 py-2 rounded-full w-fit">Sports & Glory</span>
+                                    <h2 className="text-4xl font-bold text-white italic">"Unleash the Beast"</h2>
+                                </div>
+                            </motion.div>
+
+                            {/* 2. Orange Info Card */}
+                            <motion.div whileHover={{ scale: 1.02 }} className="bg-orange-950 text-white rounded-[2rem] p-6 flex flex-col justify-between shadow-lg border border-orange-500/30">
+                                <div>
+                                    <h3 className="text-xl font-semibold leading-tight mb-2">Parakram '24</h3>
+                                    <p className="text-sm text-orange-400">Strength. Speed. Spirit.</p>
+                                </div>
+                                <div className="self-end">
+                                    <div className="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center text-xl font-bold text-black">P</div>
+                                </div>
+                            </motion.div>
+
+                            {/* 3. Green Field Card */}
+                            <motion.div whileHover={{ scale: 1.02 }} className="bg-green-900 rounded-[2rem] p-6 text-white flex flex-col justify-center shadow-lg border border-green-500/30">
+                                <p className="font-sans text-lg leading-snug font-bold">"Victory favors the brave."</p>
+                                <p className="mt-4 text-xs text-green-300 underline cursor-pointer">Register Team ↗</p>
+                            </motion.div>
+
+                            {/* 4. Basketball Image Card */}
+                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 md:col-span-1 row-span-2 rounded-[2.5rem] overflow-hidden relative group shadow-lg">
+                                <Image src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800&q=80" alt="Basketball" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent text-white">
+                                    <p className="text-xs font-bold text-orange-400">Court Dominance</p>
+                                </div>
+                            </motion.div>
+
+                            {/* 5. Football Image */}
+                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 row-span-2 rounded-[2.5rem] overflow-hidden relative group shadow-lg">
+                                <Image src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=800&q=80" alt="Football" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                                <div className="absolute bottom-6 left-6">
+                                    <p className="text-white text-xs bg-black/50 px-2 py-1 rounded">Football Frenzy</p>
+                                </div>
+                            </motion.div>
+
+                            {/* 6. Parakram Logo Card */}
+                            <motion.div whileHover={{ scale: 1.02 }} className="bg-stone-900 rounded-[2rem] p-6 flex flex-col justify-between shadow-lg relative overflow-hidden border border-stone-700">
+                                <div className="transform -rotate-6 scale-110">
+                                    <h2 className="text-4xl font-black tracking-tighter text-red-500">Parakram</h2>
+                                </div>
+                                <div className="mt-auto flex justify-between items-end">
+                                    <span className="text-xs text-stone-400">Sports Meet ↗</span>
+                                </div>
+                            </motion.div>
+
+                            {/* 7. Motivation Card */}
+                            <motion.div whileHover={{ scale: 1.02 }} className="col-span-1 md:col-span-2 bg-[#451a03] text-white rounded-[2rem] p-8 flex flex-col justify-between shadow-lg border border-orange-900">
+                                <div className="flex justify-between items-start">
+                                    <h3 className="text-2xl font-semibold leading-tight max-w-[80%]">Compete with the best athletes.</h3>
+                                    <LuArrowUpRight size={24} className="text-orange-500" />
+                                </div>
+                                <div className="mt-6">
+                                    <div className="flex gap-2">
+                                        <span className="text-xs bg-orange-600/20 text-orange-400 px-2 py-1 rounded border border-orange-600/30">Cricket</span>
+                                        <span className="text-xs bg-orange-600/20 text-orange-400 px-2 py-1 rounded border border-orange-600/30">Football</span>
+                                        <span className="text-xs bg-orange-600/20 text-orange-400 px-2 py-1 rounded border border-orange-600/30">Volleyball</span>
+                                    </div>
+                                </div>
+                            </motion.div>
+                        </div>
+                    )}
+
+                </main>
+            </div>
         </div>
     );
 };
 
-export default Gallery;
+export default BentoGallery;
