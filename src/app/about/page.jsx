@@ -30,6 +30,10 @@ import soujanyaPoshattiwar from "../../assets/soujanyaPoshattiwar.jpeg";
 import nehaKathole from "../../assets/nehaKathole.jpeg";
 import manthanBhandari from "../../assets/manthanBhandari.jpeg";
 import vaishnaviKharche from "../../assets/vaishnaviKharche.jpg";
+import parthYerawar from "../../assets/parthYerawar.jpeg";
+import pramodWalke from "../../assets/pramodWalke.avif";
+import santoshJaju from "../../assets/dr-jaju.avif";
+import sanjayDorle from "../../assets/sanjay-dorle.avif";
 
 const teamSections = [
   {
@@ -54,6 +58,26 @@ const teamSections = [
         name: "Dr. Sachin Untawale",
         role: "Director, GHRCE",
         image: director,
+      },
+    ],
+  },
+  {
+    title: "Steering Committee",
+    members: [
+      {
+        name: "Dr. Pramod Walke",
+        role: "Dy. Director & Dean Academics",
+        image: pramodWalke,
+      },
+      {
+        name: "Dr. Santosh Jaju",
+        role: "Dy. Director & Dean R&D",
+        image: santoshJaju,
+      },
+      {
+        name: "Dr. Sanjay Dorle",
+        role: "Registrar",
+        image: sanjayDorle,
       },
     ],
   },
@@ -158,13 +182,18 @@ const teamSections = [
     ],
   },
   {
-    title: "Web Development Committee",
+    title: "Web Development Incharge",
     members: [
       {
         name: "Prof. Atiya Khan",
         role: "Web Master",
         image: atiyamadam,
       },
+    ],
+  },
+  {
+    title: "Web Development Team",
+    members: [
       {
         name: "Shubham Verma",
         role: "Web Developer",
@@ -203,7 +232,7 @@ const teamSections = [
       {
         name: "Parth Yerawar",
         role: "Web Developer",
-        image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=300&q=80",
+        image: parthYerawar,
       },
       {
         name: "Manthan Bhandari",
@@ -314,7 +343,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="md:w-1/2 w-full h-72 rounded-xl overflow-hidden">
-             <video  width="640" height="360" controls autoplay>
+             <video  width="640" height="360" controls autoPlay>
     <source src="https://antaragni.co.in/assets/newantvideo-Bbjj1ztI.mp4" type="video/mp4" />
 </video> 
             </div>
