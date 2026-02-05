@@ -8,7 +8,6 @@ import sunilji from "../../assets/suniljiraisoni-Bl6duqdx.png";
 import shobharaisoni from "../../assets/shobharaisoni2-CQnZ9QrQ.png";
 import director from "../../assets/director-DX4IHFhE.png";
 import jajulwar from "../../assets/jajulwar3-IL2zNYI5.png";
-import atiyamadam from "../../assets/atiyamadam-DHN3Ahu0.jpg";
 import sonaliJoshi from "../../assets/sonaliJoshi.png";
 import sujeshGhodmare from "../../assets/sujeshGhodmare.jpg";
 import abhijeetTitarmare from "../../assets/abhijeetTitarmare.avif";
@@ -34,6 +33,10 @@ import parthYerawar from "../../assets/parthYerawar.jpeg";
 import pramodWalke from "../../assets/pramodWalke.avif";
 import santoshJaju from "../../assets/dr-jaju.avif";
 import sanjayDorle from "../../assets/sanjay-dorle.avif";
+import atiyamadam from "../../assets/atiyamadam.jpeg"
+import umakantKadu from "../../assets/decorationLead.jpeg";
+import discipline from "../../assets/disciplineLead.jpeg";
+import shreyashraisoni from "../../assets/shreyasraisoni2.png"
 
 const teamSections = [
   {
@@ -41,13 +44,18 @@ const teamSections = [
     members: [
       {
         name: "Dr. Sunilji Raisoni",
-        role: "Chairman, Raisoni Group",
+        role: "Chairman,RGI",
         image: sunilji,
       },
       {
         name: "Mrs. Shobha Raisoni",
-        role: "Vice Chairman",
+        role: "Trusty,RGI",
         image: shobharaisoni,
+      },
+      {
+        name: "Shreyash Raisoni",
+        role: "Executive Director,RGI",
+        image: shreyashraisoni,
       },
     ],
   },
@@ -173,6 +181,16 @@ const teamSections = [
         name: "Suyog Aware",
         role: "Joint Technorion President",
         image: jointTechnorion1,
+      },
+      {
+        name: "Umakant  Kadu",
+        role: "Decoration Lead",
+        image: umakantKadu,
+      },
+      {
+        name: "Kavya Jaipurkar ",
+        role: "Discipline Lead",
+        image: discipline,
       },
       {
         name: "Himanshi Joshi",
@@ -334,54 +352,65 @@ export default function AboutPage() {
 ">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
-              <div className="inline-block p-3 bg-blue-500/20 rounded-lg text-blue-400 mb-6">
-                <FaUsers size={20} />
-              </div>
+
               <h2 className="text-4xl font-bold mb-6">About Antaragni</h2>
               <p className="text-gray-300 text-lg leading-relaxed align-justify">
-                Antaragni is entirely student-driven. From sleepless nights to roaring crowds, it is passion, teamwork, and shared dreams that bring this spectacle to life. Antaragni is the flagship annual cultural and technical festival of G.H. Raisoni College of Engineering, Nagpur. Recognized nationally, the institution has consistently ranked among top engineering colleges by NIRF, ARIIA, and India Today.
+                G.H. Raisoni College of Engineering (GHRCE) Nagpur, established in 1996, is an Empowered autonomous institution affiliated to Rashtrasant Tukadoji Maharaj Nagpur University. The institute became Autonomous in 2010 and UGC has renewed autonomous status till 2032. It has been awarded A++ (3.55/4) grade by NAAC during 3 rd cycle in 2023. It is ranked in the band of 201-300 in year 2025 PAN India in Engineering Discipline, as declared by National Institutional Ranking Framework (NIRF) 2025, MoE, Government of India.
               </p>
             </div>
             <div className="md:w-1/2 w-full h-72 rounded-xl overflow-hidden">
-              <video width="640" height="360" controls autoPlay>
-                <source src="https://antaragni.co.in/assets/newantvideo-Bbjj1ztI.mp4" type="video/mp4" muted={true} />
+              <video width="640" height="360" autoPlay loop muted>
+                <source src="/videos/TeaserChangesdone.mp4" type="video/mp4" muted={true} />
               </video>
             </div>
           </div>
         </div>
-      </motion.section>
+      </motion.section >
 
       {/* Team Section */}
-      <section className="text-center px-4">
-        {teamSections.map((section) => (
-          <div key={section.title} className="mb-20">
-            <h3 className="text-3xl font-bold text-center mb-10">
-              {section.title}
-            </h3>
-            <div className="flex flex-wrap justify-center gap-8">
-              {section.members.map((member) => (
-                <div
-                  key={member.name}
-                  className="flex flex-col items-center rounded-2xl overflow-hidden text-center hover:scale-105 transition-transform max-w-xs w-full relative group"
-                >
-                  <div className="absolute top-10 w-40 h-40 md:w-48 md:h-48 rounded-full bg-gradient-to-br from-purple-600 via-purple-500 to-orange-400 blur-2xl opacity-60 scale-125 -z-10 group-hover:opacity-80 transition-opacity"></div>
-                  <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white/10 shadow-lg bg-black/20 z-10">
-                    <img
-                      src={member.image?.src || member.image}
-                      alt={member.name}
-                      className="w-full h-full object-cover object-center"
-                    />
+      < section className="text-center px-4" >
+        {
+          teamSections.map((section) => (
+            <div key={section.title} className="mb-20">
+              <h3 className="text-3xl font-bold text-center mb-10">
+                {section.title}
+              </h3>
+              <div className="flex flex-wrap justify-center gap-8">
+                {section.members.map((member) => (
+                  <div
+                    key={member.name}
+                    className="flex flex-col items-center justify-start p-4 text-center hover:scale-105 transition-all duration-300 max-w-xs w-full relative group"
+                  >
+                    {/* Image Container with Gradient */}
+                    <div className="relative mb-6 flex justify-center items-center">
+                      {/* Glowing Gradient Background */}
+                      <div className="absolute inset-0 bg-gradient-to-tr from-pink-600 via-purple-600 to-cyan-500 rounded-full blur-2xl opacity-60 group-hover:opacity-100 group-hover:blur-3xl transition-all duration-500 scale-125"></div>
+
+                      {/* Image Circle */}
+                      <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-2 border-white/20 group-hover:border-white/50 shadow-2xl z-10 bg-[#121212]">
+                        <img
+                          src={member.image?.src || member.image}
+                          alt={member.name}
+                          className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="z-10 w-full">
+                      <h4 className="font-bold text-xl mb-1 text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 transition-all duration-300">
+                        {member.name}
+                      </h4>
+                      <p className="text-sm font-medium text-gray-400 group-hover:text-gray-200 tracking-wide uppercase transition-colors">
+                        {member.role}
+                      </p>
+                    </div>
                   </div>
-                  <div className="p-4 z-10">
-                    <h4 className="font-semibold text-lg">{member.name}</h4>
-                    <p className="text-sm text-gray-400">{member.role}</p>
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
-      </section>
-    </div>
+          ))
+        }
+      </section >
+    </div >
   );
 }
