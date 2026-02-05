@@ -3,6 +3,8 @@
 import { useRef, Suspense, useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
+
+
 import {
     OrbitControls,
     PerspectiveCamera,
@@ -48,6 +50,8 @@ function CountdownTimer({ targetDate }) {
             </span>
         </div>
     );
+
+
 
     return (
         <div className="flex justify-center items-center mt-10">
@@ -291,6 +295,7 @@ export default function PrismHero() {
                                 transition={{ delay: 0.8, duration: 0.8 }}
                             >
                                 <CountdownTimer targetDate="2026-02-19T00:00:00" />
+
                             </motion.div>
 
 

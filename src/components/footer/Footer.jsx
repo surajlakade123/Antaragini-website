@@ -4,7 +4,27 @@ import Link from "next/link";
 import config from "@/data/config.json";
 import { FaInstagram, FaFacebook, FaTwitter, FaYoutube, FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import { motion, useSpring, useTransform } from "framer-motion";
 
+
+function AnimatedCounter({ value }) {
+    const spring = useSpring(0, { mass: 0.8, stiffness: 75, damping: 15 });
+    const display = useTransform(spring, (current) => Math.round(current).toLocaleString());
+
+    useEffect(() => {
+        spring.set(value);
+    }, [value, spring]);
+
+    return (
+        <div className="flex items-center gap-3 px-5 py-2 bg-gradient-to-r from-purple-900/20 to-pink-900/20 rounded-full border border-purple-500/30 backdrop-blur-md shadow-[0_0_20px_rgba(168,85,247,0.2)] hover:shadow-[0_0_30px_rgba(236,72,153,0.4)] transition-all duration-500 group">
+            <span className="text-xs font-bold tracking-[0.2em] text-purple-400 uppercase group-hover:text-pink-400 transition-colors">Visitors</span>
+            <div className="w-[1px] h-4 bg-white/20"></div>
+            <motion.span className="text-xl font-black bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 drop-shadow-lg font-mono">
+                {display}
+            </motion.span>
+        </div>
+    );
+}
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
@@ -14,7 +34,7 @@ export default function Footer() {
         fetch("/api/visits")
             .then(res => res.json())
             .then(data => setVisits(data.count))
-            .catch(() => {});
+            .catch(() => { });
     }, []);
 
     return (
@@ -102,7 +122,9 @@ export default function Footer() {
                 {/* Bottom Bar */}
                 <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
                     <p>© {currentYear} {config.collegeName} {config.festivalName.split(" ")[0]}. All rights reserved.</p>
-                    <p className="text-gray-400">Visitors: {visits}</p>
+
+                    <AnimatedCounter value={visits} />
+
                     <div className="mt-4 md:mt-0">
                         Designed & Developed by <span className="text-white">Web Team</span>
                     </div>

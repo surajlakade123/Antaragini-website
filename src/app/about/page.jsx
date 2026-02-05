@@ -30,13 +30,14 @@ import nehaKathole from "../../assets/nehaKathole.jpeg";
 import manthanBhandari from "../../assets/manthanBhandari.jpeg";
 import vaishnaviKharche from "../../assets/vaishnaviKharche.jpg";
 import parthYerawar from "../../assets/parthYerawar.jpeg";
-import pramodWalke from "../../assets/pramodWalke.avif";
-import santoshJaju from "../../assets/dr-jaju.avif";
-import sanjayDorle from "../../assets/sanjay-dorle.avif";
+import pramodWalke from "../../assets/pramodwalke.jpeg";
+import santoshJaju from "../../assets/dr-jaju.jpeg";
+import sanjayDorle from "../../assets/sanjaydorle.jpeg";
 import atiyamadam from "../../assets/atiyamadam.jpeg"
 import umakantKadu from "../../assets/decorationLead.jpeg";
 import discipline from "../../assets/disciplineLead.jpeg";
 import shreyashraisoni from "../../assets/shreyasraisoni2.png"
+import sharaddhaumate from "../../assets/sharaddhaumate.jpeg"
 
 const teamSections = [
   {
@@ -44,17 +45,17 @@ const teamSections = [
     members: [
       {
         name: "Dr. Sunilji Raisoni",
-        role: "Chairman,RGI",
+        role: "Chairman, RGI",
         image: sunilji,
       },
       {
         name: "Mrs. Shobha Raisoni",
-        role: "Trusty,RGI",
+        role: "Trustee, RGI",
         image: shobharaisoni,
       },
       {
-        name: "Shreyash Raisoni",
-        role: "Executive Director,RGI",
+        name: "Mr. Shreyash Raisoni",
+        role: "Executive Director, RGI",
         image: shreyashraisoni,
       },
     ],
@@ -120,7 +121,7 @@ const teamSections = [
       {
         name: "Prof. Shraddha Umate",
         role: "Asst. Prof, EE Dept.",
-        image: sonaliJoshi,
+        image: sharaddhaumate,
       },
     ],
   },
