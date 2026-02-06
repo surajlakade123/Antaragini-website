@@ -4,27 +4,38 @@
         "category": "antaragni",
         "contacts": [
             {
-                "name": "Cultural Coordinator",
-                "phone": "+91-9876543210"
+                "name": "Suyog Aware",
+                "phone": "+91-8010414470"
+            },
+            {
+                "name": "Riddhima Shukla",
+                "phone": "+91-8600624776"
+            },
+            {
+                "name": "Yashika Gandhi",
+                "phone": "+91-9370785192"
             }
         ],
         "description": "Unleash your rhythm and style in the ultimate street dance battle. From hip-hop to heavy hitting beats, show us your best moves and claim the streets.",
         "details": {
-            "date": "2026-03-15",
-            "prizePool": "₹10,000",
-            "registrationFee": "Free",
-            "teamSize": "5-8 members",
+            "date": "2026-02-19",
+            "prizePool": "₹5200",
+            "registrationFee": "Solo: ₹150, Group: ₹100(each member)",
+            "teamSize": "1-n members",
             "time": "10:00 AM",
-            "venue": "Main Ground"
+            "venue": "Near Parking Lot"
         },
         "id": "street-dance",
         "name": "Street Dance",
-        "registrationUrl": "https://forms.google.com/sample",
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdR1O5QEfmNG3ifjwTie3ArIhkIVH5su9IL9Gip-RqXm49Qwg/viewform",
         "rules": [
-            "Performance duration should be 4-6 minutes",
-            "Teams must register 2 days prior",
-            "Props are allowed but must be cleared after performance",
-            "Vulgarity in movements or attire will lead to disqualification"
+            "1. Eligibility: The event is open to all registered college students. A valid college ID is mandatory.",
+            "2. Time Limit: Solo: Maximum 2.5 minutes and Group: Maximum 3.5 minutes",
+            "3. Exceeding the time limit may lead to disqualification.",
+            "4) Dance Style: Any dance style is allowed.",
+            "5) Reporting Time: Teams must report at least 30 minutes before their scheduled performance time.",
+            "6) Criteria : students are not permitted to select items songs for street dance; only decent and pre-approved content is allowed."
+
         ],
         "shortDescription": "Showcase your urban dance moves",
         "slug": "street-dance"
@@ -32,7 +43,16 @@
     {
         "bannerImage": "/events/cultural.png",
         "category": "antaragni",
-        "contacts": [],
+        "contacts": [
+            {
+                "name": "Nandini Kakde",
+                "phone": "9834155456"
+            },
+            {
+                "name": "Himanshi Joshi",
+                "phone": "7028303209"
+            }
+        ],
         "description": "A celebration of culture and storytelling through dance. Bring your traditions or creative themes to life on the big stage.",
         "details": {
             "date": "2026-03-15",
@@ -44,7 +64,7 @@
         },
         "id": "theme-dance",
         "name": "Theme Dance / Folk Dance",
-        "registrationUrl": "#",
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeE4Qp3h1T7ShTiw9STaragcRCi7itCgQPeyY2EcPffxiEvOA/viewform",
         "rules": [
             "Theme-based performance is mandatory",
             "Authentic costumes encouraged",
@@ -56,7 +76,20 @@
     {
         "bannerImage": "/events/cultural.png",
         "category": "antaragni",
-        "contacts": [],
+        "contacts": [
+            {
+                "name": "Abhijeet Singh",
+                "phone": "9309324632"
+            },
+            {
+                "name": "Yukti Bopche",
+                "phone": "9021673741"
+            },
+            {
+                "name": "Janvi Pandey",
+                "phone": "8208382930"
+            }
+        ],
         "description": "Strut your stuff and showcase the latest trends or avant-garde designs. The ramp is yours to command.",
         "details": {
             "date": "2026-03-16",
@@ -68,7 +101,7 @@
         },
         "id": "fashion-show",
         "name": "Fashion Show",
-        "registrationUrl": "#",
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSepY2ZI_UOqmXpiyaVuzUJY1Uw-bYE5VTJQY0duZ4yvxp14jQ/viewform",
         "rules": [
             "3 rounds minimum",
             "Theme must be innovative",
@@ -80,7 +113,16 @@
     {
         "bannerImage": "/events/cultural.png",
         "category": "antaragni",
-        "contacts": [],
+        "contacts": [
+            {
+                "name": "Aditi Shende",
+                "phone": "9423764569"
+            },
+            {
+                "name": "Anandi Jachak",
+                "phone": "9096789297"
+            }
+        ],
         "description": "Test your knowledge of Indian traditions and showcase your cultural roots in this unique hybrid competition.",
         "details": {
             "date": "2026-03-16",
@@ -92,7 +134,7 @@
         },
         "id": "battle-of-tradition",
         "name": "Battle of Tradition",
-        "registrationUrl": "#",
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLScAl9hNVGhjwgE0pVyC2qbQfg1QdBgmqpOJaOFGezL_YJFs3A/viewform",
         "rules": [
             "Knowledge of Indian traditions required"
         ],
@@ -102,7 +144,20 @@
     {
         "bannerImage": "/events/cultural.png",
         "category": "antaragni",
-        "contacts": [],
+        "contacts": [
+            {
+                "name": "Anshika Kalbande",
+                "phone": "9823589561"
+            },
+            {
+                "name": "Radhika Saoji",
+                "phone": "8806000221"
+            },
+            {
+                "name": "Tanushree Khetan",
+                "phone": "8767992080"
+            }
+        ],
         "description": "Let your voice be heard. From classical to pop, solo or duet, the microphone awaits your melody.",
         "details": {
             "date": "2026-03-16",
@@ -114,7 +169,7 @@
         },
         "id": "singing-solo-duet",
         "name": "Singing (Solo/Duet)",
-        "registrationUrl": "#",
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLScJ5GTBxjpl7PagiLrSDj6-EDXylWjaIJk3rNCXcy0oVxmkig/viewform",
         "rules": [
             "3-5 min performance",
             "Backing track allowed",
@@ -126,7 +181,20 @@
     {
         "bannerImage": "/events/cultural.png",
         "category": "antaragni",
-        "contacts": [],
+        "contacts": [
+            {
+                "name": "Umakant Kadu (SRC)",
+                "phone": "7038371279"
+            },
+            {
+                "name": "Soham Malekar (Student Coordinator)",
+                "phone": "9022784686"
+            },
+            {
+                "name": "Vinamra Shelkar (Student Coordinator)",
+                "phone": "8459207594"
+            }
+        ],
         "description": "Transform a blank wall into a masterpiece. Express your creativity on a grand scale.",
         "details": {
             "date": "2026-03-15",
@@ -138,7 +206,7 @@
         },
         "id": "wall-painting",
         "name": "Wall Painting",
-        "registrationUrl": "#",
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdk-_9mPzOUFyg7fmXRjpPjn5nkCd7FXWV6cPzyAWhCJe2Bqg/viewform",
         "rules": [
             "3 hours duration",
             "Eco-friendly colors only"
@@ -149,7 +217,16 @@
     {
         "bannerImage": "/events/cultural.png",
         "category": "antaragni",
-        "contacts": [],
+        "contacts": [
+            {
+                "name": "Parth (SRC Coordinator)",
+                "phone": "7020453484"
+            },
+            {
+                "name": "Nitin Mishra (Student Coordinator)",
+                "phone": "8591967518"
+            }
+        ],
         "description": "Short boundaries, fast pace, and intense action. Box cricket is cricket reimagined for thrill.",
         "details": {
             "date": "2026-03-17",
@@ -161,7 +238,7 @@
         },
         "id": "box-cricket",
         "name": "Box Cricket",
-        "registrationUrl": "#",
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSd5WusIJvZK3SrKEwalRcUZ5xm2noJHyGnLDM4cFZAWuTFR8A/viewform",
         "rules": [
             "6 overs per innings",
             "Soft ball utilized"
@@ -172,7 +249,20 @@
     {
         "bannerImage": "/events/cultural.png",
         "category": "antaragni",
-        "contacts": [],
+        "contacts": [
+            {
+                "name": "Akruti Singh (SRC Coordinator)",
+                "phone": "9067128956"
+            },
+            {
+                "name": "Mayuri Vairagade (Student Coordinator)",
+                "phone": "7972941964"
+            },
+            {
+                "name": "Tamanna Sajwan (Student Coordinator)",
+                "phone": "9423682736"
+            }
+        ],
         "description": "Cook up a storm! Create delicious global street food dishes under time pressure.",
         "details": {
             "date": "2026-03-17",
@@ -184,7 +274,7 @@
         },
         "id": "global-street-master-chef",
         "name": "Global Street Master Chef",
-        "registrationUrl": "#",
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeq2_cgYi-WTLQfYlKTrspOlHqdlPY7ioYUBSZ_9dKz5vCEQg/viewform",
         "rules": [
             "90 min prep time",
             "Mystery box challenge"
@@ -195,7 +285,16 @@
     {
         "bannerImage": "/events/cultural.png",
         "category": "antaragni",
-        "contacts": [],
+        "contacts": [
+            {
+                "name": "Parth (SRC Coordinator)",
+                "phone": "7020453484"
+            },
+            {
+                "name": "Nitin Mishra (Student Coordinator)",
+                "phone": "8591967518"
+            }
+        ],
         "description": "A gallery of creativity. Display your best works for the college to admire.",
         "details": {
             "date": "2026-03-15 - 17",
@@ -207,7 +306,7 @@
         },
         "id": "art-exhibition",
         "name": "Art Exhibition",
-        "registrationUrl": "#",
+        "registrationUrl": "https://docs.google.com/forms/d/1xZ7X65yZvdq3MBOSEesVgZsvgj-PRsx7WA87lNdQaek/viewform?edit_requested=true",
         "rules": [
             "Submit 2-5 artworks",
             "Original work only",
@@ -231,7 +330,7 @@
         },
         "id": "face-painting",
         "name": "Face Painting",
-        "registrationUrl": "#",
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLScEKYh-sdYYnYWT7AEGPwFnj739RPXzw3ScnMlJowYfEK7EpQ/closedform",
         "rules": [
             "30 min per design",
             "Theme-based designs"
@@ -254,7 +353,7 @@
         },
         "id": "poster-making",
         "name": "Poster Making",
-        "registrationUrl": "#",
+        "registrationUrl": "https://docs.google.com/forms/d/1KWn-tKEQadmWGpof-cg4IC9rYUCsbadT48UvOwRZmiA/viewform?edit_requested=true",
         "rules": [
             "A2 size",
             "2 hours duration",
@@ -278,7 +377,7 @@
         },
         "id": "treasure-hunt",
         "name": "Treasure Hunt",
-        "registrationUrl": "#",
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSch_JdAMC_smE3KdtzcdZ2MWTOXqOwaxNIZWfrSijI2smJsjQ/viewform",
         "rules": [
             "Solve clues in order",
             "First to finish wins"
@@ -301,7 +400,7 @@
         },
         "id": "talent-hunt",
         "name": "Talent Hunt",
-        "registrationUrl": "#",
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLScrJJAqbF5X89C3oCIQdXsrhCZCGmDc3KHCYYQGiGKgHu115w/viewform",
         "rules": [
             "3-5 min performance",
             "Any talent allowed",
@@ -325,7 +424,7 @@
         },
         "id": "open-mic",
         "name": "Open Mic",
-        "registrationUrl": "#",
+        "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLScpV2DOoLSfwVSxosUqwg7S9rgAn7Rjbo75NSkp9b3-hCQD7w/viewform",
         "rules": [
             "5-7 min slot",
             "Original content",
