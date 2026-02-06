@@ -22,7 +22,7 @@
             "prizePool": "₹5200",
             "registrationFee": "Solo: ₹150, Group: ₹100(each member)",
             "teamSize": "1-n members",
-            "time": "10:00 AM",
+            "time": "9:30 AM",
             "venue": "Near Parking Lot"
         },
         "id": "street-dance",
@@ -32,9 +32,9 @@
             "1. Eligibility: The event is open to all registered college students. A valid college ID is mandatory.",
             "2. Time Limit: Solo: Maximum 2.5 minutes and Group: Maximum 3.5 minutes",
             "3. Exceeding the time limit may lead to disqualification.",
-            "4) Dance Style: Any dance style is allowed.",
-            "5) Reporting Time: Teams must report at least 30 minutes before their scheduled performance time.",
-            "6) Criteria : students are not permitted to select items songs for street dance; only decent and pre-approved content is allowed."
+            "4. Dance Style: Any dance style is allowed.",
+            "5. Reporting Time: Teams must report at least 30 minutes before their scheduled performance time.",
+            "6. Criteria : students are not permitted to select items songs for street dance; only decent and pre-approved content is allowed."
 
         ],
         "shortDescription": "Showcase your urban dance moves",
@@ -55,20 +55,23 @@
         ],
         "description": "A celebration of culture and storytelling through dance. Bring your traditions or creative themes to life on the big stage.",
         "details": {
-            "date": "2026-03-15",
-            "prizePool": "₹12,000",
-            "registrationFee": "Free",
-            "teamSize": "6-10 members",
-            "time": "2:00 PM",
+            "date": "2026-02-20",
+            "prizePool": "₹5000 + Trophies",
+            "registrationFee": "Solo: ₹100, Group: ₹100(each member)",
+            "teamSize": "1-n members",
+            "time": "10:00 AM",
             "venue": "Auditorium"
         },
         "id": "theme-dance",
         "name": "Theme Dance / Folk Dance",
         "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeE4Qp3h1T7ShTiw9STaragcRCi7itCgQPeyY2EcPffxiEvOA/viewform",
         "rules": [
-            "Theme-based performance is mandatory",
-            "Authentic costumes encouraged",
-            "Time limit: 8-10 minutes"
+            "1. Folk Dance - The performance duration must be exactly 3 minutes.",
+            "2. Theme Dance - The performance duration should be between 7 to 8 minutes.",
+            "3. Each team must consist of a minimum of 12 participants and a maximum of 15 participants for Theme Dance.",
+            "4. Teams exceeding or falling short of the specified participant limit may be disqualified.",
+            "5. Exceeding the time limit may lead to negative marking or disqualification.",
+            "6. Authentic costumes encouraged"
         ],
         "shortDescription": "Traditional and themed dance performances celebrating diversity",
         "slug": "theme-dance"
@@ -92,11 +95,11 @@
         ],
         "description": "Strut your stuff and showcase the latest trends or avant-garde designs. The ramp is yours to command.",
         "details": {
-            "date": "2026-03-16",
+            "date": "2026-02-21",
             "prizePool": "₹20,000",
             "registrationFee": "₹500",
             "teamSize": "8-12 models",
-            "time": "7:00 PM",
+            "time": "6:00 PM",
             "venue": "Main Stage"
         },
         "id": "fashion-show",
@@ -125,7 +128,7 @@
         ],
         "description": "Test your knowledge of Indian traditions and showcase your cultural roots in this unique hybrid competition.",
         "details": {
-            "date": "2026-03-16",
+            "date": "2026-02-19",
             "prizePool": "₹5,000",
             "registrationFee": "Free",
             "teamSize": "Team of 3",
@@ -136,7 +139,14 @@
         "name": "Battle of Tradition",
         "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLScAl9hNVGhjwgE0pVyC2qbQfg1QdBgmqpOJaOFGezL_YJFs3A/viewform",
         "rules": [
-            "Knowledge of Indian traditions required"
+            "1. Participants must be dressed in traditional attire that represents their culture, heritage, or region.",
+            "2. Costumes should be decent, respectful, and culturally appropriate.",
+            "3. The walk should reflect grace, confidence, and cultural elegance.",
+            "4. The use of props is permitted only if they are safe and relevant to the traditional theme.",
+            "5. Participants must follow the allocated time limit. Exceeding time may result in negative marking or disqualification.",
+            "6. Judging criteria will include traditional attire, confidence, posture, expressions, and overall presentation.",
+            "7. Participants are expected to maintain discipline and sportsmanship throughout the event.",
+            "8. The judges' and organizers' decisions shall be final and binding."
         ],
         "shortDescription": "Cultural quiz and performance competition",
         "slug": "battle-of-tradition"
@@ -160,20 +170,23 @@
         ],
         "description": "Let your voice be heard. From classical to pop, solo or duet, the microphone awaits your melody.",
         "details": {
-            "date": "2026-03-16",
+            "date": "2026-02-19",
             "prizePool": "₹7,000",
             "registrationFee": "Free",
             "teamSize": "1-2 members",
-            "time": "2:00 PM",
+            "time": "12:00 PM",
             "venue": "Amphitheater"
         },
         "id": "singing-solo-duet",
         "name": "Singing (Solo/Duet)",
         "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLScJ5GTBxjpl7PagiLrSDj6-EDXylWjaIJk3rNCXcy0oVxmkig/viewform",
         "rules": [
-            "3-5 min performance",
-            "Backing track allowed",
-            "Live instruments bonus"
+            "1. Time for solo singing is 3.5 minutes and for duet 4 minutes.",
+            "2. Only karaoke is allowed.",
+            "3. No mobile phones or printed copies allowed. Memorize your lyrics.",
+            "4. Languages allowed: Hindi, Marathi, and English.",
+            "5. Backing track/music system will be provided.",
+            "6. Judges' decision will be final and binding."
         ],
         "shortDescription": "Vocal talent showcase across genres",
         "slug": "singing-solo-duet"
@@ -197,19 +210,24 @@
         ],
         "description": "Transform a blank wall into a masterpiece. Express your creativity on a grand scale.",
         "details": {
-            "date": "2026-03-15",
+            "date": "2026-02-20",
             "prizePool": "₹8,000",
             "registrationFee": "Free",
             "teamSize": "Team of 2-4",
-            "time": "9:00 AM",
+            "time": "9:30 AM",
             "venue": "College Walls"
         },
         "id": "wall-painting",
         "name": "Wall Painting",
         "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdk-_9mPzOUFyg7fmXRjpPjn5nkCd7FXWV6cPzyAWhCJe2Bqg/viewform",
         "rules": [
-            "3 hours duration",
-            "Eco-friendly colors only"
+            "1. Maximum 4 members are allowed in a group.",
+            "2. 6 basic colors will be provided to participants.",
+            "3. Participants will have to bring their own brushes according to their requirement.",
+            "4. Wall size will be approximately 5*5 ft.",
+            "5. If the participants want to use sprays, they can bring their own.",
+            "6. Participants need to provide rough sketches at time of registration.",
+            "7. Entry Fee: ₹600 per group of 4"
         ],
         "shortDescription": "Large-scale artistic expression on designated walls",
         "slug": "wall-painting"
@@ -229,19 +247,22 @@
         ],
         "description": "Short boundaries, fast pace, and intense action. Box cricket is cricket reimagined for thrill.",
         "details": {
-            "date": "2026-03-17",
+            "date": "2026-02-21",
             "prizePool": "₹15,000",
             "registrationFee": "₹300",
             "teamSize": "6 players",
-            "time": "All Day",
+            "time": "9:30 AM",
             "venue": "Sports Complex"
         },
         "id": "box-cricket",
         "name": "Box Cricket",
         "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSd5WusIJvZK3SrKEwalRcUZ5xm2noJHyGnLDM4cFZAWuTFR8A/viewform",
         "rules": [
-            "6 overs per innings",
-            "Soft ball utilized"
+            "1. Each team consists of 6 players.",
+            "2. Limited overs per match (4 overs).",
+            "3. Under arm bowling is allowed.",
+            "4. NO LBW (Leg Before Wicket).",
+            "5. Soft ball is utilized."
         ],
         "shortDescription": "Indoor cricket tournament with compact format",
         "slug": "box-cricket"
@@ -265,19 +286,21 @@
         ],
         "description": "Cook up a storm! Create delicious global street food dishes under time pressure.",
         "details": {
-            "date": "2026-03-17",
+            "date": "2026-02-20",
             "prizePool": "₹6,000",
             "registrationFee": "Free",
             "teamSize": "Team of 2",
-            "time": "12:00 PM",
+            "time": "1:00 PM",
             "venue": "Food Court"
         },
         "id": "global-street-master-chef",
         "name": "Global Street Master Chef",
         "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeq2_cgYi-WTLQfYlKTrspOlHqdlPY7ioYUBSZ_9dKz5vCEQg/viewform",
         "rules": [
-            "90 min prep time",
-            "Mystery box challenge"
+            "1. Students have to bring their own ingredients.",
+            "2. 30 minutes of time will be provided for preparing the dish including presentation.",
+            "3. Use of flames, inductions, and oven is not allowed.",
+            "4. Students are allowed to be in a group of maximum 2 people."
         ],
         "shortDescription": "Outdoor cooking competition with international cuisines",
         "slug": "global-street-master-chef"
@@ -297,7 +320,7 @@
         ],
         "description": "A gallery of creativity. Display your best works for the college to admire.",
         "details": {
-            "date": "2026-03-15 - 17",
+            "date": "2026-02-19 - 21",
             "prizePool": "Certificates",
             "registrationFee": "Free",
             "teamSize": "Individual",
@@ -308,9 +331,11 @@
         "name": "Art Exhibition",
         "registrationUrl": "https://docs.google.com/forms/d/1xZ7X65yZvdq3MBOSEesVgZsvgj-PRsx7WA87lNdQaek/viewform?edit_requested=true",
         "rules": [
-            "Submit 2-5 artworks",
-            "Original work only",
-            "Artist statement required"
+            "1. All arts must be original.",
+            "2. Everything should be handmade.",
+            "3. Participants must arrange their artwork at the allotted space.",
+            "4. Each participant must prepare the artwork at home; no artwork will be created on the competition day.",
+            "5. Judges' decision will be final and binding."
         ],
         "shortDescription": "Display of paintings, sculptures, and mixed media art",
         "slug": "art-exhibition"
@@ -321,19 +346,26 @@
         "contacts": [],
         "description": "Turn faces into living canvases. Show off your painting skills on a unique medium.",
         "details": {
-            "date": "2026-03-16",
+            "date": "2026-02-20",
             "prizePool": "₹3,000",
             "registrationFee": "Free",
             "teamSize": "Individual",
-            "time": "3:00 PM",
+            "time": "2:00 PM",
             "venue": "College Lawn"
         },
         "id": "face-painting",
         "name": "Face Painting",
         "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLScEKYh-sdYYnYWT7AEGPwFnj739RPXzw3ScnMlJowYfEK7EpQ/closedform",
         "rules": [
-            "30 min per design",
-            "Theme-based designs"
+            "1. Participants must bring their own face painting materials, including colors, brushes, sponges, wipes, and mirrors.",
+            "2. Only skin-safe, non-toxic, and washable colors are allowed. Use of harmful or permanent paints is strictly prohibited.",
+            "3. Time limit will be strictly followed. Participants must complete their artwork within the given time.",
+            "4. Theme (if any) will be announced on the spot and must be followed.",
+            "5. Models must be arranged by the participants themselves.",
+            "6. Use of offensive, inappropriate, or political content in designs is strictly prohibited.",
+            "7. Participants must maintain cleanliness at their workstation and dispose of waste responsibly.",
+            "8. Judges' decision will be final and binding.",
+            "9. Any form of misconduct or violation of rules may lead to immediate disqualification."
         ],
         "shortDescription": "Live face art demonstration and competition",
         "slug": "face-painting"
@@ -341,23 +373,43 @@
     {
         "bannerImage": "/events/cultural.png",
         "category": "antaragni",
-        "contacts": [],
+        "contacts": [
+            {
+                "name":"Anushree Singtamkar",
+                "phone":"+91-9876542234"
+            },
+            {
+                "name":"Pakhi Fulzele",
+                "phone": "+91-9876543210"
+            },
+            {
+                "name":"Laxaman Yevle",
+                "phone":"+91-9876543210"
+            }
+        ],
         "description": "Design with a purpose. Create impactful posters to spread awareness on social issues.",
         "details": {
-            "date": "2026-03-15",
+            "date": "2026-02-21",
             "prizePool": "₹3,000",
             "registrationFee": "Free",
             "teamSize": "Individual",
-            "time": "11:00 AM",
+            "time": "1:00 PM",
             "venue": "Drawing Hall"
         },
         "id": "poster-making",
         "name": "Poster Making",
         "registrationUrl": "https://docs.google.com/forms/d/1KWn-tKEQadmWGpof-cg4IC9rYUCsbadT48UvOwRZmiA/viewform?edit_requested=true",
         "rules": [
-            "A2 size",
-            "2 hours duration",
-            "Theme provided on spot"
+            "1. The competition is open for individual participation only.",
+            "2. Each participant must prepare the poster at home; no poster will be created on the competition day.",
+            "3. Only hand-drawn posters are allowed; digital posters or printouts are not permitted.",
+            "4. The poster must be original and strictly based on the given theme.",
+            "5. Plagiarism is strictly prohibited and will lead to disqualification.",
+            "6. The poster must be made on A3/A2 chart paper as specified by the organizers.",
+            "7. Name, Class, Roll Number, and Branch must be written on the front side at the bottom-right corner.",
+            "8. The poster must be submitted on the specified date and time; late submissions will not be accepted.",
+            "9. Posters will be judged based on creativity, relevance to the theme, clarity of message, and overall presentation.",
+            "10. The decision of the judges will be final and binding."
         ],
         "shortDescription": "Social awareness poster design competition",
         "slug": "poster-making"
@@ -365,22 +417,38 @@
     {
         "bannerImage": "/events/cultural.png",
         "category": "antaragni",
-        "contacts": [],
+        "contacts": [
+            {
+                "name": "Karan Dubey",
+                "phone": "+91-7249757517"
+            },
+            {
+                "name":"Shubham Verma",
+                "phone":"+91-7038649298"
+            },
+            {
+                "name":"Arjun Chourasia",
+                "phone":"+91-9370894649"
+            }
+        ],
         "description": "Follow the clues, solve the riddles, and race against time to find the hidden treasure.",
         "details": {
-            "date": "2026-03-17",
+            "date": "2026-02-20",
             "prizePool": "₹8,000",
             "registrationFee": "₹200",
             "teamSize": "Team of 4",
-            "time": "10:00 AM",
+            "time": "2:30 PM",
             "venue": "Campus Wide"
         },
         "id": "treasure-hunt",
         "name": "Treasure Hunt",
         "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSch_JdAMC_smE3KdtzcdZ2MWTOXqOwaxNIZWfrSijI2smJsjQ/viewform",
         "rules": [
-            "Solve clues in order",
-            "First to finish wins"
+            "1. Players must stay in designated area. Leaving the area leads to disqualification.",
+            "2. There will be time limit for each round.",
+            "3. Solve clues in order to proceed.",
+            "4. No one can hide other people's clues.",
+            "5. First team to finish wins the treasure hunt."
         ],
         "shortDescription": "Campus-wide puzzle-solving adventure",
         "slug": "treasure-hunt"
@@ -388,23 +456,34 @@
     {
         "bannerImage": "/events/cultural.png",
         "category": "antaragni",
-        "contacts": [],
+        "contacts": [
+            {
+                "name":"Manvi Bajariya",
+                "phone":"+91-8080485601"
+            },
+            {
+                "name":"Aishnaya Dixit",
+                "phone":"+91-8421966754"
+            }
+        ],
         "description": "Got a hidden talent? Magic, juggling, mimicry? This is your stage to shine.",
         "details": {
-            "date": "2026-03-16",
+            "date": "2026-02-21",
             "prizePool": "₹5,000",
             "registrationFee": "Free",
             "teamSize": "Individual/Group",
-            "time": "4:00 PM",
+            "time": "3:00 PM",
             "venue": "Open Air Theater"
         },
         "id": "talent-hunt",
         "name": "Talent Hunt",
         "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLScrJJAqbF5X89C3oCIQdXsrhCZCGmDc3KHCYYQGiGKgHu115w/viewform",
         "rules": [
-            "3-5 min performance",
-            "Any talent allowed",
-            "Judged on originality"
+            "1. Performance length should be 3-4 minutes.",
+            "2. Bring your own props, if required.",
+            "3. All performances should maintain decorum.",
+            "4. Any talent is allowed.",
+            "5. Judged on originality and presentation."
         ],
         "shortDescription": "Open platform for unique talents and skills",
         "slug": "talent-hunt"
@@ -412,23 +491,38 @@
     {
         "bannerImage": "/events/cultural.png",
         "category": "antaragni",
-        "contacts": [],
+        "contacts": [
+            {
+                "name":"Mahi Yelne",
+                "phone":"+91-9372821754"
+            },
+            {
+                "name":"Teena Wanjari",
+                "phone":"+91-8956753023"
+            },
+            {
+                "name":"Vaishanavi Katre",
+                "phone":"+91-8830160527"
+            }
+        ],
         "description": "Speak your heart out. Poetry, comedy, or storytelling - the mic is open.",
         "details": {
-            "date": "2026-03-17",
+            "date": "2026-02-19",
             "prizePool": "Goodies",
             "registrationFee": "Free",
             "teamSize": "Individual",
-            "time": "5:00 PM",
+            "time": "3:00 PM",
             "venue": "Cafeteria Stage"
         },
         "id": "open-mic",
         "name": "Open Mic",
         "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLScpV2DOoLSfwVSxosUqwg7S9rgAn7Rjbo75NSkp9b3-hCQD7w/viewform",
         "rules": [
-            "5-7 min slot",
-            "Original content",
-            "PG-13 rating"
+            "1. Time limit should not exceed 3-4 minutes.",
+            "2. Be respectful to the other audience.",
+            "3. Original content preferred.",
+            "4. Maintain PG-13 rating (no explicit content).",
+            "5. Judges' decision will be final and binding."
         ],
         "shortDescription": "Stand-up comedy, poetry, storytelling platform",
         "slug": "open-mic"
