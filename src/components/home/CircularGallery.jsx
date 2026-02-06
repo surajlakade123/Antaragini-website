@@ -72,8 +72,8 @@ export default function CircularGallery() {
                     >
                         {videos.map((vid, index) => {
                             const angle = (index * 360) / videos.length;
-                            // Larger radius for wider spread
-                            const radius = 650;
+                            // Responsive radius
+                            const radius = typeof window !== 'undefined' && window.innerWidth < 768 ? 250 : 650;
 
                             return (
                                 <div

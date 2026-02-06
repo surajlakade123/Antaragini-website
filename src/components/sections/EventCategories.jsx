@@ -53,7 +53,7 @@ export default function EventCategories() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.2, duration: 0.6 }}
-                                className="relative h-[400px] md:h-full w-full rounded-2xl overflow-hidden glass-panel border-0"
+                                className="relative h-[300px] md:h-full w-full rounded-2xl overflow-hidden glass-panel border-0"
                             >
                                 {/* Background Image */}
                                 <div
@@ -62,11 +62,11 @@ export default function EventCategories() {
                                 />
 
                                 {/* Gradient Overlay */}
-                                <div className={`absolute inset-0 bg-gradient-to-t ${cat.gradient} opacity-60 mix-blend-multiply transition-opacity duration-300 group-hover:opacity-80`} />
-                                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300" />
+                                <div className={`absolute inset-0 bg-gradient-to-t ${cat.gradient} opacity-40 mix-blend-multiply transition-opacity duration-300 group-hover:opacity-80`} />
+                                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/20 transition-colors duration-300" />
 
                                 {/* Content */}
-                                <div className="absolute inset-0 p-8 flex flex-col justify-end">
+                                <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-end">
                                     <div className="transform transition-transform duration-300 group-hover:-translate-y-4">
                                         <span
                                             className="inline-block px-3 py-1 rounded-full text-xs font-bold text-black mb-4"
@@ -74,7 +74,7 @@ export default function EventCategories() {
                                         >
                                             {cat.count}
                                         </span>
-                                        <h3 className="text-4xl font-black text-white italic tracking-tighter mb-2">
+                                        <h3 className="text-3xl md:text-4xl font-black text-white italic tracking-tighter mb-2">
                                             {cat.name}
                                         </h3>
                                         <p className="text-xl font-light text-gray-200 mb-2">

@@ -1,6 +1,6 @@
 [
     {
-        "bannerImage": "/events/cultural.png",
+        "bannerImage": "/events/street-dance.jpeg",
         "category": "antaragni",
         "contacts": [
             {
@@ -30,7 +30,7 @@
         "slug": "street-dance"
     },
     {
-        "bannerImage": "/events/cultural.png",
+        "bannerImage": "/events/theme-dance.jpeg",
         "category": "antaragni",
         "contacts": [],
         "description": "A celebration of culture and storytelling through dance. Bring your traditions or creative themes to life on the big stage.",
@@ -78,7 +78,7 @@
         "slug": "fashion-show"
     },
     {
-        "bannerImage": "/events/cultural.png",
+        "bannerImage": "/events/fashion-show.jpeg",
         "category": "antaragni",
         "contacts": [],
         "description": "Test your knowledge of Indian traditions and showcase your cultural roots in this unique hybrid competition.",

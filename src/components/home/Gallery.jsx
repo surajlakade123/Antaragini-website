@@ -69,7 +69,7 @@ const BentoGallery = () => {
                     {activeTab === 'antaragni' && (
                         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[200px] md:auto-rows-[250px] animate-in fade-in zoom-in duration-500">
                             {/* 1. Blue Folder Card (Large) */}
-                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 md:col-span-2 row-span-2 relative bg-[#9FB6E0] rounded-[2.5rem] p-8 overflow-hidden group shadow-lg">
+                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 md:col-span-2 row-span-1 md:row-span-2 relative bg-[#9FB6E0] rounded-[2.5rem] p-8 overflow-hidden group shadow-lg">
                                 <div className="absolute top-0 left-0 w-1/3 h-12 bg-[#9FB6E0] rounded-br-[2rem] z-10" />
                                 <div className="absolute top-8 left-0 w-16 h-8 bg-[#8FA6D0] rounded-br-2xl -z-0" />
                                 <div className="h-full flex flex-col justify-end items-end">
@@ -95,7 +95,7 @@ const BentoGallery = () => {
                             </motion.div>
 
                             {/* 4. Tall Image Card */}
-                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 md:col-span-1 row-span-2 rounded-[2.5rem] overflow-hidden relative group shadow-lg">
+                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 md:col-span-1 row-span-1 md:row-span-2 rounded-[2.5rem] overflow-hidden relative group shadow-lg">
                                 <Image src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80" alt="Dancer" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
                                 <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent text-white">
                                     <p className="text-xs font-light opacity-90">Cultural Extravaganza</p>
@@ -103,7 +103,7 @@ const BentoGallery = () => {
                             </motion.div>
 
                             {/* 5. Landscape Image */}
-                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 row-span-2 rounded-[2.5rem] overflow-hidden relative group shadow-lg">
+                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 row-span-1 md:row-span-2 rounded-[2.5rem] overflow-hidden relative group shadow-lg">
                                 <Image src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80" alt="Landscape" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
                             </motion.div>
 
@@ -136,7 +136,7 @@ const BentoGallery = () => {
                     {activeTab === 'technorion' && (
                         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[200px] md:auto-rows-[250px] animate-in fade-in zoom-in duration-500">
                             {/* 1. Cyan Tech Card (Large) */}
-                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 md:col-span-2 row-span-2 relative bg-cyan-900 rounded-[2.5rem] p-8 overflow-hidden group shadow-lg border border-cyan-500/30">
+                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 md:col-span-2 row-span-1 md:row-span-2 relative bg-cyan-900 rounded-[2.5rem] p-8 overflow-hidden group shadow-lg border border-cyan-500/30">
                                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80')] bg-cover bg-center opacity-40 mix-blend-overlay" />
                                 <div className="relative z-10 h-full flex flex-col justify-between">
                                     <span className="bg-cyan-500 text-black text-xs font-bold px-4 py-2 rounded-full w-fit">Tech & Innovation</span>
@@ -162,7 +162,7 @@ const BentoGallery = () => {
                             </motion.div>
 
                             {/* 4. Robot Image Card */}
-                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 md:col-span-1 row-span-2 rounded-[2.5rem] overflow-hidden relative group shadow-lg">
+                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 md:col-span-1 row-span-1 md:row-span-2 rounded-[2.5rem] overflow-hidden relative group shadow-lg">
                                 <Image src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80" alt="Robotics" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
                                 <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent text-white">
                                     <p className="text-xs font-bold text-cyan-400">RoboWars</p>
@@ -170,7 +170,7 @@ const BentoGallery = () => {
                             </motion.div>
 
                             {/* 5. Hackathon Image */}
-                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 row-span-2 rounded-[2.5rem] overflow-hidden relative group shadow-lg">
+                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 row-span-1 md:row-span-2 rounded-[2.5rem] overflow-hidden relative group shadow-lg">
                                 <Image src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80" alt="Hackathon" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
                                 <div className="absolute bottom-6 left-6">
                                     <p className="text-white text-xs bg-black/50 px-2 py-1 rounded">24h Hackathon</p>
@@ -211,7 +211,7 @@ const BentoGallery = () => {
                     {activeTab === 'parakram' && (
                         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[200px] md:auto-rows-[250px] animate-in fade-in zoom-in duration-500">
                             {/* 1. Red Sports Card (Large) */}
-                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 md:col-span-2 row-span-2 relative bg-red-900 rounded-[2.5rem] p-8 overflow-hidden group shadow-lg border border-red-500/30">
+                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 md:col-span-2 row-span-1 md:row-span-2 relative bg-red-900 rounded-[2.5rem] p-8 overflow-hidden group shadow-lg border border-red-500/30">
                                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800&q=80')] bg-cover bg-center opacity-40 mix-blend-multiply" />
                                 <div className="relative z-10 h-full flex flex-col justify-between">
                                     <span className="bg-red-500 text-white text-xs font-bold px-4 py-2 rounded-full w-fit">Sports & Glory</span>
@@ -237,7 +237,7 @@ const BentoGallery = () => {
                             </motion.div>
 
                             {/* 4. Basketball Image Card */}
-                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 md:col-span-1 row-span-2 rounded-[2.5rem] overflow-hidden relative group shadow-lg">
+                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 md:col-span-1 row-span-1 md:row-span-2 rounded-[2.5rem] overflow-hidden relative group shadow-lg">
                                 <Image src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800&q=80" alt="Basketball" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
                                 <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent text-white">
                                     <p className="text-xs font-bold text-orange-400">Court Dominance</p>
@@ -245,7 +245,7 @@ const BentoGallery = () => {
                             </motion.div>
 
                             {/* 5. Football Image */}
-                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 row-span-2 rounded-[2.5rem] overflow-hidden relative group shadow-lg">
+                            <motion.div whileHover={{ scale: 1.01 }} className="col-span-1 row-span-1 md:row-span-2 rounded-[2.5rem] overflow-hidden relative group shadow-lg">
                                 <Image src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=800&q=80" alt="Football" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
                                 <div className="absolute bottom-6 left-6">
                                     <p className="text-white text-xs bg-black/50 px-2 py-1 rounded">Football Frenzy</p>
