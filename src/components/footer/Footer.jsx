@@ -56,16 +56,16 @@ export default function Footer() {
                             {config.tagline}
                         </p>
                         <div className="flex space-x-4 pt-4">
-                            <a href={config.socialMedia.instagram} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[var(--antaragni-primary)] transition-colors">
+                            <a href= "https://www.instagram.com/src.ghrce/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[var(--antaragni-primary)] transition-colors">
                                 <FaInstagram size={24} />
                             </a>
-                            <a href={config.socialMedia.facebook} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#1877F2] transition-colors">
+                            <a href="https://www.facebook.com/GHRCE.Official/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#1877F2] transition-colors">
                                 <FaFacebook size={24} />
                             </a>
-                            <a href={config.socialMedia.twitter} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#1DA1F2] transition-colors">
+                            <a href="https://x.com/ghrce_nagpur" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#1DA1F2] transition-colors">
                                 <FaTwitter size={24} />
                             </a>
-                            <a href={config.socialMedia.youtube} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#FF0000] transition-colors">
+                            <a href="https://www.youtube.com/@RaisoniWorld" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#FF0000] transition-colors">
                                 <FaYoutube size={24} />
                             </a>
                         </div>

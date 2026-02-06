@@ -100,26 +100,23 @@ export default function ContactPage() {
                             <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center text-blue-400 mb-4">
                                 <FaEnvelope size={20} />
                             </div>
-                            <h3 className="text-xl font-bold mb-2">Email</h3>
+                            <h3 className="text-xl font-bold mb-1">Email</h3>
                             <p className="text-gray-400 text-sm">
-                                public_relations@antaragni.in<br />
-                                marketing@antaragni.in
+                                src.ghrce@raisoni.net
                             </p>
                         </div>
                         <div className="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-2xl hover:border-green-400/30 transition-colors md:col-span-2">
                             <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center text-green-400 mb-4">
                                 <FaPhone size={20} />
                             </div>
-                            <h3 className="text-xl font-bold mb-2">Call Us</h3>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <h3 className="text-xl font-bold mb-2">Contact Us</h3>
+                            <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
                                 <div>
-                                    <p className="font-semibold text-white">Festival Coordinator</p>
-                                    <p className="text-gray-400 text-sm">+91 98765 43210</p>
+                                    <p className="font-semibold text-white">Tanish Tawri</p>
+                                    <p className="font-semibold text-white">Joint Gathering Secretory</p>
+                                    <p className="text-gray-400 text-sm">+91-8080908567</p>
                                 </div>
-                                <div>
-                                    <p className="font-semibold text-white">Public Relations</p>
-                                    <p className="text-gray-400 text-sm">+91 87654 32109</p>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
