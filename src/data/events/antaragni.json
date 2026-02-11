@@ -1,6 +1,6 @@
 [
     {
-        "bannerImage": "/events/street-dance.jpeg",
+        "bannerImage": "/events/streetDance.jpg",
         "category": "antaragni",
         "contacts": [
             {
@@ -41,7 +41,7 @@
         "slug": "street-dance"
     },
     {
-        "bannerImage": "/events/theme-dance.jpeg",
+        "bannerImage": "/events/folkDance.jpg",
         "category": "antaragni",
         "contacts": [
             {
@@ -77,7 +77,7 @@
         "slug": "theme-dance"
     },
     {
-        "bannerImage": "/events/cultural.png",
+        "bannerImage": "/events/fashion-show.jpeg",
         "category": "antaragni",
         "contacts": [
             {
@@ -114,7 +114,7 @@
         "slug": "fashion-show"
     },
     {
-        "bannerImage": "/events/fashion-show.jpeg",
+        "bannerImage": "/events/traditionalWalk.jpeg",
         "category": "antaragni",
         "contacts": [
             {
@@ -152,7 +152,7 @@
         "slug": "battle-of-tradition"
     },
     {
-        "bannerImage": "/events/cultural.png",
+        "bannerImage": "/events/Singing.jpg",
         "category": "antaragni",
         "contacts": [
             {
@@ -192,7 +192,7 @@
         "slug": "singing-solo-duet"
     },
     {
-        "bannerImage": "/events/cultural.png",
+        "bannerImage": "/events/wallPainting.jpeg",
         "category": "antaragni",
         "contacts": [
             {
@@ -233,7 +233,7 @@
         "slug": "wall-painting"
     },
     {
-        "bannerImage": "/events/cultural.png",
+        "bannerImage": "/events/boxcricket-ChgQRysi.JPG",
         "category": "antaragni",
         "contacts": [
             {
@@ -268,7 +268,7 @@
         "slug": "box-cricket"
     },
     {
-        "bannerImage": "/events/cultural.png",
+        "bannerImage": "/events/masterChef.jpg",
         "category": "antaragni",
         "contacts": [
             {
@@ -306,7 +306,7 @@
         "slug": "global-street-master-chef"
     },
     {
-        "bannerImage": "/events/cultural.png",
+        "bannerImage": "/events/artisticexpendition-BBoxXbB-.jpeg",
         "category": "antaragni",
         "contacts": [
             {
@@ -341,7 +341,7 @@
         "slug": "art-exhibition"
     },
     {
-        "bannerImage": "/events/cultural.png",
+        "bannerImage": "/events/facepainting-CUCE20QH.jpg",
         "category": "antaragni",
         "contacts": [],
         "description": "Turn faces into living canvases. Show off your painting skills on a unique medium.",
@@ -371,7 +371,7 @@
         "slug": "face-painting"
     },
     {
-        "bannerImage": "/events/cultural.png",
+        "bannerImage": "/events/postermaking-C6UMo-q9.jpg",
         "category": "antaragni",
         "contacts": [
             {
@@ -415,7 +415,7 @@
         "slug": "poster-making"
     },
     {
-        "bannerImage": "/events/cultural.png",
+        "bannerImage": "/events/treasurehunt-CdZTFynu.jpg",
         "category": "antaragni",
         "contacts": [
             {
@@ -454,7 +454,7 @@
         "slug": "treasure-hunt"
     },
     {
-        "bannerImage": "/events/cultural.png",
+        "bannerImage": "/events/talenthunt-l9n-5XEE.jpg",
         "category": "antaragni",
         "contacts": [
             {
@@ -489,7 +489,7 @@
         "slug": "talent-hunt"
     },
     {
-        "bannerImage": "/events/cultural.png",
+        "bannerImage": "/events/openMic.jpg",
         "category": "antaragni",
         "contacts": [
             {

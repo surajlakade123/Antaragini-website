@@ -13,7 +13,7 @@ export default function Home() {
             {/* <CountdownTimer /> */}
             <CircularGallery />
             <EventCategories />
-            {/* <EventTimeline /> */}
+            <EventTimeline />
         </div>
     );
 }

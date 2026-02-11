@@ -3,8 +3,8 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import parakram from "../../assets/parakram.jpeg";
-
 import antaragni from "../../assets/ant1.jpeg";
+import technorion from "../../assets/tech.png";
 
 const categories = [
     {
@@ -25,7 +25,7 @@ const categories = [
         description: "Coding, Robotics, Gaming & Innovation",
         color: "var(--technorion-primary)",
         gradient: "from-[var(--technorion-primary)] to-[var(--technorion-tertiary)]",
-        image: " ",
+        image: technorion,
     },
 
     {
@@ -45,6 +45,14 @@ export default function EventCategories() {
     return (
         <section className="py-32 bg-black relative">
             <div className="container mx-auto px-4">
+                <div className="text-center mb-16">
+                    <h2 className="text-4xl md:text-6xl font-bold mb-4 text-white">
+                        Event <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Categories</span>
+                    </h2>
+                    <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+                        Dive into the world of culture, technology, and sports.
+                    </p>
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-auto md:h-[400px]">
                     {categories.map((cat, index) => (
                         <Link href={`/events?category=${cat.id}`} key={cat.id} className="block h-full group">
