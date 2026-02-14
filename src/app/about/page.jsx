@@ -237,11 +237,7 @@ const teamSections = [
         role: "Web Developer & Designer",
         image: surajLakade,
       },
-      {
-        name: "Jitendra Yadav",
-        role: "Web Designer",
-        image: jitendraYadav,
-      },
+     
       {
         name: "Soujanya Poshattiwar",
         role: "Web Developer & Version Control",
@@ -251,6 +247,11 @@ const teamSections = [
         name: "Neha Kathole",
         role: "Web Designer",
         image: nehaKathole,
+      },
+       {
+        name: "Jitendra Yadav",
+        role: "Web Designer",
+        image: jitendraYadav,
       },
       {
         name: "Vaishnavi Kharche",
@@ -288,7 +289,7 @@ export default function AboutPage() {
 
 
   return (
-    <div className="min-h-screen w-full pt-20 pb-20 px-4 md:px-8 max-w-7xl mx-auto text-black bg-white">
+    <div className="min-h-screen w-full pt-20 pb-20 px-4 md:px-8 max-w-7xl mx-auto text-black bg-[#D3D3D3]">
       {/* Hero Section */}
       <motion.section
         initial="hidden"
@@ -387,7 +388,7 @@ export default function AboutPage() {
 
               <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6">About Antaragni</h2>
               <p className="text-gray-700 text-lg leading-relaxed align-justify">
-                ANTARAGNI-2025 is the Annual Fest of G. H. Raisoni College of Engineering, taking things to a greater level this year. With competitions in dance, film and photography, music, dramatics, and various technical events with a unique twist, it promises to be an unforgettable event.
+                ANTARAGNI-2026 is the Annual Fest of G. H. Raisoni College of Engineering, taking things to a greater level this year. With competitions in dance, film and photography, music, dramatics, and various technical events with a unique twist, it promises to be an unforgettable event.
 
                 The festival includes events like dancing, singing, and fashion shows. Antaragni, being the cultural part of the gathering, observes the maximum audience participation, starting from day one and concluding with a grand finale featuring a renowned celebrity.
               </p>
@@ -431,10 +432,10 @@ export default function AboutPage() {
                     </div>
 
                     <div className="z-10 w-full">
-                      <h4 className="font-bold text-xl mb-1 text-black group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 transition-all duration-300">
+                      <h4 className="font-bold text-xl mb-1 text-black transition-all duration-300">
                         {member.name}
                       </h4>
-                      <p className="text-sm font-medium text-gray-400 group-hover:text-gray-200 tracking-wide uppercase transition-colors">
+                      <p className="text-sm font-medium text-gray-400 group-hover:text-black-200 tracking-wide uppercase transition-colors">
                         {member.role}
                       </p>
                     </div>
