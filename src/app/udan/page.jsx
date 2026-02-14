@@ -20,15 +20,15 @@ export default function UdanPage() {
                         <div className="relative w-full h-full bg-gray-900 border-l-4 border-white/20 rounded-r-2xl rounded-l-sm shadow-2xl overflow-hidden transform transition-transform duration-500 group-hover:rotate-y-[-10deg] group-hover:scale-105 origin-left">
                             {/* Cover Image Placeholder */}
                             <img
-                                src="https://picsum.photos/seed/magazine/400/600"
+                                src="events/UDANCover.png"
                                 alt="UDAN Magazine Cover"
                                 className="w-full h-full object-cover opacity-80"
                             />
 
-                            <div className="absolute top-10 left-0 w-full text-center bg-black/60 backdrop-blur-sm py-4">
+                            {/* <div className="absolute top-10 left-0 w-full text-center bg-black/60 backdrop-blur-sm py-4">
                                 <h1 className="text-5xl font-bold tracking-[0.2em] font-serif text-white">UDAN</h1>
                                 <p className="text-sm uppercase tracking-widest text-gray-300">The Official Magazine</p>
-                            </div>
+                            </div> */}
 
                             <div className="absolute bottom-10 right-10">
                                 <p className="text-xl font-bold text-white/80">2026 Edition</p>
@@ -63,8 +63,8 @@ export default function UdanPage() {
                             Download PDF
                         </button>
                     </div>
-
-                    {/* Previous Editions */}
+                    {/* 
+                    {/* Previous Editions 
                     <div className="pt-8 border-t border-gray-200">
                         <h3 className="text-lg font-semibold text-gray-500 mb-4">Previous Editions</h3>
                         <div className="flex gap-4">
@@ -74,7 +74,7 @@ export default function UdanPage() {
                                 </span>
                             ))}
                         </div>
-                    </div>
+                    </div> */}
                 </motion.div>
 
             </div>

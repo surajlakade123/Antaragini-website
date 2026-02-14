@@ -22,8 +22,8 @@
             "prizePool": "₹5200",
             "registrationFee": "Solo: ₹150, Group: ₹100(each member)",
             "teamSize": "1-n members",
-            "time": "9:30 AM",
-            "venue": "Near Parking Lot"
+            "time": "3:30 PM - 5:30 PM",
+            "venue": "Central Parking"
         },
         "id": "street-dance",
         "name": "Street Dance",
@@ -35,7 +35,6 @@
             "4. Dance Style: Any dance style is allowed.",
             "5. Reporting Time: Teams must report at least 30 minutes before their scheduled performance time.",
             "6. Criteria : students are not permitted to select items songs for street dance; only decent and pre-approved content is allowed."
-
         ],
         "shortDescription": "Showcase your urban dance moves",
         "slug": "street-dance"
@@ -59,7 +58,7 @@
             "prizePool": "₹5000 + Trophies",
             "registrationFee": "Solo: ₹100, Group: ₹100(each member)",
             "teamSize": "1-n members",
-            "time": "10:00 AM",
+            "time": "1:30 PM - 4:00 PM",
             "venue": "Auditorium"
         },
         "id": "theme-dance",
@@ -96,11 +95,11 @@
         "description": "Strut your stuff and showcase the latest trends or avant-garde designs. The ramp is yours to command.",
         "details": {
             "date": "2026-02-21",
-            "prizePool": "₹20,000",
-            "registrationFee": "₹500",
+            "prizePool": "₹3500",
+            "registrationFee": "₹200",
             "teamSize": "8-12 models",
-            "time": "6:00 PM",
-            "venue": "Main Stage"
+            "time": "12:30 PM - 2:30 PM",
+            "venue": "Auditorium"
         },
         "id": "fashion-show",
         "name": "Fashion Show",
@@ -129,11 +128,11 @@
         "description": "Test your knowledge of Indian traditions and showcase your cultural roots in this unique hybrid competition.",
         "details": {
             "date": "2026-02-19",
-            "prizePool": "₹5,000",
-            "registrationFee": "Free",
-            "teamSize": "Team of 3",
-            "time": "11:00 AM",
-            "venue": "Seminar Hall"
+            "prizePool": "Crown + Slashes",
+            "registrationFee": "Solo: ₹100, Duo: ₹150",
+            "teamSize": "Solo: 1, Duo: 2",
+            "time": "10:30 AM - 12:30 PM",
+            "venue": "GHRCE Auditorium"
         },
         "id": "battle-of-tradition",
         "name": "Battle of Tradition",
@@ -170,12 +169,12 @@
         ],
         "description": "Let your voice be heard. From classical to pop, solo or duet, the microphone awaits your melody.",
         "details": {
-            "date": "2026-02-19",
-            "prizePool": "₹7,000",
-            "registrationFee": "Free",
+            "date": "2026-02-20",
+            "prizePool": "Prizes worth ₹1200",
+            "registrationFee": "₹150-₹200",
             "teamSize": "1-2 members",
-            "time": "12:00 PM",
-            "venue": "Amphitheater"
+            "time": "11:30 AM - 1:30 PM",
+            "venue": "Auditorium"
         },
         "id": "singing-solo-duet",
         "name": "Singing (Solo/Duet)",
@@ -210,12 +209,12 @@
         ],
         "description": "Transform a blank wall into a masterpiece. Express your creativity on a grand scale.",
         "details": {
-            "date": "2026-02-20",
-            "prizePool": "₹8,000",
-            "registrationFee": "Free",
+            "date": "2026-02-21",
+            "prizePool": "₹5000(1st Prize: 3000, 2nd Prize: 2000)",
+            "registrationFee": "₹600",
             "teamSize": "Team of 2-4",
-            "time": "9:30 AM",
-            "venue": "College Walls"
+            "time": "9:30 AM - 12:00 PM",
+            "venue": "College Parking"
         },
         "id": "wall-painting",
         "name": "Wall Painting",
@@ -237,7 +236,7 @@
         "category": "antaragni",
         "contacts": [
             {
-                "name": "Parth (SRC Coordinator)",
+                "name": "Parth Gosavi (SRC Coordinator)",
                 "phone": "7020453484"
             },
             {
@@ -247,12 +246,12 @@
         ],
         "description": "Short boundaries, fast pace, and intense action. Box cricket is cricket reimagined for thrill.",
         "details": {
-            "date": "2026-02-21",
-            "prizePool": "₹15,000",
-            "registrationFee": "₹300",
+            "date": "2026-02-20",
+            "prizePool": "₹6000 (1st Prize: ₹4000, 2nd Prize: ₹2000)",
+            "registrationFee": "₹600",
             "teamSize": "6 players",
-            "time": "9:30 AM",
-            "venue": "Sports Complex"
+            "time": "9:30 AM - 11:30 AM",
+            "venue": "Central Parking"
         },
         "id": "box-cricket",
         "name": "Box Cricket",
@@ -286,12 +285,12 @@
         ],
         "description": "Cook up a storm! Create delicious global street food dishes under time pressure.",
         "details": {
-            "date": "2026-02-20",
-            "prizePool": "₹6,000",
-            "registrationFee": "Free",
-            "teamSize": "Team of 2",
-            "time": "1:00 PM",
-            "venue": "Food Court"
+            "date": "2026-02-21",
+            "prizePool": "₹1700 (1st Prize: ₹1000, 2nd Prize: ₹700)",
+            "registrationFee": "₹200",
+            "teamSize": "1 or Team of 2",
+            "time": "9:30 AM - 12:00  PM",
+            "venue": "Opposite Civ Dept Corridor"
         },
         "id": "global-street-master-chef",
         "name": "Global Street Master Chef",
@@ -310,22 +309,26 @@
         "category": "antaragni",
         "contacts": [
             {
-                "name": "Parth (SRC Coordinator)",
-                "phone": "7020453484"
+                "name": "Purva Rathi",
+                "phone": "8975394952"
             },
             {
-                "name": "Nitin Mishra (Student Coordinator)",
-                "phone": "8591967518"
+                "name": "Krish Verma",
+                "phone": "8600288449"
+            },
+            {
+                "name": "Vaishnavi Katre",
+                "phone": "8830160527"
             }
         ],
         "description": "A gallery of creativity. Display your best works for the college to admire.",
         "details": {
             "date": "2026-02-19 - 21",
             "prizePool": "Certificates",
-            "registrationFee": "Free",
-            "teamSize": "Individual",
-            "time": "All Day",
-            "venue": "Art Gallery Hall"
+            "registrationFee": "Solo - ₹200, Duo - ₹300",
+            "teamSize": "1 or 2",
+            "time": "9:30 AM - 5:30 PM",
+            "venue": "Central Parking"
         },
         "id": "art-exhibition",
         "name": "Art Exhibition",
@@ -343,15 +346,25 @@
     {
         "bannerImage": "/events/facepainting-CUCE20QH.jpg",
         "category": "antaragni",
-        "contacts": [],
+        "contacts": [
+            {
+                "name": "Anushree Singtamkar"
+            },
+            {
+                "name": "Pakhi Fulzule"
+            },
+            {
+                "name": "Laxman Yevle"
+            }
+        ],
         "description": "Turn faces into living canvases. Show off your painting skills on a unique medium.",
         "details": {
-            "date": "2026-02-20",
-            "prizePool": "₹3,000",
-            "registrationFee": "Free",
+            "date": "2026-02-19",
+            "prizePool": "₹1000 (1st Prize: ₹600, 2nd Prize: ₹400)",
+            "registrationFee": "₹100",
             "teamSize": "Individual",
-            "time": "2:00 PM",
-            "venue": "College Lawn"
+            "time": "12:30 PM - 1:30 PM",
+            "venue": "D-05"
         },
         "id": "face-painting",
         "name": "Face Painting",
@@ -375,26 +388,26 @@
         "category": "antaragni",
         "contacts": [
             {
-                "name":"Anushree Singtamkar",
-                "phone":"+91-9876542234"
+                "name": "Nirzara Selokar",
+                "phone": "7020762206"
             },
             {
-                "name":"Pakhi Fulzele",
-                "phone": "+91-9876543210"
+                "name": "Teena Wanjari",
+                "phone": "8956753023"
             },
             {
-                "name":"Laxaman Yevle",
-                "phone":"+91-9876543210"
+                "name": "Vaishnavi Katre",
+                "phone": "8830160527"
             }
         ],
         "description": "Design with a purpose. Create impactful posters to spread awareness on social issues.",
         "details": {
-            "date": "2026-02-21",
-            "prizePool": "₹3,000",
-            "registrationFee": "Free",
+            "date": "2026-02-19",
+            "prizePool": "₹600 (1st Prize: ₹400, 2nd Prize: ₹200)",
+            "registrationFee": "₹100",
             "teamSize": "Individual",
-            "time": "1:00 PM",
-            "venue": "Drawing Hall"
+            "time": "9:30 AM - 12:30 PM",
+            "venue": "D-02"
         },
         "id": "poster-making",
         "name": "Poster Making",
@@ -423,22 +436,22 @@
                 "phone": "+91-7249757517"
             },
             {
-                "name":"Shubham Verma",
-                "phone":"+91-7038649298"
+                "name": "Shubham Verma",
+                "phone": "+91-7038649298"
             },
             {
-                "name":"Arjun Chourasia",
-                "phone":"+91-9370894649"
+                "name": "Arjun Chourasia",
+                "phone": "+91-9370894649"
             }
         ],
         "description": "Follow the clues, solve the riddles, and race against time to find the hidden treasure.",
         "details": {
-            "date": "2026-02-20",
-            "prizePool": "₹8,000",
-            "registrationFee": "₹200",
+            "date": "2026-02-19",
+            "prizePool": "₹4,000 (1st Prize: ₹2,500, 2nd Prize: ₹1,500)",
+            "registrationFee": "₹400",
             "teamSize": "Team of 4",
-            "time": "2:30 PM",
-            "venue": "Campus Wide"
+            "time": "9:30 AM - 12:30 PM",
+            "venue": "GHRCE Campus"
         },
         "id": "treasure-hunt",
         "name": "Treasure Hunt",
@@ -458,22 +471,22 @@
         "category": "antaragni",
         "contacts": [
             {
-                "name":"Manvi Bajariya",
-                "phone":"+91-8080485601"
+                "name": "Manvi Bajariya",
+                "phone": "+91-8080485601"
             },
             {
-                "name":"Aishnaya Dixit",
-                "phone":"+91-8421966754"
+                "name": "Aishnaya Dixit",
+                "phone": "+91-8421966754"
             }
         ],
         "description": "Got a hidden talent? Magic, juggling, mimicry? This is your stage to shine.",
         "details": {
-            "date": "2026-02-21",
-            "prizePool": "₹5,000",
-            "registrationFee": "Free",
+            "date": "2026-02-20",
+            "prizePool": "₹2100 (1st Prize: ₹1200, 2nd Prize: ₹900)",
+            "registrationFee": "₹100",
             "teamSize": "Individual/Group",
-            "time": "3:00 PM",
-            "venue": "Open Air Theater"
+            "time": "9:30 AM - 11:30 AM",
+            "venue": "Auditorium"
         },
         "id": "talent-hunt",
         "name": "Talent Hunt",
@@ -493,26 +506,26 @@
         "category": "antaragni",
         "contacts": [
             {
-                "name":"Mahi Yelne",
-                "phone":"+91-9372821754"
+                "name": "Mahi Yelne",
+                "phone": "+91-9372821754"
             },
             {
-                "name":"Teena Wanjari",
-                "phone":"+91-8956753023"
+                "name": "Teena Wanjari",
+                "phone": "+91-8956753023"
             },
             {
-                "name":"Vaishanavi Katre",
-                "phone":"+91-8830160527"
+                "name": "Vaishanavi Katre",
+                "phone": "+91-8830160527"
             }
         ],
         "description": "Speak your heart out. Poetry, comedy, or storytelling - the mic is open.",
         "details": {
             "date": "2026-02-19",
-            "prizePool": "Goodies",
-            "registrationFee": "Free",
+            "prizePool": "₹1700 (1st Prize: ₹1000, 2nd Prize: ₹700)",
+            "registrationFee": "₹100",
             "teamSize": "Individual",
-            "time": "3:00 PM",
-            "venue": "Cafeteria Stage"
+            "time": "1:30 PM - 3:00 PM",
+            "venue": "Auditorium"
         },
         "id": "open-mic",
         "name": "Open Mic",

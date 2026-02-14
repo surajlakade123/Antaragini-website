@@ -8,9 +8,9 @@
         "description": "An AI prompt engineering competition where participants solve creative and analytical challenges like translation, summarization, and conversation tasks using AI within a limited time.",
         "bannerImage": "/events/promptmaster-V--4U4J2.jpg",
         "details": {
-            "date": "Feb 19-21, 2026",
-            "time": "9:30 AM",
-            "venue": "Computer Lab 1",
+            "date": "20 Feb, 2026",
+            "time": "1:30 PM - 4:00 PM",
+            "venue": "C-04",
             "teamSize": "Individual",
             "registrationFee": "₹100",
             "prizePool": "₹1,700 (1st: 1000, 2nd: 700)"
@@ -53,9 +53,9 @@
         "description": "A fast-paced technology quiz competition testing participants' knowledge of innovation, computers, and emerging tech through multiple engaging quiz rounds.",
         "bannerImage": "/events/techquiz-Duxe7jXn.jpg",
         "details": {
-            "date": "Feb 19-21, 2026",
-            "time": "9:30 AM",
-            "venue": "Seminar Hall",
+            "date": "19 Feb, 2026",
+            "time": "12:30 PM - 1:30 PM",
+            "venue": "D-02",
             "teamSize": "Team of 3",
             "registrationFee": "₹200",
             "prizePool": "₹1,800 (1st: 1000, 2nd: 800)"
@@ -99,9 +99,9 @@
         "description": "A speed coding challenge where participants solve small programming problems using logic, efficiency, and minimal code length.",
         "bannerImage": "/events/microcode-DSeqX0NM.jpeg",
         "details": {
-            "date": "Feb 19-21, 2026",
-            "time": "9:30 AM",
-            "venue": "Computer Lab 2",
+            "date": "19 Feb, 2026",
+            "time": "9:30 AM - 12:30 PM",
+            "venue": "LAB-C-04",
             "teamSize": "Individual",
             "registrationFee": "₹200",
             "prizePool": "₹2,000 (1st: 1200, 2nd: 800)"
@@ -142,9 +142,9 @@
         "description": "A competitive 8-ball pool tournament played on mobile, focusing on precision, strategy, and smart shot selection.",
         "bannerImage": "/events/mobilepool-B0E5nR1U.jpg",
         "details": {
-            "date": "Feb 19-21, 2026",
-            "time": "9:30 AM",
-            "venue": "Gaming Zone",
+            "date": "20 Feb, 2026",
+            "time": "9:30 AM - 11:30 AM",
+            "venue": "D-01",
             "teamSize": "Individual",
             "registrationFee": "₹100",
             "prizePool": "₹1,200 (1st: 700, 2nd: 500)"
@@ -188,9 +188,9 @@
         "description": "A creative design competition where participants craft original logos based on a given theme, showcasing branding skills and visual creativity.",
         "bannerImage": "/events/logomaking-CFWCBqF1.jpg",
         "details": {
-            "date": "Feb 19-21, 2026",
-            "time": "9:30 AM",
-            "venue": "Online",
+            "date": "20 Feb, 2026",
+            "time": "11:30 AM - 1:30 PM",
+            "venue": "C-06",
             "teamSize": "Individual",
             "registrationFee": "₹100",
             "prizePool": "₹1,200 (1st: 700, 2nd: 500)"
@@ -229,9 +229,9 @@
         "description": "A solo mobile gaming tournament where players compete in classic Ludo matches to test strategy, luck, and decision-making.",
         "bannerImage": "/events/ludoking-WdL1WgYE.jpeg",
         "details": {
-            "date": "Feb 19-21, 2026",
-            "time": "9:30 AM",
-            "venue": "Gaming Zone",
+            "date": "20 Feb, 2026",
+            "time": "1:30 PM - 4:00 PM",
+            "venue": "D-04",
             "teamSize": "Individual",
             "registrationFee": "₹100",
             "prizePool": "₹1,200 (1st: 700, 2nd: 500)"
@@ -280,9 +280,9 @@
         "description": "An engineering challenge where teams design and construct the tallest and strongest possible tower using limited materials and structural creativity.",
         "bannerImage": "/events/tech.png",
         "details": {
-            "date": "Feb 19-21, 2026",
-            "time": "9:30 AM",
-            "venue": "Civil Workshop",
+            "date": "21 Feb, 2026",
+            "time": "12:30 PM - 2:30 PM",
+            "venue": "Civ Dept Corridor",
             "teamSize": "Team of 3",
             "registrationFee": "₹100",
             "prizePool": "₹3,000 (1st: 2000, 2nd: 1000)"
@@ -302,8 +302,8 @@
         "contacts": [
             {
                 "name": "Dr. Nikhil Pitle",
-                "role": "Faculty Coordinator" 
-           },
+                "role": "Faculty Coordinator"
+            },
             {
                 "name": "Sanchi Walke",
                 "role": "SRC Coordinator",
@@ -331,9 +331,9 @@
         "description": "A thrilling UNO mobile tournament packed with wild cards, reverses, and strategic gameplay to crown the ultimate card champion.",
         "bannerImage": "/events/uno-DWEvdAUg.jpg",
         "details": {
-            "date": "Feb 19-21, 2026",
-            "time": "9:30 AM",
-            "venue": "Casual Zone",
+            "date": "21 Feb, 2026",
+            "time": "9:30 AM - 12:00 PM",
+            "venue": "D-04",
             "teamSize": "Individual",
             "registrationFee": "₹100",
             "prizePool": "₹1,700 (1st: 1000, 2nd: 700)"
@@ -377,9 +377,9 @@
         "description": "A high-intensity battle royale tournament where squads fight for survival, strategy, and dominance on the battleground.",
         "bannerImage": "/events/bgmi-WymwZovz.jpg",
         "details": {
-            "date": "Feb 19-21, 2026",
-            "time": "9:30 AM",
-            "venue": "E-Sports Arena",
+            "date": "19 Feb, 2026",
+            "time": "12:30 PM - 1:30 PM",
+            "venue": "D-03",
             "teamSize": "Squad of 4",
             "registrationFee": "₹400",
             "prizePool": "₹5,000 (1st: 3000, 2nd: 2000)"
@@ -422,9 +422,9 @@
         "description": "A rapid-fire coding competition that tests problem-solving speed, teamwork, and accuracy under strict time limits.",
         "bannerImage": "/events/codeoquick-DRwvHCXx.jpg",
         "details": {
-            "date": "Feb 19-21, 2026",
-            "time": "9:30 AM",
-            "venue": "Computer Lab 3",
+            "date": "19 Feb, 2026",
+            "time": "9:30 AM - 12:30 PM",
+            "venue": "LAB CCC",
             "teamSize": "Group of 2",
             "registrationFee": "₹200",
             "prizePool": "₹3,300 (1st: 2000, 2nd: 1000)"
@@ -468,9 +468,9 @@
         "description": "A stock market simulation game where participants trade virtual capital, analyze market trends, and build the most profitable portfolio.",
         "bannerImage": "/events/tech.png",
         "details": {
-            "date": "Feb 19-21, 2026",
-            "time": "9:30 AM",
-            "venue": "MBA Hall",
+            "date": "20 Feb, 2026",
+            "time": "9:30 AM - 11:30 AM",
+            "venue": "C-04",
             "teamSize": "Individual/Team",
             "registrationFee": "₹100",
             "prizePool": "₹1,000 (1st)"
@@ -511,7 +511,7 @@
         "details": {
             "date": "18 Feb, 2026",
             "time": "9:00 AM",
-            "venue": "Innovation Center",
+            "venue": "Library, GHRCE, Nagpur",
             "teamSize": "Team of 4-5",
             "registrationFee": "₹500",
             "prizePool": "₹8,000 (1st: 5000, 2nd: 3000)"
@@ -564,9 +564,9 @@
         "description": "A tactical FPS esports tournament where teams compete in strategic 5v5 matches using coordination, aim, and game sense.",
         "bannerImage": "/events/valorant-TcL-RH7g.jpg",
         "details": {
-            "date": "Feb 19-21, 2026",
-            "time": "9:30 AM",
-            "venue": "E-Sports Arena",
+            "date": "20 Feb, 2026",
+            "time": "11:30 AM - 1:30 PM",
+            "venue": "F-21",
             "teamSize": "Team of 5",
             "registrationFee": "₹500",
             "prizePool": "₹5,500 (1st: 3500, 2nd: 2000)"
@@ -613,9 +613,9 @@
         "description": "A project exhibition platform for students to present working models and innovative ideas to peers and experts.",
         "bannerImage": "/events/tech.png",
         "details": {
-            "date": "Feb 19-21, 2026",
-            "time": "9:30 AM",
-            "venue": "Exhibition Hall",
+            "date": "20 Feb, 2026",
+            "time": "1:30 PM - 4:00 PM",
+            "venue": "G-21",
             "teamSize": "Team of 2",
             "registrationFee": "₹400",
             "prizePool": "₹3,000 (1st: 2000, 2nd: 1000)"
@@ -671,9 +671,9 @@
         "description": "A robotics competition where autonomous robots race against time by accurately following a predefined track.",
         "bannerImage": "/events/linefollower-aVg7c2wf.jpg",
         "details": {
-            "date": "Feb 19-21, 2026",
-            "time": "9:30 AM",
-            "venue": "Robotics Lab",
+            "date": "20 Feb, 2026",
+            "time": "11:30 AM - 1:30 PM",
+            "venue": "In Front of Vending Machine 1st floor",
             "teamSize": "Team of 3",
             "registrationFee": "₹150",
             "prizePool": "₹2,000 (1st: 1200, 2nd: 800)"
@@ -716,9 +716,9 @@
         "description": "A real-time strategy gaming tournament where players compete using skill, deck strategy, and fast decision-making.",
         "bannerImage": "/events/clashroyal-DtP6do_b.jpg",
         "details": {
-            "date": "Feb 19-21, 2026",
-            "time": "9:30 AM",
-            "venue": "Gaming Zone",
+            "date": "20 Feb, 2026",
+            "time": "9:30 AM - 11:30 AM",
+            "venue": "F-16",
             "teamSize": "Individual",
             "registrationFee": "₹100",
             "prizePool": "₹1,750 (1st: 1000, 2nd: 750)"
@@ -762,9 +762,9 @@
         "description": "A creative reel-making competition where participants express ideas, emotions, and stories through short videos.",
         "bannerImage": "/events/reel-Clm1Tp4S.jpg",
         "details": {
-            "date": "Feb 19-21, 2026",
-            "time": "9:30 AM",
-            "venue": "Online",
+            "date": "19 Feb, 2026",
+            "time": "12:30 PM - 1:30 PM",
+            "venue": "D-01",
             "teamSize": "Individual",
             "registrationFee": "₹100",
             "prizePool": "₹900 (1st: 600, 2nd: 300)"
@@ -811,9 +811,9 @@
         "description": "A mobile battle royale tournament where squads compete in fast-paced survival matches to claim victory.",
         "bannerImage": "/events/freefire-d2Wc8b64.jpeg",
         "details": {
-            "date": "Feb 19-21, 2026",
-            "time": "9:30 AM",
-            "venue": "E-Sports Arena",
+            "date": "19 Feb, 2026",
+            "time": "12:30 PM - 1:30 PM",
+            "venue": "D-04",
             "teamSize": "Squad of 4",
             "registrationFee": "₹400",
             "prizePool": "₹4,500 (1st: 3000, 2nd: 1500)"
@@ -863,9 +863,9 @@
         "description": "A robotics sports event where teams control robots to play football, blending engineering with competitive gameplay.",
         "bannerImage": "/events/roboblocks-CZCjiSH0.jpg",
         "details": {
-            "date": "Feb 19-21, 2026",
-            "time": "9:30 AM",
-            "venue": "Robotics Arena",
+            "date": "21 Feb, 2026",
+            "time": "9:30 AM - 12:00 PM",
+            "venue": "Civ Dept Corridor",
             "teamSize": "Team of 3-4",
             "registrationFee": "Free",
             "prizePool": "₹7,000"

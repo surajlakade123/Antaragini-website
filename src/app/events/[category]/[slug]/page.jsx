@@ -57,7 +57,7 @@ export default function EventDetailPage({ params }) {
             {/* Hero Section */}
             <div className="relative h-[60vh] w-full overflow-hidden">
                 <div
-                    className="absolute inset-0 bg-cover bg-center"
+                    className="absolute inset-0 bg-cover bg-top"
                     style={{ backgroundImage: `url(${event.bannerImage})` }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-[#050505]" />
