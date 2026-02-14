@@ -26,7 +26,7 @@ export default function Navbar() {
         { name: "Events", path: "/events" },
         { name: "Gallery", path: "/gallery" },
         { name: "Sponsors", path: "/sponsors" },
-        { name: "UDAN", path: "/udan" },
+        { name: "UDAN Magazine", path: "/udan" },
         { name: "Contact", path: "/contact" },
     ];
 
@@ -66,7 +66,9 @@ export default function Navbar() {
                             </Link>
                         ))}
 
-                        <img className="h-10 w-auto ml-4 lg:h-13 lg:w-27" src="https://antaragni.co.in/assets/newlogo-CaJDsZv3.png" alt="College Logo" />
+                        <Link href="https://ghrce.raisoni.net/">
+                            <img className="h-10 w-auto ml-4 lg:h-13 lg:w-27" src="https://ghrce.raisoni.net/assets/images/ghrce-logo-white.png" alt="College Logo" />
+                        </Link>
                     </nav>
 
                     {/* Mobile Menu Button */}
@@ -106,9 +108,10 @@ export default function Navbar() {
                         {/* FIX 4: Added the College Logo at the bottom of the mobile menu to match your image */}
                         <div className="p-10 flex justify-center border-t border-white/10">
                             <img
-                                src="https://antaragni.co.in/assets/newlogo-CaJDsZv3.png"
+                                src="https://ghrce.raisoni.net/assets/images/ghrce-logo-white.png"
                                 alt="College Logo"
                                 className="h-15 w-30 "
+                                href="https://ghrce.raisoni.net/"
                             />
                         </div>
                     </motion.div>

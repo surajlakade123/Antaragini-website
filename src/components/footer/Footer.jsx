@@ -47,7 +47,7 @@ export default function Footer() {
                     {/* Column 1: Branding */}
                     <div className="space-y-4">
                         <div className="flex items-center">
-                            <img src="https://antaragni.co.in/assets/newsrclogo-CcpIVukO.png" alt="SRC Logo" className="w-35 h-35 mr-4" />
+                            <img src="events/SRClogo.png" alt="SRC Logo" className="w-35 h-35 mr-4" />
                         </div>
                         <div className="text-white text-2xl font-bold">
                             {config.festivalName}
